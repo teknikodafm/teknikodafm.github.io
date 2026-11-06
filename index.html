@@ -36,7 +36,7 @@ h1 em{font-style:normal;background:linear-gradient(120deg,#F7D88B,#E9B44C);-webk
 .ekran img{border-radius:16px 16px 0 0;border:1px solid rgba(255,255,255,.1);border-bottom:0;box-shadow:0 -20px 90px rgba(79,163,255,.18);transform:rotateX(9deg);transform-origin:bottom;animation:kalk 1.1s .15s cubic-bezier(.16,1,.3,1) both}
 @keyframes kalk{from{opacity:0;transform:translateY(70px) rotateX(20deg)}}
 .ilke{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--c);border-block:1px solid var(--c)}
-.ilke div{background:var(--bg);padding:26px;text-align:center}.ilke b{display:block;font-size:17px}.ilke span{color:var(--t3);font-size:14px}
+.ilke div{background:var(--bg);padding:26px;text-align:center}.ilke b{display:block;font-size:17px}.ilke b[lang-en]{display:none}html[lang=en] .ilke b[lang-en]{display:block}.ilke span{color:var(--t3);font-size:14px}
 section.oz{padding:88px 0}
 .satir{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:center;margin-bottom:96px}
 .satir:nth-child(even){grid-template-columns:7fr 5fr}.satir:nth-child(even) .y{order:2}
@@ -67,7 +67,7 @@ footer{padding:26px 0 40px;color:var(--t3);font-size:13px;text-align:center}
 </div></header>
 <div class="ilke">
   <div><b lang-tr>Oyuna yazmaz</b><b lang-en>Never writes to the game</b><span lang-tr>Bellek ve kayıt dosyası değişmez</span><span lang-en>Memory and saves stay untouched</span></div>
-  <div><b lang-tr>Hesap istemez</b><b lang-en>No account</b><span lang-tr>İnternete veri göndermez</span><span lang-en>No data is sent online</span></div>
+  <div><b lang-tr>Hesap istemez</b><b lang-en>No account</b><span lang-tr>Kayıt verilerin bilgisayarında kalır</span><span lang-en>Your save data stays on your computer</span></div>
   <div><b lang-tr>Türkçe ve İngilizce</b><b lang-en>Turkish and English</b><span lang-tr>Windows 10 ve 11</span><span lang-en>Windows 10 and 11</span></div>
 </div>
 <section class="oz" id="ozellikler"><div class="ic">
