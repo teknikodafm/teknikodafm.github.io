@@ -15,7 +15,7 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@TeknikOdaFM">
-<link rel="canonical" href="https://teknikodafm.com/">
+<link rel="canonical" href="https://teknikodafm.com/"><link rel="alternate" hreflang="en" href="https://teknikodafm.com/?dil=en"><link rel="alternate" hreflang="tr" href="https://teknikodafm.com/?dil=tr"><link rel="alternate" hreflang="x-default" href="https://teknikodafm.com/">
 <link rel="icon" href="img/logo.png">
 <link rel="apple-touch-icon" href="img/logo.png">
 <link rel="preload" as="image" href="img/ofis-1600.webp" imagesrcset="img/ofis-960.webp 960w, img/ofis-1600.webp 1600w" imagesizes="(max-width:1240px) 100vw, 1180px">
@@ -48,7 +48,7 @@ nav .ic{display:flex;align-items:center;gap:26px;height:68px}
 .marka{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:750;font-size:18px;letter-spacing:-.01em}.marka img{width:34px;height:34px;border-radius:9px}
 .baglantilar{display:flex;gap:24px;margin-left:10px;font-size:14.5px;color:var(--t2)}.baglantilar a{text-decoration:none}.baglantilar a:hover{color:var(--t)}
 .sag{margin-left:auto;display:flex;align-items:center;gap:10px}
-.dil{-webkit-appearance:none;appearance:none;color-scheme:dark;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23AEBACC' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 11px center;border:1px solid var(--c2);color:var(--t2);border-radius:9px;height:40px;padding:0 28px 0 12px;font:600 13px Inter,sans-serif;cursor:pointer}.dil option{background:var(--k);color:var(--t)}.dil:hover{color:var(--t)}
+.dil{-webkit-appearance:none;appearance:none;color-scheme:dark;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23AEBACC' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 11px center;border:1px solid var(--c2);color:var(--t2);border-radius:9px;height:40px;padding:0 28px 0 12px;font:600 13px Inter,sans-serif;cursor:pointer}.dil{padding:0 30px 0 34px;color:#F1F4FA;border-color:rgba(242,190,90,.55);font-weight:650;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='7.5' fill='none' stroke='%23F2BE5A' stroke-width='1.5'/%3E%3Cpath d='M2.5 10h15M10 2.5c2.3 2.2 3.4 4.7 3.4 7.5s-1.1 5.3-3.4 7.5M10 2.5C7.7 4.7 6.6 7.2 6.6 10s1.1 5.3 3.4 7.5' fill='none' stroke='%23F2BE5A' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat 11px center/15px 15px,url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23F2BE5A' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 11px center}.dil:hover,.dil:focus-visible{border-color:#F2BE5A}.dil option{background:var(--k);color:var(--t)}.dil:hover{color:var(--t)}
 
 .ust{position:relative;text-align:center;padding:84px 0 0;overflow:hidden;isolation:isolate}
 .ust::before{content:"";position:absolute;inset:-12% 0 auto;height:860px;z-index:-1;background:radial-gradient(640px 400px at 28% 26%,rgba(242,190,90,.17),transparent 70%),radial-gradient(720px 460px at 74% 34%,rgba(90,169,240,.16),transparent 70%)}
@@ -155,7 +155,7 @@ footer p{flex-basis:100%;font-size:13px}
     <a href="#sirada"><span lang-tr>Yol haritası</span><span lang-en>Roadmap</span><span lang-pt>Próximos passos</span></a>
     <a href="#sss"><span lang-tr>Sorular</span><span lang-en>FAQ</span><span lang-pt>Dúvidas</span></a>
   </div>
-  <div class="sag"><select class="dil" id="dil" aria-label="Dil / Language / Idioma"><option value="tr">TR</option><option value="en">EN</option><option value="pt">PT</option></select><a class="dug kucuk" href="#indir"><span lang-tr>Ücretsiz indir</span><span lang-en>Free download</span><span lang-pt>Baixar grátis</span></a></div>
+  <div class="sag"><select class="dil" id="dil" aria-label="Dil / Language / Idioma"><option value="tr">Türkçe</option><option value="en">English</option><option value="pt">Português</option></select><a class="dug kucuk" href="#indir"><span lang-tr>Ücretsiz indir</span><span lang-en>Free download</span><span lang-pt>Baixar grátis</span></a></div>
 </div></nav>
 
 <header class="ust" id="ust"><div class="ic">
@@ -384,9 +384,9 @@ const h=document.documentElement,d=document.getElementById('dil'),sekmeler=docum
 const secili=i=>{figurler.forEach((f,n)=>f.classList.toggle('ac',n===i));[...sekmeler.children].forEach((b,n)=>b.setAttribute('aria-selected',n===i));const k=figurler[i].querySelector('.kap');k.scrollLeft=k.scrollWidth>k.clientWidth?118:0};
 const adlar=()=>{sekmeler.innerHTML='';figurler.forEach((f,i)=>{const b=document.createElement('button');b.type='button';b.className='sekme';b.role='tab';b.textContent=h.lang==='en'?f.dataset.adEn:h.lang==='pt'?(f.dataset.adPt||f.dataset.adEn):f.dataset.adTr;b.onclick=()=>secili(i);sekmeler.append(b)});secili(Math.max(0,figurler.findIndex(f=>f.classList.contains('ac'))))};
 const PT=false,DILLER=PT?['tr','en','pt']:['tr','en'];if(!PT)d.querySelector('[value=pt]').remove();const ayarla=l=>{if(!DILLER.includes(l))l='en';h.lang=l;d.value=l;try{localStorage.setItem('dil',l)}catch{}document.title=l==='en'?"Teknik Oda: your backroom staff for FM27":l==='pt'?"Teknik Oda: sua comissão técnica no FM27":"Teknik Oda: FM27 için teknik ekibin";adlar()};
-let ilk=null;try{ilk=localStorage.getItem('dil')}catch{}
+let ilk=null;try{ilk=localStorage.getItem('dil')}catch{}const q=new URLSearchParams(location.search).get('dil');if(q&&DILLER.includes(q)){ilk=q;const c=document.querySelector('link[rel=canonical]');if(c)c.href=c.href.split('?')[0]+'?dil='+q}
 const tarayici=navigator.language.toLowerCase();ayarla(ilk||(tarayici.startsWith('tr')?'tr':PT&&tarayici.startsWith('pt')?'pt':'en'));
-d.onchange=()=>ayarla(d.value);
+d.onchange=()=>{ayarla(d.value);try{history.replaceState(null,'',location.pathname+'?dil='+d.value+location.hash)}catch{}};
 const g=new IntersectionObserver(l=>l.forEach(e=>{if(e.isIntersecting){e.target.classList.add('ac');g.unobserve(e.target)}}),{threshold:.05});
 document.querySelectorAll('.gel').forEach(e=>g.observe(e));
 document.querySelectorAll('video').forEach(v=>v.addEventListener('play',()=>{try{window.goatcounter.count({path:'fragman-izlendi',title:'Fragman izlendi',event:true})}catch{}},{once:true}));

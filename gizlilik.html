@@ -6,7 +6,7 @@
 <title>Gizlilik | Teknik Oda</title>
 <meta name="description" content="Teknik Oda uygulamasının ve sitesinin hangi verileri kullandığı.">
 <meta name="theme-color" content="#080D18">
-<link rel="canonical" href="https://teknikodafm.com/gizlilik.html">
+<link rel="canonical" href="https://teknikodafm.com/gizlilik.html"><link rel="alternate" hreflang="en" href="https://teknikodafm.com/gizlilik.html?dil=en"><link rel="alternate" hreflang="tr" href="https://teknikodafm.com/gizlilik.html?dil=tr"><link rel="alternate" hreflang="x-default" href="https://teknikodafm.com/gizlilik.html">
 <link rel="icon" href="img/logo.png">
 <style>
 @font-face{font-family:Inter;src:url(fonts/Inter-latin-ext.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0100-02BA,U+1E00-1E9F}
@@ -15,14 +15,14 @@
 html:not([lang=en]) [lang-en],html:not([lang=pt]) [lang-pt]{display:none!important}html[lang=en] [lang-tr],html[lang=pt] [lang-tr]{display:none!important}
 main{width:min(760px,calc(100% - 40px));margin:auto;padding:40px 0 70px}
 header{display:flex;align-items:center;gap:12px;margin-bottom:44px}header a{display:flex;align-items:center;gap:11px;color:inherit;text-decoration:none;font-weight:750;font-size:18px}header img{width:34px;height:34px;border-radius:9px}
-.dil{margin-left:auto;-webkit-appearance:none;appearance:none;color-scheme:dark;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23AEBACC' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 11px center;border:1px solid rgba(255,255,255,.16);color:#AEBACC;border-radius:9px;height:40px;padding:0 28px 0 12px;font:600 13px Inter,sans-serif;cursor:pointer}.dil:hover{color:#F1F4FA}.dil option{background:#0F1728;color:#F1F4FA}
+.dil{margin-left:auto;-webkit-appearance:none;appearance:none;color-scheme:dark;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23AEBACC' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 11px center;border:1px solid rgba(255,255,255,.16);color:#AEBACC;border-radius:9px;height:40px;padding:0 28px 0 12px;font:600 13px Inter,sans-serif;cursor:pointer}.dil{padding:0 30px 0 34px;color:#F1F4FA;border-color:rgba(242,190,90,.55);font-weight:650;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='7.5' fill='none' stroke='%23F2BE5A' stroke-width='1.5'/%3E%3Cpath d='M2.5 10h15M10 2.5c2.3 2.2 3.4 4.7 3.4 7.5s-1.1 5.3-3.4 7.5M10 2.5C7.7 4.7 6.6 7.2 6.6 10s1.1 5.3 3.4 7.5' fill='none' stroke='%23F2BE5A' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat 11px center/15px 15px,url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23F2BE5A' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 11px center}.dil:hover,.dil:focus-visible{border-color:#F2BE5A}.dil:hover{color:#F1F4FA}.dil option{background:#0F1728;color:#F1F4FA}
 h1{font-size:clamp(32px,5vw,46px);line-height:1.1;letter-spacing:-.025em;margin:0 0 8px}h2{font-size:20px;margin:34px 0 8px;letter-spacing:-.01em}
 p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}
 </style>
 </head>
 <body>
 <main>
-  <header><a href="/"><img src="img/logo.png" alt="" width="34" height="34">Teknik Oda</a><select class="dil" id="dil" aria-label="Dil / Language / Idioma"><option value="tr">TR</option><option value="en">EN</option><option value="pt">PT</option></select></header>
+  <header><a href="/"><img src="img/logo.png" alt="" width="34" height="34">Teknik Oda</a><select class="dil" id="dil" aria-label="Dil / Language / Idioma"><option value="tr">Türkçe</option><option value="en">English</option><option value="pt">Português</option></select></header>
 
   <div lang-tr>
     <h1>Gizlilik</h1>
@@ -89,9 +89,9 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}
 <script>
 const h=document.documentElement,d=document.getElementById('dil');
 const PT=false,DILLER=PT?['tr','en','pt']:['tr','en'];if(!PT)d.querySelector('[value=pt]').remove();const ayarla=l=>{if(!DILLER.includes(l))l='en';h.lang=l;d.value=l;document.title=l==='en'?'Privacy | Teknik Oda':l==='pt'?'Privacidade | Teknik Oda':'Gizlilik | Teknik Oda';try{localStorage.setItem('dil',l)}catch{}};
-let ilk=null;try{ilk=localStorage.getItem('dil')}catch{}
+let ilk=null;try{ilk=localStorage.getItem('dil')}catch{}const q=new URLSearchParams(location.search).get('dil');if(q&&DILLER.includes(q)){ilk=q;const c=document.querySelector('link[rel=canonical]');if(c)c.href=c.href.split('?')[0]+'?dil='+q}
 const tarayici=navigator.language.toLowerCase();ayarla(ilk||(tarayici.startsWith('tr')?'tr':PT&&tarayici.startsWith('pt')?'pt':'en'));
-d.onchange=()=>ayarla(d.value);
+d.onchange=()=>{ayarla(d.value);try{history.replaceState(null,'',location.pathname+'?dil='+d.value+location.hash)}catch{}};
 </script>
 <script data-goatcounter="https://teknikodafm.goatcounter.com/count" async src="https://gc.zgo.at/count.v5.js" crossorigin="anonymous" integrity="sha384-atnOLvQb9t+jTSipvd75X2yginT4PjVbqDdlJAmxMm+wYElFmeR6EmLP5bYeoRVQ"></script>
 </body>
