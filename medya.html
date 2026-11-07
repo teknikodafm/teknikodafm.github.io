@@ -12,17 +12,17 @@
 @font-face{font-family:Inter;src:url(fonts/Inter-latin-ext.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0100-02BA,U+1E00-1E9F}
 @font-face{font-family:Inter;src:url(fonts/Inter-latin.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0000-00FF,U+2000-206F,U+20AC}
 *{box-sizing:border-box}body{margin:0;background:#080D18;color:#F1F4FA;font:400 17px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-html:not([lang=en]) [lang-en]{display:none!important}html[lang=en] [lang-tr]{display:none!important}
+html:not([lang=en]) [lang-en],html:not([lang=pt]) [lang-pt]{display:none!important}html[lang=en] [lang-tr],html[lang=pt] [lang-tr]{display:none!important}
 main{width:min(760px,calc(100% - 40px));margin:auto;padding:40px 0 70px}
 header{display:flex;align-items:center;gap:12px;margin-bottom:44px}header a{display:flex;align-items:center;gap:11px;color:inherit;text-decoration:none;font-weight:750;font-size:18px}header img{width:34px;height:34px;border-radius:9px}
-button{margin-left:auto;background:none;border:1px solid rgba(255,255,255,.16);color:#AEBACC;border-radius:9px;height:40px;padding:0 12px;font:600 13px Inter,sans-serif;cursor:pointer}
+.dil{margin-left:auto;-webkit-appearance:none;appearance:none;color-scheme:dark;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23AEBACC' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 11px center;border:1px solid rgba(255,255,255,.16);color:#AEBACC;border-radius:9px;height:40px;padding:0 28px 0 12px;font:600 13px Inter,sans-serif;cursor:pointer}.dil:hover{color:#F1F4FA}.dil option{background:#0F1728;color:#F1F4FA}
 h1{font-size:clamp(32px,5vw,46px);line-height:1.1;letter-spacing:-.025em;margin:0 0 8px}h2{font-size:20px;margin:34px 0 8px;letter-spacing:-.01em}
 p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code{font:500 14px ui-monospace,Consolas,monospace;color:#F1F4FA;background:rgba(255,255,255,.07);padding:2px 6px;border-radius:6px;overflow-wrap:anywhere}
 </style>
 </head>
 <body>
 <main>
-  <header><a href="/"><img src="img/logo.png" alt="" width="34" height="34">Teknik Oda</a><button id="dil" type="button" aria-label="Dil / Language">EN</button></header>
+  <header><a href="/"><img src="img/logo.png" alt="" width="34" height="34">Teknik Oda</a><select class="dil" id="dil" aria-label="Dil / Language / Idioma"><option value="tr">TR</option><option value="en">EN</option><option value="pt">PT</option></select></header>
 
   <div lang-tr>
     <h1>Medya kiti</h1>
@@ -41,7 +41,7 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
       <li><a href="img/gorus-karti.png">FM içi rapor kartı: kendi oyuncun</a></li>
       <li><a href="img/gorus-butce.png">FM içi rapor kartı: başka kulübün oyuncusu</a></li>
       <li><a href="img/rapor-karti-en.png">Rapor kartı (İngilizce)</a> ve <a href="img/rapor-karti-butce-en.png">bütçe kartı (İngilizce)</a></li>
-      <li><a href="video/fragman.mp4">Fragman, 73 saniye, 1080p</a>: videolarında ara görüntü olarak kullanabilirsin.</li>
+      <li><a href="video/fragman.mp4">Fragman, 73 saniye, 1080p</a>: videolarında ara görüntü olarak kullanabilirsin. Paylaşmak ya da gömmek için <a href="https://youtu.be/nYoj786k4Wg" data-goatcounter-click="fragman-youtube" data-goatcounter-title="Fragman YouTube'da açıldı">YouTube'daki fragman</a>.</li>
     </ul>
     <h2>İçerik üreticileri</h2>
     <p>Denemek ya da videoda göstermek istersen uygulama ücretsiz. Ücretli iş birliği yapmıyoruz, olumlu yorum da istemiyoruz. Sorun görürsen dürüstçe söyle, düzeltelim.</p>
@@ -82,7 +82,7 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
       <li><a href="img/gorus-karti.png">In-game report card: your own player (Turkish)</a></li>
       <li><a href="img/gorus-butce.png">In-game report card: a player at another club (Turkish)</a></li>
       <li><a href="img/rapor-karti-en.png">Report card (English)</a> and <a href="img/rapor-karti-butce-en.png">budget card (English)</a></li>
-      <li><a href="video/fragman.mp4">Trailer, 73 seconds, 1080p</a>: feel free to use it as b-roll in your videos.</li>
+      <li><a href="video/fragman.mp4">Trailer, 73 seconds, 1080p</a>: feel free to use it as b-roll in your videos. To share or embed it, use <a href="https://youtu.be/nYoj786k4Wg" data-goatcounter-click="fragman-youtube" data-goatcounter-title="Fragman YouTube'da açıldı">the trailer on YouTube</a>.</li>
     </ul>
     <h2>Creators</h2>
     <p>The app is free to try and to show in your videos. We do not run paid partnerships and we do not ask for positive reviews. If you find a problem, say so honestly and we will fix it.</p>
@@ -105,13 +105,53 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
     <h2>Contact</h2>
     <p><a href="mailto:teknikodafm@gmail.com">teknikodafm@gmail.com</a> · <a href="https://x.com/TeknikOdaFM">@TeknikOdaFM</a></p>
   </div>
+  <div lang-pt>
+    <h1>Kit de mídia</h1>
+    <small>Para criadores de conteúdo e jornalistas.</small>
+    <p>Você pode usar os textos e as imagens desta página nos seus vídeos, matérias e posts.</p>
+    <h2>Descrição curta</h2>
+    <p>O Teknik Oda é um app independente para Windows que lê sua carreira do Football Manager ao vivo. Ele abre um cartão dentro do FM quando chega uma proposta, faz um briefing do adversário antes do jogo e reúne elenco, observação, análise do adversário e finanças num só app. Está disponível em português, inglês e turco e conhece a regra de estrangeiros da Süper Lig.</p>
+    <h2>Imagens</h2>
+    <ul>
+      <li><a href="img/logo.png">Logo</a></li>
+      <li><a href="img/paylasim.jpg">Imagem de compartilhamento (turco)</a></li>
+      <li><a href="img/kapak-en.jpg">Tela de observação (inglês)</a></li>
+      <li><a href="img/ofis-1600.webp">Tela do Escritório</a></li>
+      <li><a href="img/gozlem-1600.webp">Tela de observação</a></li>
+      <li><a href="img/sezon-karti.webp">Cartão da temporada</a></li>
+      <li><a href="img/gorus-karti.png">Cartão do relatório no jogo: seu jogador (turco)</a></li>
+      <li><a href="img/gorus-butce.png">Cartão do relatório no jogo: um jogador de outro clube (turco)</a></li>
+      <li><a href="img/rapor-karti-pt.png">Cartão do relatório (português)</a> e <a href="img/rapor-karti-butce-pt.png">cartão de orçamento (português)</a></li>
+      <li><a href="img/rapor-karti-en.png">Cartão do relatório (inglês)</a> e <a href="img/rapor-karti-butce-en.png">cartão de orçamento (inglês)</a></li>
+      <li><a href="video/fragman.mp4">Trailer, 73 segundos, 1080p</a>: fique à vontade para usar como imagem de apoio nos seus vídeos. Para compartilhar ou incorporar, use <a href="https://youtu.be/nYoj786k4Wg" data-goatcounter-click="fragman-youtube" data-goatcounter-title="Fragman YouTube'da açıldı">o trailer no YouTube</a>.</li>
+    </ul>
+    <h2>Criadores de conteúdo</h2>
+    <p>O app é grátis para testar e mostrar nos seus vídeos. Não fazemos parcerias pagas e não pedimos avaliações positivas. Se encontrar um problema, diga com sinceridade e vamos corrigir.</p>
+    <h2>Se você está fazendo um vídeo</h2>
+    <p>A ordem que mostra mais em cinco minutos:</p>
+    <ol>
+      <li>Instale e abra o app. Com o FM aberto, ele lê sua carreira sozinho; a primeira leitura pode levar um ou dois minutos.</li>
+      <li>Com o FM fechado, instale o plugin no jogo em Configurações. O cartão do relatório dentro do FM vem com esse plugin.</li>
+      <li>Abra um dos seus jogadores no FM: o cartão do relatório diz se vale vender, quem é o reserva e um valor sugerido. Para um jogador de outro clube, diz se ele seria titular e se o seu orçamento permite. Quando chega uma proposta, diz se é para aceitar, fazer contraproposta ou recusar.</li>
+      <li>No app, passe pelo Escritório, Elenco, Observação e Banco de dados. O filtro "Talentos dentro do orçamento" no Banco de dados rende uma boa demonstração.</li>
+      <li>Termine com a Análise do adversário e o Cartão da temporada. O botão "Cartão do relatório" no perfil do jogador salva o cartão como imagem.</li>
+    </ol>
+    <p>Se preferir não mostrar o nome do seu treinador, ative o Modo transmissão em Configurações &gt; Aparência. Dúvidas ou problemas: é só escrever para nós.</p>
+    <h2>Bom saber</h2>
+    <ul>
+      <li>É um projeto independente, sem vínculo com a Sports Interactive ou a SEGA.</li>
+      <li>Rostos de jogadores e escudos de clubes não estão incluídos; eles vêm dos pacotes que o usuário instalou no FM.</li>
+    </ul>
+    <h2>Contato</h2>
+    <p><a href="mailto:teknikodafm@gmail.com">teknikodafm@gmail.com</a> · <a href="https://x.com/TeknikOdaFM">@TeknikOdaFM</a></p>
+</div>
 </main>
 <script>
 const h=document.documentElement,d=document.getElementById('dil');
-const ayarla=l=>{h.lang=l;d.textContent=l==='tr'?'EN':'TR';document.title=(l==='en'?'Media kit':'Medya kiti')+' | Teknik Oda';try{localStorage.setItem('dil',l)}catch{}};
+const PT=false,DILLER=PT?['tr','en','pt']:['tr','en'];if(!PT)d.querySelector('[value=pt]').remove();const ayarla=l=>{if(!DILLER.includes(l))l='en';h.lang=l;d.value=l;document.title=(l==='en'?'Media kit':l==='pt'?'Kit de mídia':'Medya kiti')+' | Teknik Oda';try{localStorage.setItem('dil',l)}catch{}};
 let ilk=null;try{ilk=localStorage.getItem('dil')}catch{}
-ayarla(ilk||(navigator.language.toLowerCase().startsWith('tr')?'tr':'en'));
-d.onclick=()=>ayarla(h.lang==='tr'?'en':'tr');
+const tarayici=navigator.language.toLowerCase();ayarla(ilk||(tarayici.startsWith('tr')?'tr':PT&&tarayici.startsWith('pt')?'pt':'en'));
+d.onchange=()=>ayarla(d.value);
 </script>
 <script data-goatcounter="https://teknikodafm.goatcounter.com/count" async src="https://gc.zgo.at/count.v5.js" crossorigin="anonymous" integrity="sha384-atnOLvQb9t+jTSipvd75X2yginT4PjVbqDdlJAmxMm+wYElFmeR6EmLP5bYeoRVQ"></script>
 </body>

@@ -12,17 +12,17 @@
 @font-face{font-family:Inter;src:url(fonts/Inter-latin-ext.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0100-02BA,U+1E00-1E9F}
 @font-face{font-family:Inter;src:url(fonts/Inter-latin.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0000-00FF,U+2000-206F,U+20AC}
 *{box-sizing:border-box}body{margin:0;background:#080D18;color:#F1F4FA;font:400 17px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-html:not([lang=en]) [lang-en]{display:none!important}html[lang=en] [lang-tr]{display:none!important}
+html:not([lang=en]) [lang-en],html:not([lang=pt]) [lang-pt]{display:none!important}html[lang=en] [lang-tr],html[lang=pt] [lang-tr]{display:none!important}
 main{width:min(760px,calc(100% - 40px));margin:auto;padding:40px 0 70px}
 header{display:flex;align-items:center;gap:12px;margin-bottom:44px}header a{display:flex;align-items:center;gap:11px;color:inherit;text-decoration:none;font-weight:750;font-size:18px}header img{width:34px;height:34px;border-radius:9px}
-button{margin-left:auto;background:none;border:1px solid rgba(255,255,255,.16);color:#AEBACC;border-radius:9px;height:40px;padding:0 12px;font:600 13px Inter,sans-serif;cursor:pointer}
+.dil{margin-left:auto;-webkit-appearance:none;appearance:none;color-scheme:dark;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23AEBACC' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 11px center;border:1px solid rgba(255,255,255,.16);color:#AEBACC;border-radius:9px;height:40px;padding:0 28px 0 12px;font:600 13px Inter,sans-serif;cursor:pointer}.dil:hover{color:#F1F4FA}.dil option{background:#0F1728;color:#F1F4FA}
 h1{font-size:clamp(32px,5vw,46px);line-height:1.1;letter-spacing:-.025em;margin:0 0 8px}h2{font-size:20px;margin:34px 0 8px;letter-spacing:-.01em}
 p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code{font:500 14px ui-monospace,Consolas,monospace;color:#F1F4FA;background:rgba(255,255,255,.07);padding:2px 6px;border-radius:6px;overflow-wrap:anywhere}
 </style>
 </head>
 <body>
 <main>
-  <header><a href="/"><img src="img/logo.png" alt="" width="34" height="34">Teknik Oda</a><button id="dil" type="button" aria-label="Dil / Language">EN</button></header>
+  <header><a href="/"><img src="img/logo.png" alt="" width="34" height="34">Teknik Oda</a><select class="dil" id="dil" aria-label="Dil / Language / Idioma"><option value="tr">TR</option><option value="en">EN</option><option value="pt">PT</option></select></header>
 
   <div lang-tr>
     <h1>Güvenlik ve antivirüs</h1>
@@ -93,13 +93,47 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
     <h2>Contact</h2>
     <p><a href="mailto:teknikodafm@gmail.com">teknikodafm@gmail.com</a></p>
   </div>
+  <div lang-pt>
+    <h1>Segurança e antivírus</h1>
+    <small>Última atualização: 7 de novembro de 2026</small>
+    <p>Você deve saber o que o Teknik Oda faz antes de instalar. Nada aqui é escondido.</p>
+    <h2>O que o app faz?</h2>
+    <ul>
+      <li>Com o FM aberto, ele lê sua carreira na memória do jogo. Ele só lê; nunca escreve na memória nem no seu save.</li>
+      <li>Os dados da sua carreira nunca saem do seu computador.</li>
+      <li>Só acessa a internet para procurar uma nova versão e para enviar uma contagem de uso anônima (só o número da versão), que pode ser desligada.</li>
+    </ul>
+    <h2>O que o plugin no jogo faz?</h2>
+    <ul>
+      <li>É opcional. Nada é instalado até você clicar em "Instalar plugin".</li>
+      <li>Ele adiciona o BepInEx, de código aberto, e o plugin do Teknik Oda à pasta do jogo, incluindo um arquivo <code>winhttp.dll</code>.</li>
+      <li>Ele fornece os botões e cartões no FM, além dos dados de jogos, funções e clube.</li>
+      <li>Os arquivos dele são removidos em Configurações ou quando você desinstala o app.</li>
+    </ul>
+    <h2>Por que o Windows mostra um aviso?</h2>
+    <p>O instalador ainda não tem assinatura de código, então o Windows pode mostrar um aviso de "editor desconhecido". Escolha "Mais informações" e depois "Executar assim mesmo".</p>
+    <h2>Se o seu antivírus reclamar</h2>
+    <p>Ferramentas que leem a memória de outro programa e plugins de jogos que usam <code>winhttp.dll</code> podem gerar alarmes falsos. Nosso instalador passou numa verificação do Windows Defender. Baixe só deste site e confira se é o mesmo arquivo:</p>
+    <p><code>Get-FileHash TeknikOda-Kurulum-1.0.1.exe</code></p>
+    <p>SHA-256: <code>C75B58F36FE7B961602B69956841FF220016291AA954B4735A75669F53D0D77C</code></p>
+    <h2>Atualizações</h2>
+    <p>O app obtém as informações de versão de um arquivo assinado e confere o hash do instalador que baixa. Um arquivo com assinatura ou hash errado não é instalado.</p>
+    <h2>Bom saber</h2>
+    <ul>
+      <li>Esta não é uma ferramenta oficial e não tem vínculo com a Sports Interactive ou a SEGA. O uso é por sua conta e risco.</li>
+      <li>Isto é um beta. Faça backup do seu save antes.</li>
+      <li>Não foi testado com carreiras online.</li>
+    </ul>
+    <h2>Contato</h2>
+    <p><a href="mailto:teknikodafm@gmail.com">teknikodafm@gmail.com</a></p>
+</div>
 </main>
 <script>
 const h=document.documentElement,d=document.getElementById('dil');
-const ayarla=l=>{h.lang=l;d.textContent=l==='tr'?'EN':'TR';document.title=(l==='en'?'Security and antivirus':'Güvenlik ve antivirüs')+' | Teknik Oda';try{localStorage.setItem('dil',l)}catch{}};
+const PT=false,DILLER=PT?['tr','en','pt']:['tr','en'];if(!PT)d.querySelector('[value=pt]').remove();const ayarla=l=>{if(!DILLER.includes(l))l='en';h.lang=l;d.value=l;document.title=(l==='en'?'Security and antivirus':l==='pt'?'Segurança e antivírus':'Güvenlik ve antivirüs')+' | Teknik Oda';try{localStorage.setItem('dil',l)}catch{}};
 let ilk=null;try{ilk=localStorage.getItem('dil')}catch{}
-ayarla(ilk||(navigator.language.toLowerCase().startsWith('tr')?'tr':'en'));
-d.onclick=()=>ayarla(h.lang==='tr'?'en':'tr');
+const tarayici=navigator.language.toLowerCase();ayarla(ilk||(tarayici.startsWith('tr')?'tr':PT&&tarayici.startsWith('pt')?'pt':'en'));
+d.onchange=()=>ayarla(d.value);
 </script>
 <script data-goatcounter="https://teknikodafm.goatcounter.com/count" async src="https://gc.zgo.at/count.v5.js" crossorigin="anonymous" integrity="sha384-atnOLvQb9t+jTSipvd75X2yginT4PjVbqDdlJAmxMm+wYElFmeR6EmLP5bYeoRVQ"></script>
 </body>

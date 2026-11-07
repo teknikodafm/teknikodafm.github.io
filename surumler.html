@@ -12,10 +12,10 @@
 @font-face{font-family:Inter;src:url(fonts/Inter-latin-ext.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0100-02BA,U+1E00-1E9F}
 @font-face{font-family:Inter;src:url(fonts/Inter-latin.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0000-00FF,U+2000-206F,U+20AC}
 *{box-sizing:border-box}body{margin:0;background:#080D18;color:#F1F4FA;font:400 17px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-html:not([lang=en]) [lang-en]{display:none!important}html[lang=en] [lang-tr]{display:none!important}
+html:not([lang=en]) [lang-en],html:not([lang=pt]) [lang-pt]{display:none!important}html[lang=en] [lang-tr],html[lang=pt] [lang-tr]{display:none!important}
 main{width:min(760px,calc(100% - 40px));margin:auto;padding:40px 0 70px}
 header{display:flex;align-items:center;gap:12px;margin-bottom:44px}header a{display:flex;align-items:center;gap:11px;color:inherit;text-decoration:none;font-weight:750;font-size:18px}header img{width:34px;height:34px;border-radius:9px}
-button{margin-left:auto;background:none;border:1px solid rgba(255,255,255,.16);color:#AEBACC;border-radius:9px;height:40px;padding:0 12px;font:600 13px Inter,sans-serif;cursor:pointer}
+.dil{margin-left:auto;-webkit-appearance:none;appearance:none;color-scheme:dark;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23AEBACC' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 11px center;border:1px solid rgba(255,255,255,.16);color:#AEBACC;border-radius:9px;height:40px;padding:0 28px 0 12px;font:600 13px Inter,sans-serif;cursor:pointer}.dil:hover{color:#F1F4FA}.dil option{background:#0F1728;color:#F1F4FA}
 h1{font-size:clamp(32px,5vw,46px);line-height:1.1;letter-spacing:-.025em;margin:0 0 8px}h2{font-size:20px;margin:34px 0 8px;letter-spacing:-.01em}
 p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code{font:500 14px ui-monospace,Consolas,monospace;color:#F1F4FA;background:rgba(255,255,255,.07);padding:2px 6px;border-radius:6px;overflow-wrap:anywhere}
 h3{font-size:16px;margin:22px 0 4px;color:#F2BE5A}
@@ -23,7 +23,7 @@ h3{font-size:16px;margin:22px 0 4px;color:#F2BE5A}
 </head>
 <body>
 <main>
-  <header><a href="/"><img src="img/logo.png" alt="" width="34" height="34">Teknik Oda</a><button id="dil" type="button" aria-label="Dil / Language">EN</button></header>
+  <header><a href="/"><img src="img/logo.png" alt="" width="34" height="34">Teknik Oda</a><select class="dil" id="dil" aria-label="Dil / Language / Idioma"><option value="tr">TR</option><option value="en">EN</option><option value="pt">PT</option></select></header>
 
   <div lang-tr>
     <h1>Sürüm notları</h1>
@@ -110,13 +110,55 @@ h3{font-size:16px;margin:22px 0 4px;color:#F2BE5A}
       <li>Steam support. Trial support for Epic Games and Xbox / Game Pass.</li>
     </ul>
   </div>
+  <div lang-pt>
+    <h1>Notas de versão</h1>
+    <small>O que mudou em cada versão.</small>
+    <h2>1.0.1 · Novembro de 2026</h2>
+    <p>Novo cartão de análise</p>
+    <h3>Dentro do FM</h3>
+    <ul>
+      <li>O cartão de análise foi redesenhado: um relatório da comissão com carimbo de decisão e uma nota curta à mão.</li>
+      <li>Quando chega uma proposta, o cartão mostra numa barra a proposta, a faixa sugerida e o menor valor aceitável.</li>
+    </ul>
+    <h3>Correções</h3>
+    <ul>
+      <li>Os filtros rápidos do Banco de dados voltaram a funcionar; antes abriam o painel do jogador com erro.</li>
+    </ul>
+    <h2>1.0.0 · Novembro de 2026</h2>
+    <p>Primeira versão</p>
+    <h3>Carreira</h3>
+    <ul>
+      <li>Escritório: próximo jogo, decisões, forma e desfalques numa só tela.</li>
+      <li>Elenco, campo e tabela de funções: as estrelas de função do FM, o melhor XI e a profundidade por posição.</li>
+      <li>Base: sub-19, jogadores emprestados, safra da base e acompanhamento do desenvolvimento.</li>
+      <li>Clube: finanças, comissão técnica, instalações e arquivo de temporadas.</li>
+      <li>Cartão da temporada: posição na liga, troféus, jogadores da temporada e resultados numa imagem, pronta para compartilhar no X.</li>
+    </ul>
+    <h3>Mercado e análise</h3>
+    <ul>
+      <li>Observação: sugestões para o seu orçamento e as necessidades do elenco, Moneyball, jogadores parecidos e elenco sombra.</li>
+      <li>Banco de dados mundial: todos os jogadores, buscas salvas e lista de observação.</li>
+      <li>Central de estatísticas, comparação e análise do adversário.</li>
+    </ul>
+    <h3>Ligação com o jogo</h3>
+    <ul>
+      <li>Botões Abrir perfil e Comparar no perfil do jogador no FM.</li>
+      <li>Abrir no jogo: vá ao perfil de um jogador no FM com um clique.</li>
+      <li>A visão do Teknik Oda: conselho de venda ou contratação dentro do FM, nos perfis de jogadores e quando chega uma proposta.</li>
+      <li>Assistente de propostas: lê o valor da proposta recebida, diz se é para aceitar, fazer contraproposta ou recusar, e sugere um valor.</li>
+      <li>Propostas recebidas, clubes interessados e os motivos no perfil do jogador.</li>
+      <li>Briefing pré-jogo: na véspera da partida, dentro do FM: a forma do adversário, o jogador-chave, os desfalques e quem poupar.</li>
+      <li>Regra de estrangeiros da Süper Lig: limites da TFF, detecção de patch de limite e um limite personalizado.</li>
+      <li>Suporte à Steam. Suporte em teste para Epic Games e Xbox / Game Pass.</li>
+    </ul>
+</div>
 </main>
 <script>
 const h=document.documentElement,d=document.getElementById('dil');
-const ayarla=l=>{h.lang=l;d.textContent=l==='tr'?'EN':'TR';document.title=(l==='en'?'Release notes':'Sürüm notları')+' | Teknik Oda';try{localStorage.setItem('dil',l)}catch{}};
+const PT=false,DILLER=PT?['tr','en','pt']:['tr','en'];if(!PT)d.querySelector('[value=pt]').remove();const ayarla=l=>{if(!DILLER.includes(l))l='en';h.lang=l;d.value=l;document.title=(l==='en'?'Release notes':l==='pt'?'Notas de versão':'Sürüm notları')+' | Teknik Oda';try{localStorage.setItem('dil',l)}catch{}};
 let ilk=null;try{ilk=localStorage.getItem('dil')}catch{}
-ayarla(ilk||(navigator.language.toLowerCase().startsWith('tr')?'tr':'en'));
-d.onclick=()=>ayarla(h.lang==='tr'?'en':'tr');
+const tarayici=navigator.language.toLowerCase();ayarla(ilk||(tarayici.startsWith('tr')?'tr':PT&&tarayici.startsWith('pt')?'pt':'en'));
+d.onchange=()=>ayarla(d.value);
 </script>
 <script data-goatcounter="https://teknikodafm.goatcounter.com/count" async src="https://gc.zgo.at/count.v5.js" crossorigin="anonymous" integrity="sha384-atnOLvQb9t+jTSipvd75X2yginT4PjVbqDdlJAmxMm+wYElFmeR6EmLP5bYeoRVQ"></script>
 </body>

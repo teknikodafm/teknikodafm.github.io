@@ -12,17 +12,17 @@
 @font-face{font-family:Inter;src:url(fonts/Inter-latin-ext.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0100-02BA,U+1E00-1E9F}
 @font-face{font-family:Inter;src:url(fonts/Inter-latin.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0000-00FF,U+2000-206F,U+20AC}
 *{box-sizing:border-box}body{margin:0;background:#080D18;color:#F1F4FA;font:400 17px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-html:not([lang=en]) [lang-en]{display:none!important}html[lang=en] [lang-tr]{display:none!important}
+html:not([lang=en]) [lang-en],html:not([lang=pt]) [lang-pt]{display:none!important}html[lang=en] [lang-tr],html[lang=pt] [lang-tr]{display:none!important}
 main{width:min(760px,calc(100% - 40px));margin:auto;padding:40px 0 70px}
 header{display:flex;align-items:center;gap:12px;margin-bottom:44px}header a{display:flex;align-items:center;gap:11px;color:inherit;text-decoration:none;font-weight:750;font-size:18px}header img{width:34px;height:34px;border-radius:9px}
-button{margin-left:auto;background:none;border:1px solid rgba(255,255,255,.16);color:#AEBACC;border-radius:9px;height:40px;padding:0 12px;font:600 13px Inter,sans-serif;cursor:pointer}
+.dil{margin-left:auto;-webkit-appearance:none;appearance:none;color-scheme:dark;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23AEBACC' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 11px center;border:1px solid rgba(255,255,255,.16);color:#AEBACC;border-radius:9px;height:40px;padding:0 28px 0 12px;font:600 13px Inter,sans-serif;cursor:pointer}.dil:hover{color:#F1F4FA}.dil option{background:#0F1728;color:#F1F4FA}
 h1{font-size:clamp(32px,5vw,46px);line-height:1.1;letter-spacing:-.025em;margin:0 0 8px}h2{font-size:20px;margin:34px 0 8px;letter-spacing:-.01em}
 p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}
 </style>
 </head>
 <body>
 <main>
-  <header><a href="/"><img src="img/logo.png" alt="" width="34" height="34">Teknik Oda</a><button id="dil" type="button" aria-label="Dil / Language">EN</button></header>
+  <header><a href="/"><img src="img/logo.png" alt="" width="34" height="34">Teknik Oda</a><select class="dil" id="dil" aria-label="Dil / Language / Idioma"><option value="tr">TR</option><option value="en">EN</option><option value="pt">PT</option></select></header>
 
   <div lang-tr>
     <h1>Gizlilik</h1>
@@ -65,13 +65,33 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}
     <h2>Contact</h2>
     <p><a href="mailto:teknikodafm@gmail.com">teknikodafm@gmail.com</a></p>
   </div>
+  <div lang-pt>
+    <h1>Privacidade</h1>
+    <small>Última atualização: 7 de novembro de 2026</small>
+    <p>O Teknik Oda é um projeto independente. Não pede conta, não rastreia usuários e não mostra anúncios.</p>
+    <h2>O app</h2>
+    <ul>
+      <li>Ele lê sua carreira do Football Manager no seu computador. Esses dados nunca saem do seu computador.</li>
+      <li>Nunca escreve na memória do jogo nem no seu save.</li>
+      <li>Só acessa a internet para procurar uma nova versão e para enviar uma contagem de uso anônima uma vez por dia. A contagem leva só o número da versão; nenhum dado da carreira, do usuário ou do computador é enviado e nenhum identificador permanente é criado. Você pode desligar a contagem em Configurações &gt; Atualizações.</li>
+      <li>Configurações e histórico ficam no seu computador, na pasta do próprio app. Você pode escolher apagá-los ao desinstalar.</li>
+    </ul>
+    <h2>Relatórios de erro</h2>
+    <p>Os relatórios de erro nunca são enviados automaticamente. O relatório é criado como um arquivo no seu computador e você só envia se quiser. Seu nome de usuário do Windows fica oculto no arquivo; o nome do clube e do treinador podem aparecer, então você pode conferir antes.</p>
+    <h2>Este site</h2>
+    <p>Este site não usa cookies. Contamos as visitas com o GoatCounter: qual página foi vista, de qual site veio a visita, se o botão de download foi clicado, tipo de navegador e sistema operacional, tamanho da tela e país. Seu endereço IP e os dados do navegador não são guardados, nenhum identificador é criado para você e os números só aparecem como totais. Sua escolha de idioma fica só no seu navegador. O site roda no GitHub Pages; o GitHub pode manter registros de conexão para operar o serviço.</p>
+    <h2>Se você falar com a gente</h2>
+    <p>Quando você escreve por e-mail ou no X, usamos seus dados só para responder e para conduzir o teste, e não os compartilhamos.</p>
+    <h2>Contato</h2>
+    <p><a href="mailto:teknikodafm@gmail.com">teknikodafm@gmail.com</a></p>
+</div>
 </main>
 <script>
 const h=document.documentElement,d=document.getElementById('dil');
-const ayarla=l=>{h.lang=l;d.textContent=l==='tr'?'EN':'TR';document.title=l==='en'?'Privacy | Teknik Oda':'Gizlilik | Teknik Oda';try{localStorage.setItem('dil',l)}catch{}};
+const PT=false,DILLER=PT?['tr','en','pt']:['tr','en'];if(!PT)d.querySelector('[value=pt]').remove();const ayarla=l=>{if(!DILLER.includes(l))l='en';h.lang=l;d.value=l;document.title=l==='en'?'Privacy | Teknik Oda':l==='pt'?'Privacidade | Teknik Oda':'Gizlilik | Teknik Oda';try{localStorage.setItem('dil',l)}catch{}};
 let ilk=null;try{ilk=localStorage.getItem('dil')}catch{}
-ayarla(ilk||(navigator.language.toLowerCase().startsWith('tr')?'tr':'en'));
-d.onclick=()=>ayarla(h.lang==='tr'?'en':'tr');
+const tarayici=navigator.language.toLowerCase();ayarla(ilk||(tarayici.startsWith('tr')?'tr':PT&&tarayici.startsWith('pt')?'pt':'en'));
+d.onchange=()=>ayarla(d.value);
 </script>
 <script data-goatcounter="https://teknikodafm.goatcounter.com/count" async src="https://gc.zgo.at/count.v5.js" crossorigin="anonymous" integrity="sha384-atnOLvQb9t+jTSipvd75X2yginT4PjVbqDdlJAmxMm+wYElFmeR6EmLP5bYeoRVQ"></script>
 </body>
