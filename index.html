@@ -300,7 +300,7 @@ footer p{flex-basis:100%;font-size:13px}
   <div class="etiket"><span lang-tr>Ücretsiz beta</span><span lang-en>Free beta</span></div>
   <h2><span lang-tr>İndir, kendi kariyerinde dene.</span><span lang-en>Download it and try it on your own save.</span></h2>
   <p class="alt"><span lang-tr>Hesap yok, kredi kartı yok. Bir şey ters giderse uygulamadaki "Hata bildir" düğmesi yeter.</span><span lang-en>No account, no card. If something goes wrong, the "Report a problem" button in the app is all you need.</span></p>
-  <div class="dugmeler"><a class="dug" href="https://github.com/teknikodafm/teknikodafm.github.io/releases/download/v1.0.1/TeknikOda-Kurulum-1.0.1.exe"><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M1 3.2 8.4 2v7.3H1zM9.3 1.9 19 .5v8.8H9.3zM1 10.2h7.4v7.4L1 16.4zM9.3 10.2H19V19l-9.7-1.4z"/></svg><span lang-tr>Windows için indir</span><span lang-en>Download for Windows</span></a><a class="dug ikinci" href="guvenlik.html"><span lang-tr>Güvenlik ve antivirüs</span><span lang-en>Security and antivirus</span></a></div>
+  <div class="dugmeler"><a class="dug" data-goatcounter-click="indir-kurulum" data-goatcounter-title="Kurulum dosyası indirildi" href="https://github.com/teknikodafm/teknikodafm.github.io/releases/download/v1.0.1/TeknikOda-Kurulum-1.0.1.exe"><svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M1 3.2 8.4 2v7.3H1zM9.3 1.9 19 .5v8.8H9.3zM1 10.2h7.4v7.4L1 16.4zM9.3 10.2H19V19l-9.7-1.4z"/></svg><span lang-tr>Windows için indir</span><span lang-en>Download for Windows</span></a><a class="dug ikinci" href="guvenlik.html"><span lang-tr>Güvenlik ve antivirüs</span><span lang-en>Security and antivirus</span></a></div>
   <p class="not"><span lang-tr>Sürüm 1.0.1 · 74 MB · Windows uyarı verirse "Daha fazla bilgi", sonra "Yine de çalıştır" seç; dosya henüz imzalı değil. Yardım etmek istersen <a href="beta-rehberi.txt">beta rehberi</a>.</span><span lang-en>Version 1.0.1 · 74 MB · If Windows shows a warning, choose "More info", then "Run anyway"; the file is not signed yet. Want to help? See the <a href="beta-guide.txt">beta guide</a>.</span></p>
 </div></div></section>
 
@@ -333,7 +333,9 @@ ayarla(ilk||(navigator.language.toLowerCase().startsWith('tr')?'tr':'en'));
 d.onclick=()=>ayarla(h.lang==='tr'?'en':'tr');
 const g=new IntersectionObserver(l=>l.forEach(e=>{if(e.isIntersecting){e.target.classList.add('ac');g.unobserve(e.target)}}),{threshold:.05});
 document.querySelectorAll('.gel').forEach(e=>g.observe(e));
+document.querySelectorAll('video').forEach(v=>v.addEventListener('play',()=>{try{window.goatcounter.count({path:'fragman-izlendi',title:'Fragman izlendi',event:true})}catch{}},{once:true}));
 const on=new IntersectionObserver(l=>{if(l.some(e=>e.isIntersecting)){figurler.forEach(f=>f.querySelector('img').loading='eager');on.disconnect()}},{rootMargin:'700px'});on.observe(sekmeler);
 </script>
+<script data-goatcounter="https://teknikodafm.goatcounter.com/count" async src="https://gc.zgo.at/count.v5.js" crossorigin="anonymous" integrity="sha384-atnOLvQb9t+jTSipvd75X2yginT4PjVbqDdlJAmxMm+wYElFmeR6EmLP5bYeoRVQ"></script>
 </body>
 </html>

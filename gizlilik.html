@@ -38,7 +38,7 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}
     <h2>Hata raporu</h2>
     <p>Hata raporu kendiliğinden gönderilmez. Rapor bilgisayarında bir dosya olarak oluşur, göndermek istersen sen gönderirsin. Dosyada Windows kullanıcı adın gizlenir; kulüp ve menajer adı görünebilir, göndermeden önce içine bakabilirsin.</p>
     <h2>Site</h2>
-    <p>Bu site çerez ve ziyaretçi ölçümü kullanmaz. Dil seçimin yalnız tarayıcında saklanır. Site GitHub Pages üzerinde durur; GitHub hizmeti çalıştırmak için bağlantı kayıtları tutabilir.</p>
+    <p>Bu site çerez kullanmaz. Kaç kişinin ziyaret ettiğini GoatCounter ile sayarız: hangi sayfaya bakıldığı, hangi siteden gelindiği, indirme düğmesine basılıp basılmadığı, tarayıcı ve işletim sistemi türü, ekran boyutu ve ülke. IP adresin ve tarayıcı bilgin kaydedilmez, seni tanıyan bir kimlik oluşturulmaz, sayılar yalnız toplam olarak görünür. Dil seçimin yalnız tarayıcında saklanır. Site GitHub Pages üzerinde durur; GitHub hizmeti çalıştırmak için bağlantı kayıtları tutabilir.</p>
     <h2>Bize yazarsan</h2>
     <p>E-posta ya da X ile yazdığında bilgilerini yalnız sana cevap vermek ve test sürecini yürütmek için kullanırız, başkasıyla paylaşmayız.</p>
     <h2>İletişim</h2>
@@ -59,7 +59,7 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}
     <h2>Error reports</h2>
     <p>Error reports are never sent automatically. A report is created as a file on your computer, and you send it only if you choose to. Your Windows user name is hidden in the file; your club and manager name may appear, so you can check it first.</p>
     <h2>This site</h2>
-    <p>This site uses no cookies and no visitor analytics. Your language choice is kept only in your browser. The site runs on GitHub Pages; GitHub may keep connection logs to operate the service.</p>
+    <p>This site uses no cookies. We count visits with GoatCounter: which page was viewed, which site the visit came from, whether the download button was pressed, browser and operating system type, screen size and country. Your IP address and browser details are not stored, no identifier is created for you, and the numbers are only seen as totals. Your language choice is kept only in your browser. The site runs on GitHub Pages; GitHub may keep connection logs to operate the service.</p>
     <h2>If you contact us</h2>
     <p>When you write by email or on X, we use your details only to reply and to run the test, and we do not share them.</p>
     <h2>Contact</h2>
@@ -73,5 +73,6 @@ let ilk=null;try{ilk=localStorage.getItem('dil')}catch{}
 ayarla(ilk||(navigator.language.toLowerCase().startsWith('tr')?'tr':'en'));
 d.onclick=()=>ayarla(h.lang==='tr'?'en':'tr');
 </script>
+<script data-goatcounter="https://teknikodafm.goatcounter.com/count" async src="https://gc.zgo.at/count.v5.js" crossorigin="anonymous" integrity="sha384-atnOLvQb9t+jTSipvd75X2yginT4PjVbqDdlJAmxMm+wYElFmeR6EmLP5bYeoRVQ"></script>
 </body>
 </html>
