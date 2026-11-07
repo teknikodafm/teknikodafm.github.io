@@ -105,6 +105,7 @@ section.bolum{padding:104px 0}
 .durust .sinir li::before{background:rgba(90,169,240,.14) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 6v5M10 14v.01' fill='none' stroke='%235AA9F0' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") center/20px no-repeat}
 
 .sirada{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.sirada div{padding:22px 24px;border-radius:14px;background:var(--k);border:1px solid var(--c)}.sirada b{display:block;font-size:17px;font-weight:680;margin-bottom:4px}.sirada p{color:var(--t2);font-size:15px;line-height:1.5}
+.fragman video{display:block;width:100%;height:auto;border-radius:16px;border:1px solid var(--c);background:#000;box-shadow:0 30px 80px rgba(0,0,0,.45)}
 .uyum{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.uyum>div{padding:22px;border-radius:14px;background:var(--k);border:1px solid var(--c)}.uyum b{display:block;font-size:16.5px;font-weight:700;margin-bottom:10px}.uyum em{display:inline-block;font-style:normal;font-size:12.5px;font-weight:700;padding:4px 10px;border-radius:99px;margin-bottom:10px}.uyum em.iyi{color:#5FD08E;background:rgba(95,208,142,.13)}.uyum em.orta{color:var(--altin);background:rgba(242,190,90,.13)}.uyum em.kotu{color:var(--t3);background:rgba(255,255,255,.07)}.uyum p{color:var(--t2);font-size:14.5px;line-height:1.5;margin:0}@media(max-width:900px){.uyum{grid-template-columns:1fr 1fr}}@media(max-width:560px){.uyum{grid-template-columns:1fr}}
 .test{position:relative;text-align:center;padding:84px 28px;border-radius:24px;overflow:hidden;background:radial-gradient(620px 300px at 50% 0,rgba(242,190,90,.2),transparent 72%),var(--k);border:1px solid rgba(242,190,90,.22)}
 .test .alt{margin:16px auto 28px}.test .not{margin-top:20px}
@@ -128,6 +129,7 @@ footer p{flex-basis:100%;font-size:13px}
 <nav><div class="ic">
   <a class="marka" href="#ust"><img src="img/logo.png" alt="" width="34" height="34">Teknik Oda</a>
   <div class="baglantilar">
+    <a href="#fragman"><span lang-tr>Fragman</span><span lang-en>Trailer</span></a>
     <a href="#oyun"><span lang-tr>FM'in içinde</span><span lang-en>Inside FM</span></a>
     <a href="#ekranlar"><span lang-tr>Ekranlar</span><span lang-en>Screens</span></a>
     <a href="#lig">Süper Lig</a>
@@ -141,7 +143,7 @@ footer p{flex-basis:100%;font-size:13px}
   <div class="rozet"><i></i><span lang-tr>FM27 için · Ücretsiz beta açık</span><span lang-en>For FM27 · Free beta is open</span></div>
   <h1><span lang-tr>Teknik ekibin artık <em>FM'in içinde.</em></span><span lang-en>Your backroom staff, now <em>inside FM.</em></span></h1>
   <p class="alt"><span lang-tr>Teknik Oda kariyerini canlı okur. Kimi satmamalısın, kimi almalısın, hangi sözleşme riskli; kararı verirken yanında söyler.</span><span lang-en>Teknik Oda reads your career live. Who not to sell, who to sign, which contract is a risk: it tells you at the moment you decide.</span></p>
-  <div class="dugmeler"><a class="dug" href="#indir"><span lang-tr>Ücretsiz indir</span><span lang-en>Free download</span></a><a class="dug ikinci" href="#ekranlar"><span lang-tr>Ekranları gör</span><span lang-en>See the screens</span></a></div>
+  <div class="dugmeler"><a class="dug" href="#indir"><span lang-tr>Ücretsiz indir</span><span lang-en>Free download</span></a><a class="dug ikinci" href="#fragman"><span lang-tr>Fragmanı izle</span><span lang-en>Watch the trailer</span></a></div>
   <div class="sahne">
     <img class="ana" src="img/ofis-1600.webp" srcset="img/ofis-960.webp 960w, img/ofis-1600.webp 1600w" sizes="(max-width:1240px) 100vw, 1180px" width="1600" height="1000" alt="Teknik Oda Ofis ekranı: sıradaki maç, lig yarışı ve bekleyen kararlar" fetchpriority="high">
     <img class="yuzen dugme" src="img/fm-dugmeler.png" width="412" height="52" alt="FM oyuncu profilindeki Teknik Oda düğmeleri">
@@ -155,6 +157,14 @@ footer p{flex-basis:100%;font-size:13px}
   <div><b lang-tr>Hesap istemez</b><b lang-en>No account needed</b><span lang-tr>Kur ve kullan</span><span lang-en>Install and use</span></div>
   <div><b lang-tr>Türkçe ve İngilizce</b><b lang-en>Turkish and English</b><span lang-tr>Windows 10 ve 11</span><span lang-en>Windows 10 and 11</span></div>
 </div>
+
+<section class="bolum" id="fragman" style="padding-bottom:0"><div class="ic">
+  <div class="basliklar gel">
+    <div class="etiket"><span lang-tr>Fragman</span><span lang-en>Trailer</span></div>
+    <h2><span lang-tr>Teknik Oda'yı 74 saniyede gör.</span><span lang-en>See Teknik Oda in 74 seconds.</span></h2>
+  </div>
+  <div class="fragman gel"><video controls playsinline preload="none" poster="img/fragman-kapak.jpg" width="1920" height="1080"><source src="video/fragman.mp4" type="video/mp4"></video></div>
+</div></section>
 
 <section class="bolum" id="oyun"><div class="ic iki">
   <div class="gel">
