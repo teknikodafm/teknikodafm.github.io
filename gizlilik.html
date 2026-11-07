@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gizlilik | Teknik Oda</title>
+<meta name="description" content="Teknik Oda uygulamasının ve sitesinin hangi verileri kullandığı.">
+<meta name="theme-color" content="#080D18">
+<link rel="canonical" href="https://teknikodafm.com/gizlilik.html">
+<link rel="icon" href="img/logo.png">
+<style>
+@font-face{font-family:Inter;src:url(fonts/Inter-latin-ext.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0100-02BA,U+1E00-1E9F}
+@font-face{font-family:Inter;src:url(fonts/Inter-latin.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0000-00FF,U+2000-206F,U+20AC}
+*{box-sizing:border-box}body{margin:0;background:#080D18;color:#F1F4FA;font:400 17px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+html:not([lang=en]) [lang-en]{display:none!important}html[lang=en] [lang-tr]{display:none!important}
+main{width:min(760px,calc(100% - 40px));margin:auto;padding:40px 0 70px}
+header{display:flex;align-items:center;gap:12px;margin-bottom:44px}header a{display:flex;align-items:center;gap:11px;color:inherit;text-decoration:none;font-weight:750;font-size:18px}header img{width:34px;height:34px;border-radius:9px}
+button{margin-left:auto;background:none;border:1px solid rgba(255,255,255,.16);color:#AEBACC;border-radius:9px;height:40px;padding:0 12px;font:600 13px Inter,sans-serif;cursor:pointer}
+h1{font-size:clamp(32px,5vw,46px);line-height:1.1;letter-spacing:-.025em;margin:0 0 8px}h2{font-size:20px;margin:34px 0 8px;letter-spacing:-.01em}
+p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}
+</style>
+</head>
+<body>
+<main>
+  <header><a href="/"><img src="img/logo.png" alt="" width="34" height="34">Teknik Oda</a><button id="dil" type="button" aria-label="Dil / Language">EN</button></header>
+
+  <div lang-tr>
+    <h1>Gizlilik</h1>
+    <small>Son güncelleme: 7 Kasım 2026</small>
+    <p>Teknik Oda bağımsız bir projedir. Hesap istemez, kullanıcı takibi yapmaz, reklam göstermez.</p>
+    <h2>Uygulama</h2>
+    <ul>
+      <li>Football Manager kariyerini bilgisayarında okur. Bu veriler bilgisayarından çıkmaz.</li>
+      <li>Oyunun belleğine ve kayıt dosyana yazmaz.</li>
+      <li>İnternete yalnız yeni sürüm var mı diye bakmak için çıkar. Bu istekte kariyer, kullanıcı ya da bilgisayar bilgisi gönderilmez.</li>
+      <li>Ayarlar ve geçmiş kayıtlar bilgisayarında, uygulamanın kendi klasöründe durur. Kaldırırken bunları silmeyi seçebilirsin.</li>
+    </ul>
+    <h2>Hata raporu</h2>
+    <p>Hata raporu kendiliğinden gönderilmez. Rapor bilgisayarında bir dosya olarak oluşur, göndermek istersen sen gönderirsin. Dosyada Windows kullanıcı adın gizlenir; kulüp ve menajer adı görünebilir, göndermeden önce içine bakabilirsin.</p>
+    <h2>Site</h2>
+    <p>Bu site çerez ve ziyaretçi ölçümü kullanmaz. Dil seçimin yalnız tarayıcında saklanır. Site GitHub Pages üzerinde durur; GitHub hizmeti çalıştırmak için bağlantı kayıtları tutabilir.</p>
+    <h2>Bize yazarsan</h2>
+    <p>E-posta ya da X ile yazdığında bilgilerini yalnız sana cevap vermek ve test sürecini yürütmek için kullanırız, başkasıyla paylaşmayız.</p>
+    <h2>İletişim</h2>
+    <p><a href="mailto:teknikodafm@gmail.com">teknikodafm@gmail.com</a></p>
+  </div>
+
+  <div lang-en>
+    <h1>Privacy</h1>
+    <small>Last updated: 7 November 2026</small>
+    <p>Teknik Oda is an independent project. It needs no account, does not track users and shows no ads.</p>
+    <h2>The app</h2>
+    <ul>
+      <li>It reads your Football Manager career on your computer. That data never leaves your computer.</li>
+      <li>It never writes to game memory or your save file.</li>
+      <li>It only goes online to check for a new version. That request carries no career, user or computer details.</li>
+      <li>Settings and history stay on your computer, in the app's own folder. You can choose to delete them when uninstalling.</li>
+    </ul>
+    <h2>Error reports</h2>
+    <p>Error reports are never sent automatically. A report is created as a file on your computer, and you send it only if you choose to. Your Windows user name is hidden in the file; your club and manager name may appear, so you can check it first.</p>
+    <h2>This site</h2>
+    <p>This site uses no cookies and no visitor analytics. Your language choice is kept only in your browser. The site runs on GitHub Pages; GitHub may keep connection logs to operate the service.</p>
+    <h2>If you contact us</h2>
+    <p>When you write by email or on X, we use your details only to reply and to run the test, and we do not share them.</p>
+    <h2>Contact</h2>
+    <p><a href="mailto:teknikodafm@gmail.com">teknikodafm@gmail.com</a></p>
+  </div>
+</main>
+<script>
+const h=document.documentElement,d=document.getElementById('dil');
+const ayarla=l=>{h.lang=l;d.textContent=l==='tr'?'EN':'TR';document.title=l==='en'?'Privacy | Teknik Oda':'Gizlilik | Teknik Oda';try{localStorage.setItem('dil',l)}catch{}};
+let ilk=null;try{ilk=localStorage.getItem('dil')}catch{}
+ayarla(ilk||(navigator.language.toLowerCase().startsWith('tr')?'tr':'en'));
+d.onclick=()=>ayarla(h.lang==='tr'?'en':'tr');
+</script>
+</body>
+</html>

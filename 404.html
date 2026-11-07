@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sayfa bulunamadı | Teknik Oda</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#080D18">
+<link rel="icon" href="/img/logo.png">
+<style>
+@font-face{font-family:Inter;src:url(/fonts/Inter-latin-ext.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0100-02BA,U+1E00-1E9F}
+@font-face{font-family:Inter;src:url(/fonts/Inter-latin.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0000-00FF,U+2000-206F,U+20AC}
+*{box-sizing:border-box}html,body{height:100%}body{margin:0;display:grid;place-items:center;background:#080D18;color:#F1F4FA;font:400 17px/1.6 Inter,system-ui,sans-serif;text-align:center;padding:24px}
+img{width:64px;height:64px;border-radius:16px;margin-bottom:22px}h1{font-size:clamp(30px,5vw,44px);letter-spacing:-.025em;line-height:1.1;margin:0 0 10px}p{color:#AEBACC;margin:0 0 26px}
+a{display:inline-flex;align-items:center;min-height:50px;padding:0 24px;border-radius:13px;font-weight:650;text-decoration:none;color:#201503;background:linear-gradient(135deg,#F9DD97,#E9B44C 48%,#B8862A)}
+</style>
+</head>
+<body>
+<main>
+  <img src="/img/logo.png" alt="" width="64" height="64">
+  <h1 id="b">Bu sayfa kadroda yok.</h1>
+  <p id="m">Aradığın sayfa taşınmış ya da hiç olmamış olabilir.</p>
+  <a id="a" href="/">Ana sayfaya dön</a>
+</main>
+<script>
+let l=null;try{l=localStorage.getItem('dil')}catch{}
+if((l||(navigator.language.toLowerCase().startsWith('tr')?'tr':'en'))==='en'){document.documentElement.lang='en';document.title='Page not found | Teknik Oda';b.textContent='This page is not in the squad.';m.textContent='The page you are looking for has moved or never existed.';a.textContent='Back to the home page'}
+</script>
+</body>
+</html>
