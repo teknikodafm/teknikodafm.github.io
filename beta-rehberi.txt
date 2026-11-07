@@ -1,0 +1,48 @@
+TEKNİK ODA BETA REHBERİ
+
+Yardımın için teşekkürler. Test yaklaşık 30 dakika sürer.
+
+BAŞLAMADAN ÖNCE
+- FM kaydını yedekle. Uygulama kaydına yazmaz ama bu bir deneme sürümü.
+- Gereken: Windows 10/11 (64 bit), FM27 (Steam, Epic Games ya da Game Pass), 16 GB RAM önerilir.
+
+KURULUM
+1. FM'i kapat.
+2. Kurulum dosyasını teknikodafm.com adresinden indirip çalıştır. Windows uyarı verirse "Daha fazla bilgi", sonra "Yine de çalıştır" seç.
+3. Teknik Oda açılınca Ayarlar > Oyun içi eklenti > "Eklentiyi kur" düğmesine bas. Windows izin isterse onayla.
+4. FM'i aç. Eklentiyle ilk açılış birkaç dakika sürebilir, bu normaldir.
+5. Kariyerini yükle. Teknik Oda kaydı kendisi okur; ilk okuma yarım dakika sürebilir.
+
+BAKMANI İSTEDİĞİM ŞEYLER
+1. Kurulum ve eklenti sorunsuz oldu mu? FM'in ilk açılışı kaç dakika sürdü?
+2. Ofis ekranındaki sıradaki maç ve lig tablosu FM ile aynı mı?
+3. Üç oyuncu seç: CA ve rol yıldızları, değer ve sözleşme FM ile aynı mı?
+4. Bir oyun günü ilerlet. Teknik Oda yeni tarihi kendisi okudu mu?
+5. Ekranlar arasında gez. Boş, bozuk ya da yanlış görünen bir yer var mı?
+6. Oyun yavaşladı ya da kapandı mı?
+7. Süper Lig'de oynuyorsan: Kadro'daki YABANCI sayısı ve Ofis uyarıları oyununla uyuşuyor mu? Yabancı sınırı yaması kullanıyor musun? Kural Ayarlar'dan değişir.
+8. FM'de bir oyuncu profili aç. "Profili aç" ve "Karşılaştır" düğmeleri göründü mü, çalıştı mı?
+9. Yüz ya da logo paketin var mı? Ayarlar > Oyuncu fotoğrafları ve logolar bölümünde sayılar doğru mu?
+10. FM'de sağ altta çıkan Teknik Oda görüşü kartına bak. Kendi oyuncunda ve başka kulübün oyuncusunda önerisi mantıklı mı? Yanlış bulduğun bir öneri varsa ekran görüntüsü al.
+11. Oyuncuna teklif gelirse FM'de kart açıldı mı, bedel ve kulüp doğru mu? Önerdiği karar ve rakam mantıklı mı?
+12. Maçtan bir gün önce FM'de brifing kartı çıktı mı? Rakip formu, eksikler ve dinlendirme önerisi doğru mu?
+13. Ofis'te Lig yarışı kutusundaki "Sezon kartı"nı aç. Sayılar FM ile aynı mı, paylaşılacak kadar güzel mi?
+14. Özel tema kullanıyor musun (FMU, CTRL, ASF gibi)? Hangisi? Düğmeler ve kartlar temayla görünüyor mu?
+15. Epic Games ya da Game Pass'te oynuyorsan: Tanılama ekranında Platform doğru mu, kayıt okundu mu, eklenti kuruldu mu? Bu test bizim için çok değerli.
+
+ÖNEMLİ UYARI
+Maç oynanırken "Oyunda aç" düğmesine basma.
+
+BANA GÖNDERECEKLERİN
+1. Kulübün, ligin ve FM'in dili.
+2. Bilgisayarın RAM miktarı.
+3. Yukarıdaki maddelere kısa cevapların ve ekran görüntüleri.
+4. Hata raporu: sol alttaki "Hata bildir" düğmesine bas ve TeknikOda-Rapor.txt dosyasını ekle.
+   Uygulama hiç açılmıyorsa Başlat menüsünden "Teknik Oda Tanılama"yı çalıştır.
+   Dosyada Windows kullanıcı adın gizlenir; kulüp ve menajer adı görünebilir. Göndermeden önce bakabilirsin.
+5. En beğendiğin ve en kötü bulduğun şey.
+6. Bu uygulama için ayda para öder miydin? Ne kadar?
+
+Nereye: teknikodafm@gmail.com ya da https://x.com/TeknikOdaFM
+
+Teknik Oda bağımsız bir projedir. Sports Interactive ya da SEGA ile bağlantısı yoktur.

@@ -1,0 +1,49 @@
+TEKNIK ODA BETA GUIDE
+
+Thanks for helping. The test takes about 30 minutes.
+
+BEFORE YOU START
+- Back up your FM save. The app never writes to it, but this is a test build.
+- You need: Windows 10/11 (64-bit), FM27 (Steam, Epic Games or Game Pass). 16 GB RAM recommended.
+
+INSTALL
+1. Close FM.
+2. Download the installer from teknikodafm.com and run it. If Windows shows a warning, choose "More info", then "Run anyway".
+3. When Teknik Oda opens, go to Settings > In-game plugin and press "Install plugin". Approve if Windows asks for permission.
+4. Open FM. The first launch with the plugin can take a few minutes. This is normal.
+5. Load your career. Teknik Oda reads the save by itself; the first read can take about half a minute.
+
+The app follows your Windows language. To switch, use Settings > Language.
+
+WHAT I WOULD LIKE YOU TO CHECK
+1. Did the install and the plugin work? How many minutes did FM's first launch take?
+2. Do the next match and league table on the Office screen match FM?
+3. Pick three players: do CA, role stars, value and contract match FM?
+4. Advance one game day. Did Teknik Oda pick up the new date by itself?
+5. Walk through the screens. Is anything empty, broken or wrong? Is any text still in Turkish?
+6. Did the game slow down or close?
+7. Open a player profile in FM. Did the "Open profile" and "Compare" buttons appear and work?
+8. Do you use a face or logo pack? Are the counts right under Settings > Player photos and logos?
+9. Look at the Teknik Oda card at the bottom right in FM. Is its advice sensible for your own player and for a player at another club? If you disagree with it, take a screenshot.
+10. If an offer comes in for one of your players, did the card open in FM? Are the fee and club right? Do the decision and the suggested figure make sense?
+11. Did the briefing card appear in FM the day before a match? Are the opponent's form, absences and the rest suggestion right?
+12. Open "Season card" in the League race box on the Office screen. Do the numbers match FM? Would you share it?
+13. Do you use a custom skin (FMU, CTRL, ASF...)? Which one? Do the buttons and cards show with it?
+14. If you play on Epic Games or Game Pass: on the Diagnostics screen, is the platform right? Was the save read and did the plugin install? This test is especially valuable to us.
+
+IMPORTANT
+Do not press "Open in game" during a match.
+
+PLEASE SEND ME
+1. Your club, league and FM language.
+2. Your computer's RAM.
+3. Short answers to the points above, with screenshots.
+4. Problem report: press "Report a problem" at the bottom left and attach TeknikOda-Rapor.txt.
+   If the app does not open at all, run "Teknik Oda Diagnostics" from the Start menu.
+   Your Windows user name is hidden in the file; your club and manager name may appear. You can read it before sending.
+5. The thing you liked most and the thing you liked least.
+6. Would you pay monthly for this app? How much?
+
+Where to send: teknikodafm@gmail.com or https://x.com/TeknikOdaFM
+
+Teknik Oda is an independent project. It has no connection with Sports Interactive or SEGA.

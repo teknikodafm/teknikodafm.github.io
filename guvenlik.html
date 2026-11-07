@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Güvenlik ve antivirüs | Teknik Oda</title>
+<meta name="description" content="Teknik Oda ne yapar, eklenti ne ekler, Windows ve antivirüs neden uyarabilir.">
+<meta name="theme-color" content="#080D18">
+<link rel="canonical" href="https://teknikodafm.com/guvenlik.html">
+<link rel="icon" href="img/logo.png">
+<style>
+@font-face{font-family:Inter;src:url(fonts/Inter-latin-ext.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0100-02BA,U+1E00-1E9F}
+@font-face{font-family:Inter;src:url(fonts/Inter-latin.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0000-00FF,U+2000-206F,U+20AC}
+*{box-sizing:border-box}body{margin:0;background:#080D18;color:#F1F4FA;font:400 17px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+html:not([lang=en]) [lang-en]{display:none!important}html[lang=en] [lang-tr]{display:none!important}
+main{width:min(760px,calc(100% - 40px));margin:auto;padding:40px 0 70px}
+header{display:flex;align-items:center;gap:12px;margin-bottom:44px}header a{display:flex;align-items:center;gap:11px;color:inherit;text-decoration:none;font-weight:750;font-size:18px}header img{width:34px;height:34px;border-radius:9px}
+button{margin-left:auto;background:none;border:1px solid rgba(255,255,255,.16);color:#AEBACC;border-radius:9px;height:40px;padding:0 12px;font:600 13px Inter,sans-serif;cursor:pointer}
+h1{font-size:clamp(32px,5vw,46px);line-height:1.1;letter-spacing:-.025em;margin:0 0 8px}h2{font-size:20px;margin:34px 0 8px;letter-spacing:-.01em}
+p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code{font:500 14px ui-monospace,Consolas,monospace;color:#F1F4FA;background:rgba(255,255,255,.07);padding:2px 6px;border-radius:6px;overflow-wrap:anywhere}
+</style>
+</head>
+<body>
+<main>
+  <header><a href="/"><img src="img/logo.png" alt="" width="34" height="34">Teknik Oda</a><button id="dil" type="button" aria-label="Dil / Language">EN</button></header>
+
+  <div lang-tr>
+    <h1>Güvenlik ve antivirüs</h1>
+    <small>Son güncelleme: 7 Kasım 2026</small>
+    <p>Teknik Oda'yı kurmadan önce ne yaptığını bilmen gerekir. Burada saklı bir şey yok.</p>
+    <h2>Uygulama ne yapar?</h2>
+    <ul>
+      <li>FM açıkken kariyerini oyunun belleğinden okur. Yalnız okur; belleğe ve kayıt dosyana yazmaz.</li>
+      <li>Kariyer verilerin bilgisayarından çıkmaz.</li>
+      <li>İnternete yalnız yeni sürüm var mı diye bakmak için çıkar.</li>
+    </ul>
+    <h2>Oyun içi eklenti ne yapar?</h2>
+    <ul>
+      <li>İsteğe bağlıdır. Sen "Eklentiyi kur" demeden kurulmaz.</li>
+      <li>Açık kaynaklı BepInEx ve Teknik Oda eklentisini oyun klasörüne ekler. Bunun için klasöre <code>winhttp.dll</code> dosyası da konur.</li>
+      <li>FM'deki düğmeleri, görüş kartlarını ve maç, rol ve kulüp verilerini sağlar.</li>
+      <li>Ayarlar'dan ya da uygulamayı kaldırınca eklediği dosyalar silinir.</li>
+    </ul>
+    <h2>Windows neden uyarı veriyor?</h2>
+    <p>Kurulum dosyası henüz kod imzalı değil, bu yüzden Windows "bilinmeyen yayıncı" uyarısı gösterebilir. "Daha fazla bilgi", sonra "Yine de çalıştır" seç.</p>
+    <h2>Antivirüs uyarırsa</h2>
+    <p>Başka bir programın belleğini okuyan araçlar ve <code>winhttp.dll</code> kullanan oyun eklentileri yanlış alarm alabilir. Kurulum dosyamız Windows Defender taramasından temiz geçti. Dosyayı yalnız bu siteden indir ve aynı dosya olduğunu doğrula:</p>
+    <p><code>Get-FileHash TeknikOda-Kurulum-1.0.0.exe</code></p>
+    <p>SHA-256: <code>087B0BE78522F41332DC573BD9316F46CFE8621E9F3EB06230D8C42486FB6DC7</code></p>
+    <h2>Güncellemeler</h2>
+    <p>Uygulama yeni sürüm bilgisini imzalı dosyadan alır ve indirdiği kurulum dosyasının özetini denetler. İmzası ya da özeti tutmayan dosya kurulmaz.</p>
+    <h2>Bilmen gerekenler</h2>
+    <ul>
+      <li>Resmî bir araç değildir; Sports Interactive ya da SEGA ile bağlantısı yoktur. Kullanım sorumluluğu sana aittir.</li>
+      <li>Bu bir beta sürümü. Önce kaydını yedekle.</li>
+      <li>Çevrim içi kariyerlerde denenmedi.</li>
+    </ul>
+    <h2>İletişim</h2>
+    <p><a href="mailto:teknikodafm@gmail.com">teknikodafm@gmail.com</a></p>
+  </div>
+
+  <div lang-en>
+    <h1>Security and antivirus</h1>
+    <small>Last updated: 7 November 2026</small>
+    <p>You should know what Teknik Oda does before you install it. Nothing here is hidden.</p>
+    <h2>What does the app do?</h2>
+    <ul>
+      <li>While FM is open, it reads your career from game memory. It only reads; it never writes to memory or your save.</li>
+      <li>Your career data never leaves your computer.</li>
+      <li>It only goes online to check for a new version.</li>
+    </ul>
+    <h2>What does the in-game plugin do?</h2>
+    <ul>
+      <li>It is optional. Nothing is installed until you press "Install plugin".</li>
+      <li>It adds open-source BepInEx and the Teknik Oda plugin to the game folder, including a <code>winhttp.dll</code> file.</li>
+      <li>It provides the buttons and cards in FM, and match, role and club data.</li>
+      <li>Its files are removed from Settings, or when you uninstall the app.</li>
+    </ul>
+    <h2>Why does Windows show a warning?</h2>
+    <p>The installer is not code signed yet, so Windows may show an "unknown publisher" warning. Choose "More info", then "Run anyway".</p>
+    <h2>If your antivirus complains</h2>
+    <p>Tools that read another program's memory and game plugins that use <code>winhttp.dll</code> can trigger false alarms. Our installer passed a Windows Defender scan. Only download it from this site, and check that it is the same file:</p>
+    <p><code>Get-FileHash TeknikOda-Kurulum-1.0.0.exe</code></p>
+    <p>SHA-256: <code>087B0BE78522F41332DC573BD9316F46CFE8621E9F3EB06230D8C42486FB6DC7</code></p>
+    <h2>Updates</h2>
+    <p>The app gets version information from a signed file and checks the hash of the installer it downloads. A file with a wrong signature or hash is not installed.</p>
+    <h2>Good to know</h2>
+    <ul>
+      <li>This is not an official tool and has no connection with Sports Interactive or SEGA. You use it at your own responsibility.</li>
+      <li>This is a beta. Back up your save first.</li>
+      <li>It has not been tested with online careers.</li>
+    </ul>
+    <h2>Contact</h2>
+    <p><a href="mailto:teknikodafm@gmail.com">teknikodafm@gmail.com</a></p>
+  </div>
+</main>
+<script>
+const h=document.documentElement,d=document.getElementById('dil');
+const ayarla=l=>{h.lang=l;d.textContent=l==='tr'?'EN':'TR';document.title=(l==='en'?'Security and antivirus':'Güvenlik ve antivirüs')+' | Teknik Oda';try{localStorage.setItem('dil',l)}catch{}};
+let ilk=null;try{ilk=localStorage.getItem('dil')}catch{}
+ayarla(ilk||(navigator.language.toLowerCase().startsWith('tr')?'tr':'en'));
+d.onclick=()=>ayarla(h.lang==='tr'?'en':'tr');
+</script>
+</body>
+</html>
