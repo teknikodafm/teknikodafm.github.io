@@ -6,7 +6,7 @@
 <title>Güvenlik ve antivirüs | Teknik Oda</title>
 <meta name="description" content="Teknik Oda ne yapar, eklenti ne ekler, Windows ve antivirüs neden uyarabilir.">
 <meta name="theme-color" content="#080D18">
-<link rel="canonical" href="https://teknikodafm.com/guvenlik.html"><link rel="alternate" hreflang="en" href="https://teknikodafm.com/guvenlik.html?dil=en"><link rel="alternate" hreflang="tr" href="https://teknikodafm.com/guvenlik.html?dil=tr"><link rel="alternate" hreflang="x-default" href="https://teknikodafm.com/guvenlik.html">
+<link rel="canonical" href="https://teknikodafm.com/guvenlik.html"><link rel="alternate" hreflang="en" href="https://teknikodafm.com/guvenlik.html?dil=en"><link rel="alternate" hreflang="tr" href="https://teknikodafm.com/guvenlik.html?dil=tr"><link rel="alternate" hreflang="pt" href="https://teknikodafm.com/guvenlik.html?dil=pt"><link rel="alternate" hreflang="x-default" href="https://teknikodafm.com/guvenlik.html">
 <link rel="icon" href="img/logo.png">
 <style>
 @font-face{font-family:Inter;src:url(fonts/Inter-latin-ext.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0100-02BA,U+1E00-1E9F}
@@ -26,13 +26,13 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
 
   <div lang-tr>
     <h1>Güvenlik ve antivirüs</h1>
-    <small>Son güncelleme: 7 Kasım 2026</small>
+    <small>Son güncelleme: 11 Kasım 2026</small>
     <p>Teknik Oda'yı kurmadan önce ne yaptığını bilmen gerekir. Burada saklı bir şey yok.</p>
     <h2>Uygulama ne yapar?</h2>
     <ul>
       <li>FM açıkken kariyerini oyunun belleğinden okur. Yalnız okur; belleğe ve kayıt dosyana yazmaz.</li>
       <li>Kariyer verilerin bilgisayarından çıkmaz.</li>
-      <li>İnternete yalnız yeni sürüm var mı diye bakmak için çıkar.</li>
+      <li>İnternete yeni sürüm var mı diye bakmak ve anonim bir kullanım sayımı (sürüm numarası, o gün Toby'de kullanılan bölümlerin adı ve verdiğin geri bildirim: beğendim ya da beğenmedim, beta sonrası sorusunun yanıtı) göndermek için çıkar; sayım kapatılabilir.</li>
     </ul>
     <h2>Oyun içi eklenti ne yapar?</h2>
     <ul>
@@ -45,8 +45,8 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
     <p>Kurulum dosyası henüz kod imzalı değil, bu yüzden Windows "bilinmeyen yayıncı" uyarısı gösterebilir. "Daha fazla bilgi", sonra "Yine de çalıştır" seç.</p>
     <h2>Antivirüs uyarırsa</h2>
     <p>Başka bir programın belleğini okuyan araçlar ve <code>winhttp.dll</code> kullanan oyun eklentileri yanlış alarm alabilir. Kurulum dosyamız Windows Defender taramasından temiz geçti. Dosyayı yalnız bu siteden indir ve aynı dosya olduğunu doğrula:</p>
-    <p><code>Get-FileHash TeknikOda-Kurulum-1.0.1.exe</code></p>
-    <p>SHA-256: <code>C75B58F36FE7B961602B69956841FF220016291AA954B4735A75669F53D0D77C</code></p>
+    <p><code>Get-FileHash TeknikOda-Kurulum-1.0.2.exe</code></p>
+    <p>SHA-256: <code>A28710B26C1701B5D86867721184F3FE73ABFE9F59B0D66E3BE93B522B7A4DB3</code></p>
     <h2>Güncellemeler</h2>
     <p>Uygulama yeni sürüm bilgisini imzalı dosyadan alır ve indirdiği kurulum dosyasının özetini denetler. İmzası ya da özeti tutmayan dosya kurulmaz.</p>
     <h2>Bilmen gerekenler</h2>
@@ -61,13 +61,13 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
 
   <div lang-en>
     <h1>Security and antivirus</h1>
-    <small>Last updated: 7 November 2026</small>
+    <small>Last updated: 11 November 2026</small>
     <p>You should know what Teknik Oda does before you install it. Nothing here is hidden.</p>
     <h2>What does the app do?</h2>
     <ul>
       <li>While FM is open, it reads your career from game memory. It only reads; it never writes to memory or your save.</li>
       <li>Your career data never leaves your computer.</li>
-      <li>It only goes online to check for a new version.</li>
+      <li>It goes online to check for a new version and to send an anonymous usage count (the version number, the names of the Toby features used that day and the feedback you gave: thumbs up or down, your answer to the after-beta question), which you can turn off.</li>
     </ul>
     <h2>What does the in-game plugin do?</h2>
     <ul>
@@ -80,8 +80,8 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
     <p>The installer is not code signed yet, so Windows may show an "unknown publisher" warning. Choose "More info", then "Run anyway".</p>
     <h2>If your antivirus complains</h2>
     <p>Tools that read another program's memory and game plugins that use <code>winhttp.dll</code> can trigger false alarms. Our installer passed a Windows Defender scan. Only download it from this site, and check that it is the same file:</p>
-    <p><code>Get-FileHash TeknikOda-Kurulum-1.0.1.exe</code></p>
-    <p>SHA-256: <code>C75B58F36FE7B961602B69956841FF220016291AA954B4735A75669F53D0D77C</code></p>
+    <p><code>Get-FileHash TeknikOda-Kurulum-1.0.2.exe</code></p>
+    <p>SHA-256: <code>A28710B26C1701B5D86867721184F3FE73ABFE9F59B0D66E3BE93B522B7A4DB3</code></p>
     <h2>Updates</h2>
     <p>The app gets version information from a signed file and checks the hash of the installer it downloads. A file with a wrong signature or hash is not installed.</p>
     <h2>Good to know</h2>
@@ -95,13 +95,13 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
   </div>
   <div lang-pt>
     <h1>Segurança e antivírus</h1>
-    <small>Última atualização: 7 de novembro de 2026</small>
+    <small>Última atualização: 11 de novembro de 2026</small>
     <p>Você deve saber o que o Teknik Oda faz antes de instalar. Nada aqui é escondido.</p>
     <h2>O que o app faz?</h2>
     <ul>
       <li>Com o FM aberto, ele lê sua carreira na memória do jogo. Ele só lê; nunca escreve na memória nem no seu save.</li>
       <li>Os dados da sua carreira nunca saem do seu computador.</li>
-      <li>Só acessa a internet para procurar uma nova versão e para enviar uma contagem de uso anônima (só o número da versão), que pode ser desligada.</li>
+      <li>Só acessa a internet para procurar uma nova versão e para enviar uma contagem de uso anônima (o número da versão, os nomes dos recursos do Toby usados nesse dia e o feedback que você deu: gostei, não gostei, sua resposta à pergunta pós-beta), que pode ser desligada.</li>
     </ul>
     <h2>O que o plugin no jogo faz?</h2>
     <ul>
@@ -114,8 +114,8 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
     <p>O instalador ainda não tem assinatura de código, então o Windows pode mostrar um aviso de "editor desconhecido". Escolha "Mais informações" e depois "Executar assim mesmo".</p>
     <h2>Se o seu antivírus reclamar</h2>
     <p>Ferramentas que leem a memória de outro programa e plugins de jogos que usam <code>winhttp.dll</code> podem gerar alarmes falsos. Nosso instalador passou numa verificação do Windows Defender. Baixe só deste site e confira se é o mesmo arquivo:</p>
-    <p><code>Get-FileHash TeknikOda-Kurulum-1.0.1.exe</code></p>
-    <p>SHA-256: <code>C75B58F36FE7B961602B69956841FF220016291AA954B4735A75669F53D0D77C</code></p>
+    <p><code>Get-FileHash TeknikOda-Kurulum-1.0.2.exe</code></p>
+    <p>SHA-256: <code>A28710B26C1701B5D86867721184F3FE73ABFE9F59B0D66E3BE93B522B7A4DB3</code></p>
     <h2>Atualizações</h2>
     <p>O app obtém as informações de versão de um arquivo assinado e confere o hash do instalador que baixa. Um arquivo com assinatura ou hash errado não é instalado.</p>
     <h2>Bom saber</h2>
@@ -130,7 +130,7 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
 </main>
 <script>
 const h=document.documentElement,d=document.getElementById('dil');
-const PT=false,DILLER=PT?['tr','en','pt']:['tr','en'];if(!PT)d.querySelector('[value=pt]').remove();const ayarla=l=>{if(!DILLER.includes(l))l='en';h.lang=l;d.value=l;document.title=(l==='en'?'Security and antivirus':l==='pt'?'Segurança e antivírus':'Güvenlik ve antivirüs')+' | Teknik Oda';try{localStorage.setItem('dil',l)}catch{}};
+const PT=true,DILLER=PT?['tr','en','pt']:['tr','en'];if(!PT)d.querySelector('[value=pt]').remove();const ayarla=l=>{if(!DILLER.includes(l))l='en';h.lang=l;d.value=l;document.title=(l==='en'?'Security and antivirus':l==='pt'?'Segurança e antivírus':'Güvenlik ve antivirüs')+' | Teknik Oda';try{localStorage.setItem('dil',l)}catch{}};
 let ilk=null;try{ilk=localStorage.getItem('dil')}catch{}const q=new URLSearchParams(location.search).get('dil');if(q&&DILLER.includes(q)){ilk=q;const c=document.querySelector('link[rel=canonical]');if(c)c.href=c.href.split('?')[0]+'?dil='+q}
 const tarayici=navigator.language.toLowerCase();ayarla(ilk||(tarayici.startsWith('tr')?'tr':PT&&tarayici.startsWith('pt')?'pt':'en'));
 d.onchange=()=>{ayarla(d.value);try{history.replaceState(null,'',location.pathname+'?dil='+d.value+location.hash)}catch{}};

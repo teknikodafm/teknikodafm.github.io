@@ -24,7 +24,7 @@ a{display:inline-flex;align-items:center;min-height:50px;padding:0 24px;border-r
 </main>
 <script>
 let l=null;try{l=localStorage.getItem('dil')}catch{}
-const PT=false,secim=l||(navigator.language.toLowerCase().startsWith('tr')?'tr':PT&&navigator.language.toLowerCase().startsWith('pt')?'pt':'en');if(secim==='pt'&&PT){document.documentElement.lang='pt-BR';document.title='Página não encontrada | Teknik Oda';b.textContent='Esta página não está no elenco.';m.textContent='A página que você procura mudou de lugar ou nunca existiu.';a.textContent='Voltar para a página inicial'}else if(secim!=='tr'){document.documentElement.lang='en';document.title='Page not found | Teknik Oda';b.textContent='This page is not in the squad.';m.textContent='The page you are looking for has moved or never existed.';a.textContent='Back to the home page'}
+const PT=true,secim=l||(navigator.language.toLowerCase().startsWith('tr')?'tr':PT&&navigator.language.toLowerCase().startsWith('pt')?'pt':'en');if(secim==='pt'&&PT){document.documentElement.lang='pt-BR';document.title='Página não encontrada | Teknik Oda';b.textContent='Esta página não está no elenco.';m.textContent='A página que você procura mudou de lugar ou nunca existiu.';a.textContent='Voltar para a página inicial'}else if(secim!=='tr'){document.documentElement.lang='en';document.title='Page not found | Teknik Oda';b.textContent='This page is not in the squad.';m.textContent='The page you are looking for has moved or never existed.';a.textContent='Back to the home page'}
 </script>
 <script data-goatcounter="https://teknikodafm.goatcounter.com/count" async src="https://gc.zgo.at/count.v5.js" crossorigin="anonymous" integrity="sha384-atnOLvQb9t+jTSipvd75X2yginT4PjVbqDdlJAmxMm+wYElFmeR6EmLP5bYeoRVQ"></script>
 </body>

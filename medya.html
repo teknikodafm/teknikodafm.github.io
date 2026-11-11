@@ -6,7 +6,7 @@
 <title>Medya kiti | Teknik Oda</title>
 <meta name="description" content="Teknik Oda için kısa tanım, görseller ve iletişim.">
 <meta name="theme-color" content="#080D18">
-<link rel="canonical" href="https://teknikodafm.com/medya.html"><link rel="alternate" hreflang="en" href="https://teknikodafm.com/medya.html?dil=en"><link rel="alternate" hreflang="tr" href="https://teknikodafm.com/medya.html?dil=tr"><link rel="alternate" hreflang="x-default" href="https://teknikodafm.com/medya.html">
+<link rel="canonical" href="https://teknikodafm.com/medya.html"><link rel="alternate" hreflang="en" href="https://teknikodafm.com/medya.html?dil=en"><link rel="alternate" hreflang="tr" href="https://teknikodafm.com/medya.html?dil=tr"><link rel="alternate" hreflang="pt" href="https://teknikodafm.com/medya.html?dil=pt"><link rel="alternate" hreflang="x-default" href="https://teknikodafm.com/medya.html">
 <link rel="icon" href="img/logo.png">
 <style>
 @font-face{font-family:Inter;src:url(fonts/Inter-latin-ext.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0100-02BA,U+1E00-1E9F}
@@ -29,7 +29,7 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
     <small>İçerik üreticileri ve yazarlar için.</small>
     <p>Bu sayfadaki metin ve görselleri videolarında, yazılarında ve paylaşımlarında kullanabilirsin.</p>
     <h2>Kısa tanım</h2>
-    <p>Teknik Oda, Football Manager kariyerini canlı okuyan bağımsız bir Windows uygulamasıdır. Teklif gelince FM'in içinde kart açar, maçtan önce rakibi özetler; kadro, gözlem, rakip analizi ve finansı tek uygulamada toplar. Türkçe ve İngilizcedir, Süper Lig yabancı kuralını tanır.</p>
+    <p>Teknik Oda, Football Manager kariyerini canlı okuyan bağımsız bir Windows uygulamasıdır. Teklif gelince FM'in içinde kart açar, maçtan önce rakibi özetler; kadro, gözlem, rakip analizi ve finansı tek uygulamada toplar. Türkçe, İngilizce ve Portekizcedir, Süper Lig yabancı kuralını tanır.</p>
     <h2>Görseller</h2>
     <ul>
       <li><a href="img/logo.png">Logo</a></li>
@@ -70,7 +70,7 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
     <small>For creators and writers.</small>
     <p>You are welcome to use the text and images on this page in your videos, articles and posts.</p>
     <h2>Short description</h2>
-    <p>Teknik Oda is an independent Windows app that reads your Football Manager career live. It opens a card inside FM when an offer arrives, briefs you on the opponent before a match, and brings squad, scouting, opposition analysis and finances into one app. It is available in English and Turkish and knows the Turkish Süper Lig foreign player rule.</p>
+    <p>Teknik Oda is an independent Windows app that reads your Football Manager career live. It opens a card inside FM when an offer arrives, briefs you on the opponent before a match, and brings squad, scouting, opposition analysis and finances into one app. It is available in English, Turkish and Portuguese and knows the Turkish Süper Lig foreign player rule.</p>
     <h2>Images</h2>
     <ul>
       <li><a href="img/logo.png">Logo</a></li>
@@ -148,7 +148,7 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
 </main>
 <script>
 const h=document.documentElement,d=document.getElementById('dil');
-const PT=false,DILLER=PT?['tr','en','pt']:['tr','en'];if(!PT)d.querySelector('[value=pt]').remove();const ayarla=l=>{if(!DILLER.includes(l))l='en';h.lang=l;d.value=l;document.title=(l==='en'?'Media kit':l==='pt'?'Kit de mídia':'Medya kiti')+' | Teknik Oda';try{localStorage.setItem('dil',l)}catch{}};
+const PT=true,DILLER=PT?['tr','en','pt']:['tr','en'];if(!PT)d.querySelector('[value=pt]').remove();const ayarla=l=>{if(!DILLER.includes(l))l='en';h.lang=l;d.value=l;document.title=(l==='en'?'Media kit':l==='pt'?'Kit de mídia':'Medya kiti')+' | Teknik Oda';try{localStorage.setItem('dil',l)}catch{}};
 let ilk=null;try{ilk=localStorage.getItem('dil')}catch{}const q=new URLSearchParams(location.search).get('dil');if(q&&DILLER.includes(q)){ilk=q;const c=document.querySelector('link[rel=canonical]');if(c)c.href=c.href.split('?')[0]+'?dil='+q}
 const tarayici=navigator.language.toLowerCase();ayarla(ilk||(tarayici.startsWith('tr')?'tr':PT&&tarayici.startsWith('pt')?'pt':'en'));
 d.onchange=()=>{ayarla(d.value);try{history.replaceState(null,'',location.pathname+'?dil='+d.value+location.hash)}catch{}};
