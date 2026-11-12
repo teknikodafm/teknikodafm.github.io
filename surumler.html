@@ -28,15 +28,23 @@ h3{font-size:16px;margin:22px 0 4px;color:#F2BE5A}
   <div lang-tr>
     <h1>Sürüm notları</h1>
     <small>Her sürümde ne değişti.</small>
-    <h2>1.0.4 – 1.0.7 · Kasım 2026</h2>
-    <p>Kısa düzeltmeler ve çeviri taraması</p>
+    <h2>1.0.4 – 1.0.9 · Kasım 2026</h2>
+    <p>Otomatik güncelleme ve kısa düzeltmeler</p>
+    <h3>Güncelleme</h3>
+    <ul>
+      <li>Güncellemeler artık kendiliğinden kuruluyor: yeni sürüm arka planda iner ve doğrulanır, uygulamayı kapattığında kurulur. Hemen kurmak istersen Güncellemeler'deki Şimdi güncelle düğmesi duruyor.</li>
+      <li>FM güncellenince Teknik Oda yeni FM derlemesini kendisi denetleyip onaylayabiliyor. Onaylanan derlemede uygulaman yeni sürüm beklemeden okumaya devam eder, yanlış "doğrulanamadı" uyarısı çıkmaz.</li>
+    </ul>
     <h3>Düzeltmeler</h3>
     <ul>
+      <li>FM güncellemesinden sonra okuma doğrulanamazsa uygulama artık kendiliğinden yeniden dener; uyarı şeridinden tek tıkla rapor da oluşturabilirsin. Doğrulama geçmedikçe yanlış veri gösterilmez.</li>
       <li>12 Kasım FM güncellemesinden sonra bazı kariyerlerde Teknik Oda okumayı doğrulayamadığını söyleyip eski veriyi gösteriyordu. Okuma aslında doğruydu: sürüm denetimi, oyuncuların oyun içindeki küçük gelişimini (bir nitelikte +1 gibi) sorun sandı. Düzeldi; okuma ve eklenti FM'in yeni sürümüyle denendi, ikisi de çalışıyor.</li>
+      <li>SI sürüm numarasını değiştirmeden yama çıkarınca durum satırında "27.0.1 → 27.0.1" yazıyordu. Artık "27.0.1, yeni derleme" yazıyor.</li>
       <li>İngilizce ve Portekizce arayüzde bazı ekranlarda Türkçe kalan ya da yarım çevrilen metinler vardı: oyuncu profili (benzer oyuncular, performans, sezonlar, sözleşme), Ofis kartları, gözlem gerekçeleri, akademi, kadro ve kulüp notları. Bütün uygulama tarandı ve düzeltildi.</li>
       <li>Ofis'teki kiralık oyuncu kartının başlığı kulüp adına yanlış ek getiriyordu ("Leverkusen'da"). Artık "Oyuncu kiralıkta: Kulüp" diye yazılıyor.</li>
       <li>İngilizce arayüzde kadro uyarılarındaki mevki adlarının baş harfi yanlış geliyordu ("Bull-backs", "Ftrikers", "Sentre-backs"). Düzeldi.</li>
       <li>1.0.3'te Eklentiler sayfası açılmıyordu ("Ekran çizilemedi" hatası). Düzeldi; eklentiler ve FM içi kartlar zaten çalışıyordu, yalnız sayfa açılmıyordu.</li>
+      <li>Başka bir mod aracı BepInEx'i kapattığında (doorstop_config.ini, enabled = false) FM içi kartlar hiç gelmiyordu, eklentiyi yeniden kurmak da düzeltmiyordu. Artık Ayarlar › Eklenti nedeni açıkça söylüyor; eklentiyi yeniden kurmak BepInEx'i yeniden açıyor.</li>
       <li>İlk kez açanlarda tanıtım ile "Toby maçta da yanında olsun mu?" sorusu üst üste açılıyordu; soru artık tanıtım kapanınca geliyor.</li>
     </ul>
     <h2>1.0.3 · Kasım 2026</h2>
@@ -87,7 +95,7 @@ h3{font-size:16px;margin:22px 0 4px;color:#F2BE5A}
       <li>Toby'nin karnesi: sözden sonra savunma hattını değiştirdiğin anlar ayrı sayılır, xG farkı yan yana görünür. Defter odasında ölçülen sözler türe göre de sayılır; sözün tutup tutmadığı kayıtta olmadığı için isabet oranı yazılmaz.</li>
       <li>Maç öncesi kart maç gününün başında birkaç saniyede gelir, Takım Haberleri ekranında da görünür. FM hangi dilde olursa olsun çalışır.</li>
       <li>Toby'nin görünümü: varsayılan olarak deneyimli bir teknik adam, isteyen tilkiyi ya da sade görünümü seçer (Ayarlar › Görünüm). Sade görünümde karakter hiç çizilmez: ofiste koltuk boş, odalarda not tahtası, FM içindeki fısıltı kartı resimsiz. Sözler ve analiz üçünde de aynı.</li>
-      <li>Geri bildirim: Toby'nin her odasının altında "Bu oda işine yaradı mı?" satırı (Evet / Hayır); her oda için günün ilk oyu sayılır, aynı gün fikrini değiştirebilirsin. Ofis üç farklı günde açıldıktan sonra bir kez sorulur: Toby beta bitince aylık küçük bir ücretle devam etse kullanır mıydın? "Sorma" dersen bir daha gelmez. İkisi de anonim kullanım sayımıyla gider; sayım kapalıysa hiç görünmez.</li>
+      <li>Geri bildirim: Toby'nin her odasının altında "Bu oda işine yaradı mı?" satırı (Evet / Hayır); her oda için günün ilk oyu sayılır, aynı gün fikrini değiştirebilirsin. Ofis üç farklı günde açıldıktan sonra bir kez sorulur: Toby beta bitince aylık küçük bir ücretle devam etse kullanır mıydın? "Sorma" dersen bir daha gelmez. İkisi de anonim kullanım sayımıyla gider.</li>
       <li>Menü sadeleşti: Toby grubunda Toby'nin Ofisi ve Önümüzdeki maç var. Rakip analizi, Taktik danışmanı, Antrenman, Maç defteri ve Toby'nin listesi ilgili odanın "Ayrıntılı sayfa" düğmesinden açılır. Bugün'deki Ofis'in adı artık Genel bakış; Sözleşmeler rozeti, Genel bakış kararı ve Toby'nin kartı aynı sayıyı söyler (A takım).</li>
     </ul>
     <h3>Dil</h3>
@@ -173,7 +181,7 @@ h3{font-size:16px;margin:22px 0 4px;color:#F2BE5A}
     </ul>
     <h3>Gizlilik</h3>
     <ul>
-      <li>Anonim kullanım sayımı: kurulu uygulama günde bir kez sürüm numarasını, o gün Toby'de kullandığın bölümlerin adını (kart, oda, hazır soru, yazarak sorduğun sorunun türü, "Neden?" ve paylaş düğmesi; örnek: "kart-rakip"; yazdığın metin gönderilmez) ve verdiğin geri bildirimi (beğendim, beğenmedim, beta sonrası sorusunun yanıtı) gönderir; kayıt, kullanıcı ya da bilgisayar bilgisi gitmez. Ayarlar &gt; Güncellemeler'den kapatılabilir.</li>
+      <li>Anonim kullanım sayımı: kurulu uygulama günde bir kez sürüm numarasını, o gün Toby'de kullandığın bölümlerin adını (kart, oda, hazır soru, yazarak sorduğun sorunun türü, "Neden?" ve paylaş düğmesi; örnek: "kart-rakip"; yazdığın metin gönderilmez) ve verdiğin geri bildirimi (beğendim, beğenmedim, beta sonrası sorusunun yanıtı) gönderir; kayıt, kullanıcı ya da bilgisayar bilgisi gitmez.</li>
       <li>FM'de başka bir kayıt açınca uygulama yeni kariyere kendiliğinden ve hemen geçer; bazen eski kariyerde kalıyordu. İki kariyerin verisi birbirine karışmaz: eski kariyerin maç hafızası, rolleri ve istatistikleri olduğu gibi kalır. Kayıt yüklenirken "FM sürümü doğrulanamadı" uyarısı çıkmaz. Maç günü kaydına dönüp maçı yeniden oynayınca maç öncesi kart ve defter yeniden gelir.</li>
       <li>Aynı kulüple baştan başlayınca oyuncu ekranında eski kariyerin maçları kalmaz.</li>
       <li>Uygulama arka plandayken çok daha az bellek kullanır: FM önde ise yer açar.</li>
@@ -221,15 +229,23 @@ h3{font-size:16px;margin:22px 0 4px;color:#F2BE5A}
   <div lang-en>
     <h1>Release notes</h1>
     <small>What changed in each version.</small>
-    <h2>1.0.4 – 1.0.7 · November 2026</h2>
-    <p>Quick fixes and a translation sweep</p>
+    <h2>1.0.4 – 1.0.9 · November 2026</h2>
+    <p>Automatic updates and quick fixes</p>
+    <h3>Updates</h3>
+    <ul>
+      <li>Updates now install themselves: a new version downloads and is verified in the background, then installs when you close the app. To install right away, the Update now button under Updates is still there.</li>
+      <li>When FM updates, Teknik Oda can check and approve the new FM build itself. On an approved build your app keeps reading without waiting for a new version, with no false "could not be verified" warning.</li>
+    </ul>
     <h3>Fixes</h3>
     <ul>
+      <li>If the reading can't be verified after an FM update, the app now retries by itself, and you can create a report straight from the warning bar. Unverified data is never shown.</li>
       <li>After the 12 November FM update, some careers got a message that Teknik Oda could not verify the reading, and older data stayed on screen. The reading was actually fine: the version check mistook small in-game player development (like +1 in one attribute) for a problem. Fixed; reading and the plugin are tested with the new FM version and both work.</li>
+      <li>When SI shipped a patch without changing the version number, the status line read "27.0.1 → 27.0.1". It now says "27.0.1, new build".</li>
       <li>Some screens in the English and Portuguese interface showed Turkish or half-translated text: the player profile (similar players, performance, seasons, contract), Office cards, scouting reasons, and academy, squad and club notes. We went through the whole app and fixed them.</li>
       <li>The loan card title in the Office added a Turkish suffix to the club name ("Leverkusen'da"). It now reads "Player on loan at Club".</li>
       <li>In the English interface, position names in squad alerts started with the wrong letter ("Bull-backs", "Ftrikers", "Sentre-backs"). Fixed.</li>
       <li>In 1.0.3 the Plugins page didn't open ("Screen could not be drawn"). Fixed; the plugin and the cards inside FM kept working, only the page failed.</li>
+      <li>When another mod tool switched BepInEx off (doorstop_config.ini, enabled = false), the cards inside FM never appeared and reinstalling the plugin didn't help. Settings › Plugin now says why, and reinstalling the plugin switches BepInEx back on.</li>
       <li>For first-time users the welcome tour and the "Should Toby be with you during matches?" question opened on top of each other; the question now waits until the tour is closed.</li>
     </ul>
     <h2>1.0.3 · November 2026</h2>
@@ -280,7 +296,7 @@ h3{font-size:16px;margin:22px 0 4px;color:#F2BE5A}
       <li>Toby's scorecard: moments when you changed your defensive line after a remark are counted separately, with the xG difference side by side. The notebook room also counts the measured remarks by kind; the record does not say whether a remark came true, so no hit rate is shown.</li>
       <li>The pre-match card arrives within seconds on match day and also shows on the Team News screen. It works whatever language FM is in.</li>
       <li>Toby's look: by default an experienced coach, or pick the fox or the plain look (Settings › Appearance). In the plain look the character is never drawn: an empty chair in the office, a flip chart in the rooms, and the in-FM whisper card without a picture. The words and the analysis are the same in all three.</li>
-      <li>Feedback: a "Was this room useful?" row (Yes / No) at the bottom of every Toby room; the first vote of the day in each room is counted, and you can change your mind the same day. After the office has been opened on three different days, a one-time question: would you keep using Toby for a small monthly fee after the beta? Pick "Don't ask" and it never comes back. Both go out with the anonymous usage count; when the count is off they do not appear at all.</li>
+      <li>Feedback: a "Was this room useful?" row (Yes / No) at the bottom of every Toby room; the first vote of the day in each room is counted, and you can change your mind the same day. After the office has been opened on three different days, a one-time question: would you keep using Toby for a small monthly fee after the beta? Pick "Don't ask" and it never comes back. Both go out with the anonymous usage count.</li>
       <li>A simpler menu: the Toby group has Toby's Office and Next match. Opposition analysis, Tactics adviser, Training, Match notebook and Toby's list open from the "Full page" button of their room. The Office under Today is now called Overview; the Contracts badge, the Overview decision and Toby's card all give the same number (first team).</li>
     </ul>
     <h3>Language</h3>
@@ -366,7 +382,7 @@ h3{font-size:16px;margin:22px 0 4px;color:#F2BE5A}
     </ul>
     <h3>Privacy</h3>
     <ul>
-      <li>Anonymous usage count: once a day the installed app sends its version number, the names of the Toby features you used that day (cards, rooms, preset questions, the kind of question you typed, the "Why?" and share buttons; for example "kart-rakip"; the text you type is never sent) and the feedback you gave (thumbs up or down, your answer to the after-beta question); no save, user or computer data is sent. Turn it off in Settings &gt; Updates.</li>
+      <li>Anonymous usage count: once a day the installed app sends its version number, the names of the Toby features you used that day (cards, rooms, preset questions, the kind of question you typed, the "Why?" and share buttons; for example "kart-rakip"; the text you type is never sent) and the feedback you gave (thumbs up or down, your answer to the after-beta question); no save, user or computer data is sent.</li>
       <li>Loading another save in FM now moves the app to that career on its own, right away; sometimes it stayed on the old one. Data from two careers no longer mixes: the old career's match memory, roles and stats stay as they were. The "FM version could not be verified" warning no longer appears while a save is loading. If you go back to a match-day save and replay the match, the pre-match card and the notebook come again.</li>
       <li>Restarting with the same club no longer leaves the old career's matches on the player screen.</li>
       <li>The app uses far less memory while in the background, leaving room for FM.</li>
@@ -413,15 +429,23 @@ h3{font-size:16px;margin:22px 0 4px;color:#F2BE5A}
   <div lang-pt>
     <h1>Notas de versão</h1>
     <small>O que mudou em cada versão.</small>
-    <h2>1.0.4 – 1.0.7 · Novembro de 2026</h2>
-    <p>Correções rápidas e revisão das traduções</p>
+    <h2>1.0.4 – 1.0.9 · Novembro de 2026</h2>
+    <p>Atualização automática e correções rápidas</p>
+    <h3>Atualizações</h3>
+    <ul>
+      <li>As atualizações agora se instalam sozinhas: a nova versão é baixada e verificada em segundo plano e instalada quando você fecha o app. Para instalar na hora, o botão Atualizar agora em Atualizações continua lá.</li>
+      <li>Quando o FM é atualizado, o Teknik Oda pode verificar e aprovar a nova compilação do FM. Numa compilação aprovada, o app continua lendo sem esperar uma nova versão, sem o falso aviso de "não pôde ser verificada".</li>
+    </ul>
     <h3>Correções</h3>
     <ul>
+      <li>Se a leitura não puder ser verificada depois de uma atualização do FM, o app agora tenta de novo sozinho, e você pode criar um relatório direto da barra de aviso. Dados não verificados nunca são mostrados.</li>
       <li>Depois da atualização do FM de 12 de novembro, algumas carreiras recebiam a mensagem de que o Teknik Oda não conseguia verificar a leitura, e os dados antigos continuavam na tela. A leitura estava correta: a verificação de versão confundiu a pequena evolução dos jogadores no jogo (como +1 em um atributo) com um problema. Corrigido; a leitura e o plugin foram testados com a nova versão do FM e os dois funcionam.</li>
+      <li>Quando a SI lançava um patch sem mudar o número da versão, a linha de status mostrava "27.0.1 → 27.0.1". Agora mostra "27.0.1, nova compilação".</li>
       <li>Algumas telas em inglês e português mostravam texto em turco ou traduzido pela metade: perfil do jogador (jogadores parecidos, desempenho, temporadas, contrato), cartões do Escritório, motivos do scout e notas de base, elenco e clube. Revisamos o app inteiro e corrigimos.</li>
       <li>O título do cartão de empréstimo no Escritório colocava um sufixo turco no nome do clube ("Leverkusen'da"). Agora aparece "Jogador emprestado ao Clube".</li>
       <li>Na interface em inglês, os nomes de posição nos alertas do elenco começavam com a letra errada ("Bull-backs", "Ftrikers", "Sentre-backs"). Corrigido.</li>
       <li>Na 1.0.3 a página Plugins não abria ("Não foi possível desenhar a tela"). Corrigido; o plugin e os cartões dentro do FM continuavam funcionando, só a página falhava.</li>
+      <li>Quando outra ferramenta de mod desligava o BepInEx (doorstop_config.ini, enabled = false), os cartões dentro do FM não apareciam e reinstalar o plugin não resolvia. Agora Configurações › Plugin mostra o motivo, e reinstalar o plugin liga o BepInEx de novo.</li>
       <li>Para quem abre pela primeira vez, o tour de boas-vindas e a pergunta "O Toby deve ficar com você nas partidas?" abriam um sobre o outro; agora a pergunta espera o tour fechar.</li>
     </ul>
     <h2>1.0.3 · Novembro de 2026</h2>
@@ -472,7 +496,7 @@ h3{font-size:16px;margin:22px 0 4px;color:#F2BE5A}
       <li>Boletim do Toby: os momentos em que você mudou a linha defensiva após uma fala são contados à parte, com a diferença de xG lado a lado. A sala do caderno também conta as falas medidas por tipo; o registro não diz se a fala se confirmou, por isso não há taxa de acerto.</li>
       <li>O cartão pré-jogo chega em segundos no dia do jogo e também aparece na tela de Notícias da Equipe. Funciona em qualquer idioma do FM.</li>
       <li>Aparência do Toby: por padrão um treinador experiente, ou escolha a raposa ou a aparência simples (Configurações › Aparência). Na aparência simples o personagem nunca é desenhado: cadeira vazia no escritório, um quadro de anotações nas salas e o cartão de sussurro no FM sem imagem. As falas e a análise são iguais nas três.</li>
-      <li>Feedback: uma linha "Esta sala foi útil?" (Sim / Não) no fim de cada sala do Toby; conta o primeiro voto do dia em cada sala, e dá para mudar de ideia no mesmo dia. Depois que o escritório for aberto em três dias diferentes, uma pergunta única: você continuaria usando o Toby por uma pequena mensalidade depois do beta? Com "Não perguntar" ela não volta. Os dois vão com a contagem de uso anônima; com a contagem desligada, não aparecem.</li>
+      <li>Feedback: uma linha "Esta sala foi útil?" (Sim / Não) no fim de cada sala do Toby; conta o primeiro voto do dia em cada sala, e dá para mudar de ideia no mesmo dia. Depois que o escritório for aberto em três dias diferentes, uma pergunta única: você continuaria usando o Toby por uma pequena mensalidade depois do beta? Com "Não perguntar" ela não volta. Os dois vão com a contagem de uso anônima.</li>
       <li>Menu mais simples: o grupo Toby tem o Escritório do Toby e o Próximo jogo. Análise do adversário, Assistente tático, Treino, Caderno de jogo e Lista do Toby abrem pelo botão "Página completa" da sala correspondente. O Escritório em Hoje agora se chama Visão geral; o selo de Contratos, a decisão da Visão geral e o cartão do Toby dão o mesmo número (time principal).</li>
     </ul>
     <h3>Idioma</h3>
@@ -558,7 +582,7 @@ h3{font-size:16px;margin:22px 0 4px;color:#F2BE5A}
     </ul>
     <h3>Privacidade</h3>
     <ul>
-      <li>Contagem de uso anônima: uma vez por dia o app instalado envia o número da versão, os nomes dos recursos do Toby que você usou nesse dia (cartões, salas, perguntas prontas, o tipo de pergunta que você escreveu, os botões "Por quê?" e de compartilhar; por exemplo "kart-rakip"; o texto que você escreve nunca é enviado) e o feedback que você deu (gostei, não gostei, sua resposta à pergunta pós-beta); nenhum dado do save, do usuário ou do computador é enviado. Desligue em Configurações &gt; Atualizações.</li>
+      <li>Contagem de uso anônima: uma vez por dia o app instalado envia o número da versão, os nomes dos recursos do Toby que você usou nesse dia (cartões, salas, perguntas prontas, o tipo de pergunta que você escreveu, os botões "Por quê?" e de compartilhar; por exemplo "kart-rakip"; o texto que você escreve nunca é enviado) e o feedback que você deu (gostei, não gostei, sua resposta à pergunta pós-beta); nenhum dado do save, do usuário ou do computador é enviado.</li>
       <li>Ao abrir outro save no FM, o app agora passa sozinho e na hora para essa carreira; às vezes ficava na carreira antiga. Os dados de duas carreiras não se misturam mais: a memória de jogos, as funções e as estatísticas da carreira antiga ficam como estavam. O aviso "Não foi possível verificar a versão do FM" não aparece mais enquanto um save carrega. Se você voltar a um save do dia do jogo e jogar de novo, o cartão pré-jogo e o caderno aparecem outra vez.</li>
       <li>Recomeçar com o mesmo clube não deixa mais os jogos da carreira antiga na tela do jogador.</li>
       <li>O app usa bem menos memória em segundo plano, deixando espaço para o FM.</li>
