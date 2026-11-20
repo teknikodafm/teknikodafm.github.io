@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Teknik Oda: FM27 için teknik ekibin</title>
-<meta name="description" content="Teknik Oda, Football Manager kariyerini canlı okur. Kimi satmamalısın, kimi almalısın, hangi sözleşme riskli; kararı verirken FM'in içinde söyler.">
+<title>Teknik Oda: FM27 antrenman planı ve maç ayarı asistanı | Football Manager</title>
+<meta name="description" content="Teknik Oda, Football Manager (FM27) kariyerini okur: Taktik Etkinliği koçu, hafta hafta antrenman planı ve rakibe göre maç ayarı. Sen basınca FM'e yazar, tek tıkla geri alınır. Windows, hesap istemez.">
 <meta name="theme-color" content="#080D18">
 <meta property="og:title" content="Teknik Oda: teknik ekibin artık FM'in içinde">
 <meta property="og:description" content="Kariyerini okur, kararı verirken yanında söyler. Oyuna yazmaz, hesap istemez.">
@@ -19,7 +19,7 @@
 <link rel="icon" href="img/logo.png">
 <link rel="apple-touch-icon" href="img/logo.png">
 <link rel="preload" as="image" href="img/ofis-1600.webp" imagesrcset="img/ofis-960.webp 960w, img/ofis-1600.webp 1600w" imagesizes="(max-width:1240px) 100vw, 1180px">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Teknik Oda","url":"https://teknikodafm.com/","applicationCategory":"GameApplication","operatingSystem":"Windows 10, Windows 11","description":"Football Manager kariyerini okuyan analiz ve karar destek uygulaması."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Teknik Oda","url":"https://teknikodafm.com/","applicationCategory":"GameApplication","operatingSystem":"Windows 10, Windows 11","description":"Football Manager (FM27) için Windows yardımcı uygulaması: Taktik Etkinliği koçu, antrenman planı ve rakibe göre maç ayarı; kullanıcı onayıyla FM'e yazar.","inLanguage":["tr","en","pt"]}</script>
 <script>document.documentElement.classList.add('js')</script>
 <style>
 @font-face{font-family:Inter;src:url(fonts/Inter-latin-ext.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0100-02BA,U+1E00-1E9F}
@@ -431,7 +431,7 @@ footer p{flex-basis:100%;font-size:13px}
 const h=document.documentElement,d=document.getElementById('dil'),sekmeler=document.getElementById('sekmeler'),figurler=[...document.querySelectorAll('#vitrin figure')];
 const secili=i=>{figurler.forEach((f,n)=>f.classList.toggle('ac',n===i));[...sekmeler.children].forEach((b,n)=>b.setAttribute('aria-selected',n===i));const k=figurler[i].querySelector('.kap');k.scrollLeft=k.scrollWidth>k.clientWidth?118:0};
 const adlar=()=>{sekmeler.innerHTML='';figurler.forEach((f,i)=>{const b=document.createElement('button');b.type='button';b.className='sekme';b.role='tab';b.textContent=h.lang==='en'?f.dataset.adEn:h.lang==='pt'?(f.dataset.adPt||f.dataset.adEn):f.dataset.adTr;b.onclick=()=>secili(i);sekmeler.append(b)});secili(Math.max(0,figurler.findIndex(f=>f.classList.contains('ac'))))};
-const PT=true,DILLER=PT?['tr','en','pt']:['tr','en'];if(!PT)d.querySelector('[value=pt]').remove();const ayarla=l=>{if(!DILLER.includes(l))l='en';h.lang=l;d.value=l;try{localStorage.setItem('dil',l)}catch{}document.title=l==='en'?"Teknik Oda: your backroom staff for FM27":l==='pt'?"Teknik Oda: sua comissão técnica no FM27":"Teknik Oda: FM27 için teknik ekibin";adlar()};
+const PT=true,DILLER=PT?['tr','en','pt']:['tr','en'];if(!PT)d.querySelector('[value=pt]').remove();const ayarla=l=>{if(!DILLER.includes(l))l='en';h.lang=l;d.value=l;try{localStorage.setItem('dil',l)}catch{}document.title=l==='en'?"Teknik Oda: FM27 training plan and match settings assistant | Football Manager":l==='pt'?"Teknik Oda: plano de treino e ajustes de jogo para o FM27 | Football Manager":"Teknik Oda: FM27 antrenman planı ve maç ayarı asistanı | Football Manager";adlar()};
 let ilk=null;try{ilk=localStorage.getItem('dil')}catch{}const q=new URLSearchParams(location.search).get('dil');if(q&&DILLER.includes(q)){ilk=q;const c=document.querySelector('link[rel=canonical]');if(c)c.href=c.href.split('?')[0]+'?dil='+q}
 const tarayici=navigator.language.toLowerCase();ayarla(ilk||(tarayici.startsWith('tr')?'tr':PT&&tarayici.startsWith('pt')?'pt':'en'));
 d.onchange=()=>{ayarla(d.value);try{history.replaceState(null,'',location.pathname+'?dil='+d.value+location.hash)}catch{}};
