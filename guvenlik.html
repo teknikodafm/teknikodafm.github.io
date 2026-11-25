@@ -6,33 +6,40 @@
 <title>Güvenlik ve antivirüs | Teknik Oda</title>
 <meta name="description" content="Teknik Oda ne yapar, eklenti ne ekler, Windows ve antivirüs neden uyarabilir.">
 <meta name="theme-color" content="#080D18">
-<link rel="canonical" href="https://teknikodafm.com/guvenlik.html"><link rel="alternate" hreflang="en" href="https://teknikodafm.com/guvenlik.html?dil=en"><link rel="alternate" hreflang="tr" href="https://teknikodafm.com/guvenlik.html?dil=tr"><link rel="alternate" hreflang="pt" href="https://teknikodafm.com/guvenlik.html?dil=pt"><link rel="alternate" hreflang="x-default" href="https://teknikodafm.com/guvenlik.html">
+<link rel="canonical" href="https://teknikodafm.com/guvenlik.html"><link rel="alternate" hreflang="en" href="https://teknikodafm.com/guvenlik.html?dil=en"><link rel="alternate" hreflang="tr" href="https://teknikodafm.com/guvenlik.html?dil=tr"><link rel="alternate" hreflang="pt" href="https://teknikodafm.com/guvenlik.html?dil=pt"><link rel="alternate" hreflang="de" href="https://teknikodafm.com/guvenlik.html?dil=de"><link rel="alternate" hreflang="fr" href="https://teknikodafm.com/guvenlik.html?dil=fr"><link rel="alternate" hreflang="es" href="https://teknikodafm.com/guvenlik.html?dil=es"><link rel="alternate" hreflang="it" href="https://teknikodafm.com/guvenlik.html?dil=it"><link rel="alternate" hreflang="id" href="https://teknikodafm.com/guvenlik.html?dil=id"><link rel="alternate" hreflang="x-default" href="https://teknikodafm.com/guvenlik.html">
 <link rel="icon" href="img/logo.png">
 <style>
 @font-face{font-family:Inter;src:url(fonts/Inter-latin-ext.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0100-02BA,U+1E00-1E9F}
 @font-face{font-family:Inter;src:url(fonts/Inter-latin.woff2) format("woff2");font-weight:100 900;font-display:swap;unicode-range:U+0000-00FF,U+2000-206F,U+20AC}
 *{box-sizing:border-box}body{margin:0;background:#080D18;color:#F1F4FA;font:400 17px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-html:not([lang=en]) [lang-en],html:not([lang=pt]) [lang-pt]{display:none!important}html[lang=en] [lang-tr],html[lang=pt] [lang-tr]{display:none!important}
+html:not([lang=en]) [lang-en],html:not([lang=pt]) [lang-pt],html:not([lang=id]) [lang-id],html:not([lang=de]) [lang-de],html:not([lang=fr]) [lang-fr],html:not([lang=es]) [lang-es],html:not([lang=it]) [lang-it]{display:none!important}html[lang=en] [lang-tr],html[lang=pt] [lang-tr],html[lang=id] [lang-tr],html[lang=de] [lang-tr],html[lang=fr] [lang-tr],html[lang=es] [lang-tr],html[lang=it] [lang-tr]{display:none!important}
 main{width:min(760px,calc(100% - 40px));margin:auto;padding:40px 0 70px}
 header{display:flex;align-items:center;gap:12px;margin-bottom:44px}header a{display:flex;align-items:center;gap:11px;color:inherit;text-decoration:none;font-weight:750;font-size:18px}header img{width:34px;height:34px;border-radius:9px}
 .dil{margin-left:auto;-webkit-appearance:none;appearance:none;color-scheme:dark;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23AEBACC' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 11px center;border:1px solid rgba(255,255,255,.16);color:#AEBACC;border-radius:9px;height:40px;padding:0 28px 0 12px;font:600 13px Inter,sans-serif;cursor:pointer}.dil{padding:0 30px 0 34px;color:#F1F4FA;border-color:rgba(242,190,90,.55);font-weight:650;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='7.5' fill='none' stroke='%23F2BE5A' stroke-width='1.5'/%3E%3Cpath d='M2.5 10h15M10 2.5c2.3 2.2 3.4 4.7 3.4 7.5s-1.1 5.3-3.4 7.5M10 2.5C7.7 4.7 6.6 7.2 6.6 10s1.1 5.3 3.4 7.5' fill='none' stroke='%23F2BE5A' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat 11px center/15px 15px,url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23F2BE5A' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 11px center}.dil:hover,.dil:focus-visible{border-color:#F2BE5A}.dil:hover{color:#F1F4FA}.dil option{background:#0F1728;color:#F1F4FA}
 h1{font-size:clamp(32px,5vw,46px);line-height:1.1;letter-spacing:-.025em;margin:0 0 8px}h2{font-size:20px;margin:34px 0 8px;letter-spacing:-.01em}
 p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code{font:500 14px ui-monospace,Consolas,monospace;color:#F1F4FA;background:rgba(255,255,255,.07);padding:2px 6px;border-radius:6px;overflow-wrap:anywhere}
+.gv-k{margin:14px 0;padding:14px 16px;border:1px solid rgba(255,255,255,.1);border-radius:12px;background:rgba(255,255,255,.03)}.gv-k h3{margin:0 0 4px;font-size:16px;letter-spacing:-.005em}.gv-k p{margin:6px 0 0;font-size:15px;line-height:1.55}.gv-k p b{color:#F1F4FA;font-weight:600}.gv-nereye{color:#7C8BA4!important}.gv-alt{font-size:16px;margin:22px 0 4px}
+.gv-tablo{width:100%;border-collapse:collapse;margin:14px 0;font-size:15px}.gv-tablo th{text-align:left;font-weight:600;font-size:13px;color:#7C8BA4;padding:6px 10px 8px 0;border-bottom:1px solid rgba(255,255,255,.14)}.gv-tablo td{padding:11px 10px 11px 0;border-bottom:1px solid rgba(255,255,255,.07);vertical-align:top;color:#F1F4FA}.gv-tablo td small{display:block;margin-top:3px;font-size:13.5px;line-height:1.5}.gv-tablo td:nth-child(n+2){white-space:nowrap;width:1%}
+.gv-r{display:inline-block;font:600 12px/1 Inter,sans-serif;padding:5px 9px;border-radius:99px;border:1px solid rgba(255,255,255,.18);color:#AEBACC}.gv-r.gv-beta{color:#F2BE5A;border-color:rgba(242,190,90,.5);background:rgba(242,190,90,.08)}.gv-r.gv-deneysel{color:#F1F4FA;border-style:dashed}.gv-r.gv-yok{color:#F1F4FA;border-color:rgba(242,190,90,.55)}.gv-taslak td{opacity:.55}
+@media(max-width:560px){.gv-tablo td:nth-child(n+2){white-space:normal;width:auto}.gv-tablo th:nth-child(n+2){padding-right:4px}}
+[data-yakinda]{display:none!important}
+.dilk{margin-left:auto}.dilk .dil{margin-left:0}.dilk{position:relative;display:inline-flex}.dilk i{display:none}@media (max-width:560px){.dilk .dil{width:84px;color:transparent}.dilk.beta .dil{width:122px}.dilk i{display:block;position:absolute;left:34px;top:0;font:650 13px/40px Inter,sans-serif;color:#F1F4FA;pointer-events:none;white-space:nowrap}}
 </style>
 </head>
 <body>
 <main>
-  <header><a href="/"><img src="img/logo.png" alt="" width="34" height="34">Teknik Oda</a><select class="dil" id="dil" aria-label="Dil / Language / Idioma"><option value="tr">Türkçe</option><option value="en">English</option><option value="pt">Português</option></select></header>
+  <header><a href="/"><img src="img/logo.png" alt="" width="34" height="34">Teknik Oda</a><span class="dilk"><select class="dil" id="dil" aria-label="Dil / Language / Idioma"><option value="tr">Türkçe</option><option value="en">English</option><option value="pt">Português</option><option value="de">Deutsch (Beta)</option><option value="fr">Français (Beta)</option><option value="es">Español (Beta)</option><option value="it">Italiano (Beta)</option><option value="id">Bahasa Indonesia (Beta)</option></select><i id="dilkod" aria-hidden="true"></i></span></header>
 
   <div lang-tr>
     <h1>Güvenlik ve antivirüs</h1>
-    <small>Son güncelleme: 12 Kasım 2026</small>
+    <small>Son güncelleme: 21 Kasım 2026</small>
     <p>Teknik Oda'yı kurmadan önce ne yaptığını bilmen gerekir. Burada saklı bir şey yok.</p>
+    <p><a href="#cikanlar">Bilgisayarından ne çıkıyor?</a> · <a href="#yazilanlar">FM'e ne yazıyoruz?</a></p>
     <h2>Uygulama ne yapar?</h2>
     <ul>
-      <li>FM açıkken kariyerini oyunun belleğinden okur. Yalnız okur; belleğe ve kayıt dosyana yazmaz.</li>
+      <li>FM açıkken kariyerini oyunun belleğinden okur. Oyuna kendiliğinden yazmaz: FM'de bir şey "FM'e uygula"ya basınca, FM'in kendi düğmelerinin yolundan değişir ve geri alınabilir. Kayıt dosyana yazmaz. Tek istisna: Toby'nin maç ayarı yalnız o maç içindir ve maç bitince, senin değiştirmediğin talimatlar eski ayarlarına kendiliğinden döner; Eklentiler › Beta ve Deneysel'den kapatabilirsin, "Maçtan sonra da kalsın" kutusunu işaretlersen ayar kalır.</li>
       <li>Kariyer verilerin bilgisayarından çıkmaz.</li>
-      <li>İnternete yeni sürüm var mı diye bakmak ve anonim bir kullanım sayımı (sürüm numarası, o gün Toby'de kullanılan bölümlerin adı ve verdiğin geri bildirim: beğendim ya da beğenmedim, beta sonrası sorusunun yanıtı; bir de karşılaşılan sorunun türü) göndermek için çıkar.</li>
+      <li>İnternete yeni sürüm var mı diye bakmak ve anonim bir kullanım sayımı (sürüm numarası, o gün Toby'de kullanılan bölümlerin adı, uygulamanın dili ve verdiğin geri bildirim: beğendim ya da beğenmedim, memnuniyet sorusunda seçtiğin düğme; bir de karşılaşılan sorunun türü ve eklenti kuruluysa oyunun mağazası) göndermek için çıkar.</li>
     </ul>
     <h2>Oyun içi eklenti ne yapar?</h2>
     <ul>
@@ -40,13 +47,106 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
       <li>Açık kaynaklı BepInEx ve Teknik Oda eklentisini oyun klasörüne ekler. Bunun için klasöre <code>winhttp.dll</code> dosyası da konur.</li>
       <li>FM'deki düğmeleri, görüş kartlarını ve maç, rol ve kulüp verilerini sağlar.</li>
       <li>Ayarlar'dan ya da uygulamayı kaldırınca eklediği dosyalar silinir.</li>
+      <li>Eklentiyle ilgili bir sorun görülürse uygulama bunu anonim bir sorun sinyali olarak sayar: sinyalde yalnız sorunun kısa kod adı, sürüm ve oyunun mağazası (Steam, Xbox ya da Epic) vardır. Kayıt, oyuncu, kulüp ya da klasör yolu gitmez. Ayrıntısı aşağıda, "Anonim kullanım sayımı"nda.</li>
+      <li>Kurulum klasöründe <code>LISANS.txt</code> dosyası bulunur: kişisel kullanım serbest; kopyalama, değiştirme, yeniden dağıtma ve satış izinsiz; yazılım "olduğu gibi" verilir; Sports Interactive ya da SEGA ile bağlantı yoktur.</li>
     </ul>
+    <!--guven-tr-->
+    <h2 id="cikanlar">Bilgisayarından ne çıkıyor?</h2>
+    <p>Bu liste uygulamanın kodundan çıkarıldı ve bir testle denetleniyor: uygulama ve oyun içi eklenti internete yalnız aşağıdaki adreslere bağlanır. Her satırda ne gittiği, kime gittiği ve ne zaman gittiği yazar.</p>
+      <div class="gv-k">
+        <h3>Sürüm ve ayar dosyaları</h3>
+        <p class="gv-nereye">Nereye: <code>raw.githubusercontent.com</code> <code>teknikodafm.github.io</code></p>
+        <p><b>Ne gider:</b> İki imzalı dosya istenir: sürüm bilgisi (surum.json) ve bir ayar dosyası. Sunucuya veri gönderilmez; her web isteğinde olduğu gibi sunucu IP adresini ve uygulamanın adı ile sürümünü (TeknikOda/1.1.0) görür.</p>
+        <p><b>Ne zaman:</b> Açıldıktan birkaç saniye sonra, sonra saatte bir. Ayarlar &gt; Güncellemeler'deki kutuyla sürüm denetimi kapatılabilir; kapalıyken ayar dosyası günde bir kez istenir.</p>
+      </div>
+      <div class="gv-k">
+        <h3>Yeni sürümün kurulum dosyası</h3>
+        <p class="gv-nereye">Nereye: <code>teknikodafm.com</code></p>
+        <p><b>Ne gider:</b> Yalnız dosya isteği. Adres imzalı sürüm dosyasında yazar (bugün sitenin kendisi). İnen dosyanın imzası ve SHA-256 özeti denetlenir; tutmayan dosya kurulmaz.</p>
+        <p><b>Ne zaman:</b> Yeni sürüm çıkınca arka planda; sürüm denetimi açıkken.</p>
+      </div>
+      <div class="gv-k">
+        <h3>Anonim kullanım sayımı</h3>
+        <p class="gv-nereye">Nereye: <code>teknikodafm.goatcounter.com</code></p>
+        <p><b>Ne gider:</b> Yalnız kurulu uygulamadan ve yalnız adı gider: sürüm numarası, uygulamanın dili, o gün Toby'de kullandığın bölümlerin adı (kart, oda, hazır soru; yazdığın sorunun yalnız türü, metni değil), verdiğin geri bildirim (beğendim ya da beğenmedim, anket yanıtı), karşılaşılan sorunun türü (okuma, eklenti, ekran adı, güncelleme), eklenti kuruluysa oyunun mağazası (Steam, Xbox ya da Epic) ve uygulamanın açık olduğunu bildiren içeriksiz bir sinyal. Kariyer, oyuncu, kulüp, menajer adı, kullanıcı ya da bilgisayar bilgisi gitmez; kalıcı bir kimlik oluşturulmaz. Sayaç hizmeti (GoatCounter) IP adresini saklamaz; ülke, dil, Windows ve tarayıcı motoru sürümünü toplu sayı olarak tutar.</p>
+        <p><b>Ne zaman:</b> Sürüm, dil ve eklentinin kurulu olduğu (oyunun mağazasıyla) günde bir kez; bölüm adları ve geri bildirim kullandıkça (her ad günde bir kez); sorun türü günde en çok 12 kez; &quot;açık&quot; sinyali uygulama açıkken 15 dakikada bir.</p>
+      </div>
+      <div class="gv-k">
+        <h3>BepInEx için Unity kütüphaneleri</h3>
+        <p class="gv-nereye">Nereye: <code>unity.bepinex.dev</code></p>
+        <p><b>Ne gider:</b> Yalnız dosya isteği (yaklaşık 3 MB, adresinde FM'in Unity sürümü yazar). Sunucuya erişilip erişilemediği veri göndermeden yoklanır. Hazırlanamazsa BepInEx aynı adresten kendisi indirir.</p>
+        <p><b>Ne zaman:</b> Yalnız oyun içi eklentiyi kurunca ve FM güncellemesi Unity sürümünü değiştirirse, FM kapalıyken. Eklentiyi kurmazsan hiç.</p>
+      </div>
+    <div class="gv-k">
+      <h3>Tarayıcında açılan bağlantılar</h3>
+      <p class="gv-nereye">Nereye: <code>teknikodafm.com</code> <code>x.com</code> <code>sortitoutsi.net</code></p>
+      <p>Uygulamadaki site, X, destek ve paylaş düğmeleri yalnız sen tıklayınca varsayılan tarayıcını açar; uygulamanın kendisi bu adreslere bağlanmaz. Uygulamanın penceresi kendi yerel adresinin dışına gidemez. &quot;Hata bildir&quot; yalnız bu bilgisayarda bir rapor dosyası hazırlar; göndermek (e-postayla) sana kalır, kendiliğinden gitmez.</p>
+    </div>
+    <h3 class="gv-alt">Bunlar hiçbir yere gitmez</h3>
+    <ul>
+      <li>Kariyerin: oyuncular, kulüpler, kadro, maçlar, transferler. Hepsi bu bilgisayarda okunur ve çizilir.</li>
+      <li>Kayıt dosyan ve oyun dosyaların.</li>
+      <li>Toby'ye yazdığın sorunun metni ve Toby'nin cevabı.</li>
+      <li>Teknik Oda'nın oyun içi eklentisi hiçbir yere bağlanmaz; kodunda ağ çağrısı yoktur. Uygulamayla aynı bilgisayardaki dosyalarla konuşur.</li>
+      <li>Windows'un kendi bileşenleri (örneğin arayüzü çizen WebView2) kendi ayarlarınla çalışır; yukarıdaki liste Teknik Oda'nın gönderdiklerini anlatır.</li>
+    </ul>
+    <h2 id="yazilanlar">FM'e ne yazıyoruz?</h2>
+    <p>Teknik Oda oyuna kendiliğinden yazmaz ve kayıt dosyana yazmaz. FM'de bir şey sen satırın düğmesine basınca değişir: FM'in kendi düğmelerinin yolundan, oyunun belleğinde; tek istisna, maç bitince Toby'nin maç ayarının eski ayarlarına döndürülmesidir. Her yazma FM'den geri okunup denetlenir; FM düzenlemeye izin vermiyorsa yazılmaz ve ekran söyler. Değişiklik, FM'de elle yaptığın bir değişiklik gibi, sen kaydedince kaydına girer.</p>
+    <p>Açık: kullanıma hazır. Beta: açık ama yeni, sorun görürsen söyle. Deneysel: varsayılan kapalı; açmak sende.</p>
+    <table class="gv-tablo">
+      <thead><tr><th>Ne</th><th>Durum</th><th>Geri alınır mı</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Takım talimatları (Toby'nin maç ayarı)<small>Satır başına &quot;Geri al&quot; ve &quot;Hepsini geri al&quot;. Bir istekte en çok 8 talimat, talimat başına en çok 4 adım. Maç başlayınca yazılmaz. Varsayılan olarak yalnız o maç içindir: maç bitince Toby ayarı kendiliğinden geri alır (Eklentiler › Beta ve Deneysel'den hatırlatmaya çevirebilirsin); &quot;Maçtan sonra da kalsın&quot; işaretlenirse kalır. İlk yazmadan önce bir kez bilgi verir.</small></td>
+          <td><span class="gv-r gv-acik">Açık</span></td>
+          <td><span class="gv-r">Evet</span></td>
+        </tr>
+        <tr>
+          <td>Toby'nin haftası, seans seans<small>Varsayılan açık: Eklentiler › Beta ve Deneysel'den kapatırsın. Antrenman planının &quot;FM'e uygula&quot;sı ve Toby'nin haftası bölümü Toby'nin haftasını FM'in takvimine seans seans yazar; yalnız seansın türü değişir, FM'in hazır programları yazılmaz. Bir basışta en çok 16 seans. &quot;Geri al&quot; yazılan bütün seansları eski haline döndürür; liste bu bilgisayarda saklanır, uygulamayı kapatıp açsan da aynı oyun gününde durur. İlk yazmadan önce bir kez bilgi verir. Maç günlerine, dinlenme ve yolculuk günlerine dokunulmaz; maç başlayınca yazılmaz.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Evet</span></td>
+        </tr>
+        <tr>
+          <td>Oyuncu antrenman yoğunluğu ve dinlenme<small>Varsayılan açık: Eklentiler › Beta ve Deneysel'den kapatırsın. Düğmeye bastığında Toby'nin önerdiği oyuncu yoğunluğu FM'e yazılır. Bir istekte en çok 12 oyuncu. FM düzenlemeye izin vermeyen oyuncuya (örneğin sakat) yazılmaz; nedeni FM'in cümlesiyle gösterilir. Satır başına &quot;Geri al&quot;, birden çok varsa &quot;Hepsini geri al&quot;; liste bu bilgisayarda saklanır. İlk yazmadan önce bir kez bilgi verir.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Evet</span></td>
+        </tr>
+        <tr>
+          <td>Gençlerin rolü ve ek odağı<small>Varsayılan açık: Eklentiler › Beta ve Deneysel'den kapatırsın. Gençlerde Toby'nin önerdiği rol (topa sahipken mevki ve rol, topsuz rol) ve ek odak, satırdaki &quot;FM'e yaz&quot; düğmesiyle FM'in bireysel antrenmanına yazılır. Değer FM'in kendi listesinden gelir. FM düzenlemeye izin vermiyorsa ya da personel yönetiyorsa yazılmaz ve nedeni gösterilir. Şimdiki değer geri alınamayacaksa hiç yazılmaz. Satır başına &quot;Geri al&quot;, birden çok varsa &quot;Hepsini geri al&quot;; liste bu bilgisayarda saklanır. İlk yazmadan önce bir kez bilgi verir. Bir istekte en çok 12 oyuncu, maç sürerken yazılmaz.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Evet</span></td>
+        </tr>
+        <tr>
+          <td>Maç hazırlığı seansı<small>Varsayılan açık: Eklentiler › Beta ve Deneysel'den kapatırsın. Düğmeye bastığında Toby'nin maç hazırlığı seansı FM'in programına yazılır. Yalnız FM'in düzenlenebilir dediği yuva; seans adı FM'in döndürdüğü adla gösterilir. &quot;Geri al&quot; seansı eski haline döndürür (FM'in haftanın adına eklediği &quot;(Düzenlenmiş)&quot; kalır); geri al bilgisi bu bilgisayarda saklanır. İlk yazmadan önce bir kez bilgi verir. Maç başlayınca yazılmaz.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Evet</span></td>
+        </tr>
+        <tr>
+          <td>Mentorluk grubu<small>Varsayılan açık: Eklentiler › Beta ve Deneysel'den kapatırsın. Toby mentorluk grubunu FM'in kendi penceresinde kurar, FM'den okuyup doğrular; tutmazsa kimi işaretleyeceğini gösterir. Oyuncuları FM'in Düzenle penceresinde işaretler, her işaretten sonra FM'den okur ve yalnız liste birebir aynıysa onaylar. Grup yoksa düğmeyle FM'de boş bir grup açar; &quot;Geri al&quot; o grubu siler (FM'de o arada değiştiyse silmez), geri al bilgisi bu bilgisayarda saklanır. İlk seferden önce bir kez bilgi verir. Maç sürerken çalışmaz.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Evet</span></td>
+        </tr>
+        <tr>
+          <td>Oyuncuyu FM takip listesine ekleme<small>Varsayılan açık: Eklentiler › Beta ve Deneysel'den kapatırsın. Toby'nin liste ve gözlem satırlarındaki düğmeye bastığında oyuncu FM'in takip listesine eklenir. Geri alınamaz: oyuncuyu listeden FM'de elle çıkarırsın. Eklenen oyuncu FM'den geri okunup doğrulanır. Liste dosyası yazılmaz. İlk yazmadan önce bir kez bilgi verir.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r gv-yok">Geri alınamaz</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <!--/guven-tr-->
     <h2>Windows neden uyarı veriyor?</h2>
-    <p>Kurulum dosyası henüz kod imzalı değil, bu yüzden Windows "bilinmeyen yayıncı" uyarısı gösterebilir. "Daha fazla bilgi", sonra "Yine de çalıştır" seç.</p>
+    <p>Kurulum dosyası kod imzalı değil, bu yüzden Windows "bilinmeyen yayıncı" uyarısı gösterebilir. "Daha fazla bilgi", sonra "Yine de çalıştır" seç.</p>
     <h2>Antivirüs uyarırsa</h2>
-    <p>Başka bir programın belleğini okuyan araçlar ve <code>winhttp.dll</code> kullanan oyun eklentileri yanlış alarm alabilir. Kurulum dosyamız Windows Defender taramasından temiz geçti. Dosyayı yalnız bu siteden indir ve aynı dosya olduğunu doğrula:</p>
-    <p><code>Get-FileHash TeknikOda-Kurulum-1.0.10.exe</code></p>
-    <p>SHA-256: <code>4E4CEC47E717D18F5FAC83CDF5A1F7BCD809B33E14084976183D6B6FE4BF37BA</code></p>
+    <p>Başka bir programın belleğini okuyan araçlar ve <code>winhttp.dll</code> kullanan oyun eklentileri yanlış alarm alabilir. Elimizdeki sonuçlar (18 Kasım 2026): Windows Defender kurulum dosyamızı ve yayın paketlerimizi taradı, tehdit bulmadı. Malwarebytes tam taramasında yayın paketlerimiz (1.0.0 – 1.0.9 ve 1.1 adayı) temiz çıktı; aynı taramada yalnız kullanıcıya hiç gitmeyen geliştirme derlemelerimiz makine öğrenimi tahminiyle "anormal" diye işaretlendi. Dosyayı yalnız bu siteden indir ve aynı dosya olduğunu doğrula:</p>
+    <p><code>Get-FileHash TeknikOda-Kurulum-1.1.0.exe</code></p>
+    <p>SHA-256: <code>6610739D4D847532F4581199F0D34FDA9A406D788A62860E2B4FCEDC6189D437</code></p>
+    <p>VirusTotal, 1.0.10 kurulum dosyası (SHA-256 <code>4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba</code>): 20 Kasım 2026'da baktığımızda son analiz bir gün öncesine aitti ve 69 motordan 2'si dosyayı işaretlemişti: Deep Instinct "MALICIOUS", VBA32 "TScope.Trojan.MSIL" dedi; Windows Defender dahil öbür motorlar işaretlemedi. <a href="https://www.virustotal.com/gui/file/4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba" rel="noopener">VirusTotal sonucu</a>. İki firmaya da 20 Kasım 2026'da yanlış alarm bildirimi gönderdik; yanıt gelince bu sayfayı güncelleriz.</p>
+    <p data-yakinda="virustotal"><a href="{{VIRUSTOTAL}}" rel="noopener">VirusTotal tarama sonucu</a></p>
+    <h2>Sık sorulanlar</h2>
+    <h3>"VirusTotal'da 69 motordan 2'si işaretlemiş", doğru mu?</h3>
+    <p>Evet, 1.0.10 için doğru; sonuç yukarıda. Bir dizin sitesi de aynı sayıyı yazdı. Bunu geçiştirmiyoruz: kurulum dosyası kod imzalı değil, yeni ve oyunun belleğini okuyan bir yardımcı uygulama; böyle dosyalara az sayıda motor uyarı verebilir. İki firmaya da bildirim gönderdik. Windows Defender ve Malwarebytes sonuçlarımız yukarıda, uygulamanın internete çıkan her adresi bu sayfada yazılı ve bir testle denetleniyor. VirusTotal'da 1.1 için bir sonuç olursa bağlantısı yukarıdaki satıra konur; o zamana kadar 1.1 için bir sayı yazmıyoruz.</p>
+    <h3>İlk açılışta FM neden 2-5 dakika siyah ekranda kalıyor?</h3>
+    <p>Oyun içi eklentiyi kurduktan sonraki ilk FM açılışında BepInEx oyunun parçalarını kendi klasörüne hazırlar. Bu birkaç dakika sürebilir ve FM o sürede siyah ekranda donmuş gibi görünür. Kapatma, bekle: hazırlık bitince ana menü açılır. Hazırlanan klasör saklanır, sonraki açılışlarda bu bekleyiş olmaz; FM güncellenince hazırlık yeniden gerekebilir. Eklentiyi kurmadıysan bu bekleme olmaz. Çok uzun sürerse Eklentiler sayfasından eklentiyi kaldır ve bize yaz.</p>
     <h2>Güncellemeler</h2>
     <p>Uygulama yeni sürüm bilgisini imzalı dosyadan alır ve indirdiği kurulum dosyasının özetini denetler. İmzası ya da özeti tutmayan dosya kurulmaz.</p>
     <h2>Bilmen gerekenler</h2>
@@ -61,13 +161,14 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
 
   <div lang-en>
     <h1>Security and antivirus</h1>
-    <small>Last updated: 12 November 2026</small>
+    <small>Last updated: 21 November 2026</small>
     <p>You should know what Teknik Oda does before you install it. Nothing here is hidden.</p>
+    <p><a href="#cikanlar">What leaves your computer?</a> · <a href="#yazilanlar">What do we write to FM?</a></p>
     <h2>What does the app do?</h2>
     <ul>
-      <li>While FM is open, it reads your career from game memory. It only reads; it never writes to memory or your save.</li>
+      <li>While FM is open, it reads your career from game memory. It never writes to the game on its own: something in FM changes when you press "Apply to FM", through the same path as FM's own buttons, and it can be undone. It never writes to your save. The one exception: Toby's match setup is for that one match only, and after the match the instructions you did not change go back to your old settings by themselves; you can switch this off in Plugins › Beta and Experimental, and if you tick "Keep after the match" the setup stays.</li>
       <li>Your career data never leaves your computer.</li>
-      <li>It goes online to check for a new version and to send an anonymous usage count (the version number, the names of the Toby features used that day and the feedback you gave: thumbs up or down, your answer to the after-beta question; plus the type of problem the app ran into).</li>
+      <li>It goes online to check for a new version and to send an anonymous usage count (the version number, the names of the Toby features used that day, the app's language and the feedback you gave: thumbs up or down, the button you picked in the satisfaction question; plus the type of problem the app ran into and, if the in-game plugin is installed, the game's store).</li>
     </ul>
     <h2>What does the in-game plugin do?</h2>
     <ul>
@@ -75,13 +176,106 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
       <li>It adds open-source BepInEx and the Teknik Oda plugin to the game folder, including a <code>winhttp.dll</code> file.</li>
       <li>It provides the buttons and cards in FM, and match, role and club data.</li>
       <li>Its files are removed from Settings, or when you uninstall the app.</li>
+      <li>If a plugin-related problem is seen, the app counts it as an anonymous problem signal: the signal carries only a short code name for the problem, the version and the game's store (Steam, Xbox or Epic). No career, player, club or folder path is sent. Details are below, under "Anonymous usage count".</li>
+      <li>The install folder contains a <code>LISANS.txt</code> file: personal use is allowed; copying, modifying, redistributing and selling are not allowed without permission; the software is provided "as is"; there is no connection with Sports Interactive or SEGA.</li>
     </ul>
+    <!--guven-en-->
+    <h2 id="cikanlar">What leaves your computer?</h2>
+    <p>This list was taken from the app's code and is checked by a test: the app and the in-game plugin connect to the internet only at the addresses below. Each row says what is sent, to whom and when.</p>
+      <div class="gv-k">
+        <h3>Version and settings files</h3>
+        <p class="gv-nereye">Where to: <code>raw.githubusercontent.com</code> <code>teknikodafm.github.io</code></p>
+        <p><b>What is sent:</b> Two signed files are requested: the version information (surum.json) and a settings file. No data is sent; as with any web request, the server sees your IP address and the app's name and version (TeknikOda/1.1.0).</p>
+        <p><b>When:</b> A few seconds after the app opens, then once an hour. The version check can be turned off in Settings &gt; Updates; while it is off the settings file is still requested once a day.</p>
+      </div>
+      <div class="gv-k">
+        <h3>Installer of a new version</h3>
+        <p class="gv-nereye">Where to: <code>teknikodafm.com</code></p>
+        <p><b>What is sent:</b> A file request only. The address comes from the signed version file (today, this site). The signature and SHA-256 hash of the downloaded file are checked; a file that does not match is not installed.</p>
+        <p><b>When:</b> In the background when a new version is out, while the version check is on.</p>
+      </div>
+      <div class="gv-k">
+        <h3>Anonymous usage count</h3>
+        <p class="gv-nereye">Where to: <code>teknikodafm.goatcounter.com</code></p>
+        <p><b>What is sent:</b> Only from an installed app, and only names are sent: the version number, the app's language, the names of the Toby features you used that day (cards, rooms, preset questions; for a question you typed, only its type, never the text), the feedback you gave (thumbs up or down, a survey answer), the type of problem the app ran into (reading, plugin, screen name, update), the game's store if the in-game plugin is installed (Steam, Xbox or Epic) and a contentless signal that the app is open. No career, player, club, manager name, user or computer details are sent, and no lasting identifier is created. The counter service (GoatCounter) does not store your IP address; it keeps country, language, Windows and browser engine versions as aggregate counts.</p>
+        <p><b>When:</b> Version, language and that the plugin is installed (with the game's store) once a day; feature names and feedback as you use them (each name once a day); problem types at most 12 times a day; the &quot;open&quot; signal every 15 minutes while the app is open.</p>
+      </div>
+      <div class="gv-k">
+        <h3>Unity libraries for BepInEx</h3>
+        <p class="gv-nereye">Where to: <code>unity.bepinex.dev</code></p>
+        <p><b>What is sent:</b> A file request only (about 3 MB; the address carries FM's Unity version). Whether the server can be reached is checked without sending data. If it cannot be prepared, BepInEx downloads from the same address itself.</p>
+        <p><b>When:</b> Only when you install the in-game plugin, and when an FM update changes the Unity version, while FM is closed. Never if you do not install the plugin.</p>
+      </div>
+    <div class="gv-k">
+      <h3>Links that open in your browser</h3>
+      <p class="gv-nereye">Where to: <code>teknikodafm.com</code> <code>x.com</code> <code>sortitoutsi.net</code></p>
+      <p>The site, X, support and share buttons in the app open your default browser only when you click them; the app itself does not connect to these addresses. The app's window cannot navigate away from its own local address. &quot;Report a problem&quot; only prepares a report file on this computer; sending it (by e-mail) is up to you, it never goes by itself.</p>
+    </div>
+    <h3 class="gv-alt">These never go anywhere</h3>
+    <ul>
+      <li>Your career: players, clubs, squad, matches, transfers. All of it is read and drawn on this computer.</li>
+      <li>Your save file and your game files.</li>
+      <li>The text of the question you type to Toby, and Toby's answer.</li>
+      <li>The Teknik Oda in-game plugin connects nowhere; its code has no network calls. It talks to the app through files on the same computer.</li>
+      <li>Windows' own components (for example WebView2, which draws the interface) follow your own Windows settings; the list above describes what Teknik Oda sends.</li>
+    </ul>
+    <h2 id="yazilanlar">What do we write to FM?</h2>
+    <p>Teknik Oda never writes to the game on its own and never writes to your save file. Something in FM changes when you press that row's button: through the same path as FM's own buttons, in the game's memory; the one exception is Toby's match setup going back to your old settings after the match. Every write is read back from FM and checked; if FM does not allow editing, nothing is written and the screen says so. The change enters your save when you save, like any change you make in FM by hand.</p>
+    <p>On: ready to use. Beta: on, but new; tell us if you see a problem. Experimental: off by default; turning it on is up to you.</p>
+    <table class="gv-tablo">
+      <thead><tr><th>What</th><th>Status</th><th>Can be undone</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Team instructions (Toby's match setup)<small>&quot;Undo&quot; per row and &quot;Undo all&quot;. At most 8 instructions per request, at most 4 steps each. Nothing is written once a match has started. By default it applies to that one match only: when the match ends Toby puts it back by itself (you can switch this to a reminder in Plugins › Beta and Experimental), and it stays only if &quot;Keep after the match&quot; is ticked. You get a one-time heads-up before the first write.</small></td>
+          <td><span class="gv-r gv-acik">On</span></td>
+          <td><span class="gv-r">Yes</span></td>
+        </tr>
+        <tr>
+          <td>Toby's week, session by session<small>On by default: you turn it off in Plugins › Beta and Experimental. The training plan's &quot;Apply to FM&quot; and Toby's week section write Toby's week to FM's calendar session by session; only the type of a session changes and FM's ready-made programmes are not written. At most 16 sessions per press. &quot;Undo&quot; puts every written session back; the list is kept on this computer and survives closing and reopening the app on the same game day. You get a one-time heads-up before the first write. Match days, rest days and travel days are left alone; nothing is written once a match has started.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Yes</span></td>
+        </tr>
+        <tr>
+          <td>Player training intensity and rest<small>On by default: you turn it off in Plugins › Beta and Experimental. When you press the button, the player intensity Toby suggests is written to FM. At most 12 players per request. A player FM does not allow editing (an injured one, for example) is skipped and FM's reason is shown. Each row has &quot;Undo&quot;, and &quot;Undo all&quot; appears when there are several; the list is kept on this computer. You get a one-time heads-up before the first write.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Yes</span></td>
+        </tr>
+        <tr>
+          <td>Young players' role and additional focus<small>On by default: you turn it off in Plugins › Beta and Experimental. For young players, the role Toby suggests (in-possession position and role, out-of-possession role) and the additional focus are written into FM's individual training with the &quot;Write to FM&quot; button on the row. The value comes from FM's own list. If FM doesn't allow editing or staff run it, nothing is written and the reason is shown. If the current value couldn't be undone, nothing is written at all. Each row has &quot;Undo&quot;, and &quot;Undo all&quot; appears when there are several; the list is kept on this computer. You get a one-time heads-up before the first write. At most 12 players per request, and nothing during a match.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Yes</span></td>
+        </tr>
+        <tr>
+          <td>Match preparation session<small>On by default: you turn it off in Plugins › Beta and Experimental. When you press the button, Toby's match preparation session is written to FM's schedule. Only a slot FM says can be edited; the session name is shown as FM returns it. &quot;Undo&quot; puts the session back (the &quot;(Edited)&quot; tag FM adds to the week's name stays); the undo information is kept on this computer. You get a one-time heads-up before the first write. Nothing is written once a match has started.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Yes</span></td>
+        </tr>
+        <tr>
+          <td>Mentoring group<small>On by default: you turn it off in Plugins › Beta and Experimental. Toby sets up the mentoring group in FM's own window and reads it back from FM to confirm it; if that doesn't work, he shows you who to tick. He ticks the players in FM's Edit window, reads FM after each tick and confirms only if the list matches exactly. If there is no group, a button opens an empty one in FM; &quot;Undo&quot; deletes it (not if it changed in FM in the meantime), and the undo information is kept on this computer. You get a one-time heads-up the first time. It doesn't work during a match.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Yes</span></td>
+        </tr>
+        <tr>
+          <td>Adding a player to FM's shortlist<small>On by default: you turn it off in Plugins › Beta and Experimental. When you press the button on Toby's list and scouting rows, the player is added to FM's shortlist. It cannot be undone here: you remove the player from the list in FM yourself. The added player is read back from FM and verified. No list file is written. You get a one-time heads-up before the first write.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r gv-yok">Cannot be undone</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <!--/guven-en-->
     <h2>Why does Windows show a warning?</h2>
-    <p>The installer is not code signed yet, so Windows may show an "unknown publisher" warning. Choose "More info", then "Run anyway".</p>
+    <p>The installer is not code signed, so Windows may show an "unknown publisher" warning. Choose "More info", then "Run anyway".</p>
     <h2>If your antivirus complains</h2>
-    <p>Tools that read another program's memory and game plugins that use <code>winhttp.dll</code> can trigger false alarms. Our installer passed a Windows Defender scan. Only download it from this site, and check that it is the same file:</p>
-    <p><code>Get-FileHash TeknikOda-Kurulum-1.0.10.exe</code></p>
-    <p>SHA-256: <code>4E4CEC47E717D18F5FAC83CDF5A1F7BCD809B33E14084976183D6B6FE4BF37BA</code></p>
+    <p>Tools that read another program's memory and game plugins that use <code>winhttp.dll</code> can trigger false alarms. Our results (18 November 2026): Windows Defender scanned our installer and release packages and found no threats. In a full Malwarebytes scan our release packages (1.0.0 – 1.0.9 and the 1.1 candidate) came out clean; in the same scan only our development builds, which never reach users, were flagged as "anomalous" by a machine-learning guess. Only download the installer from this site, and check that it is the same file:</p>
+    <p><code>Get-FileHash TeknikOda-Kurulum-1.1.0.exe</code></p>
+    <p>SHA-256: <code>6610739D4D847532F4581199F0D34FDA9A406D788A62860E2B4FCEDC6189D437</code></p>
+    <p>VirusTotal, installer 1.0.10 (SHA-256 <code>4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba</code>): when we looked on 20 November 2026 the latest analysis was a day old and 2 of 69 engines flagged the file: Deep Instinct said "MALICIOUS" and VBA32 said "TScope.Trojan.MSIL"; the other engines, Windows Defender included, did not flag it. <a href="https://www.virustotal.com/gui/file/4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba" rel="noopener">VirusTotal result</a>. We sent a false-positive report to both vendors on 20 November 2026 and will update this page when they answer.</p>
+    <p data-yakinda="virustotal"><a href="{{VIRUSTOTAL}}" rel="noopener">VirusTotal scan result</a></p>
+    <h2>Frequently asked questions</h2>
+    <h3>"2 of 69 engines flag it on VirusTotal", is that true?</h3>
+    <p>Yes, for 1.0.10; the result is above. A directory site wrote the same number too. We do not wave it away: the installer is not code signed, it is new, and it is a helper app that reads the game's memory; a small number of engines may warn about files like that. We sent a report to both vendors. Our Windows Defender and Malwarebytes results are above, and every address the app connects to is written on this page and checked by a test. If there is a VirusTotal result for 1.1, its link goes on the line above; until then we do not state a number for 1.1.</p>
+    <h3>Why does FM sit on a black screen for 2-5 minutes the first time?</h3>
+    <p>On the first FM start after installing the in-game plugin, BepInEx prepares the game's parts in its own folder. This can take a few minutes, and FM looks frozen on a black screen meanwhile. Do not close it, wait: the main menu opens when the preparation is done. The prepared folder is kept, so later starts do not wait; after an FM update the preparation may be needed again. If you did not install the plugin, there is no such wait. If it takes very long, remove the plugin from the Plugins page and write to us.</p>
     <h2>Updates</h2>
     <p>The app gets version information from a signed file and checks the hash of the installer it downloads. A file with a wrong signature or hash is not installed.</p>
     <h2>Good to know</h2>
@@ -95,13 +289,14 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
   </div>
   <div lang-pt>
     <h1>Segurança e antivírus</h1>
-    <small>Última atualização: 12 de novembro de 2026</small>
+    <small>Última atualização: 21 de novembro de 2026</small>
     <p>Você deve saber o que o Teknik Oda faz antes de instalar. Nada aqui é escondido.</p>
+    <p><a href="#cikanlar">O que sai do seu computador?</a> · <a href="#yazilanlar">O que gravamos no FM?</a></p>
     <h2>O que o app faz?</h2>
     <ul>
-      <li>Com o FM aberto, ele lê sua carreira na memória do jogo. Ele só lê; nunca escreve na memória nem no seu save.</li>
+      <li>Com o FM aberto, ele lê sua carreira na memória do jogo. Nunca grava no jogo por conta própria: algo no FM muda quando você aperta "Aplicar no FM", pelo mesmo caminho dos botões do próprio FM, e pode ser desfeito. Nunca grava no seu save. A única exceção: o ajuste de jogo do Toby vale só para aquela partida e, depois do jogo, as instruções que você não alterou voltam sozinhas aos ajustes antigos; dá para desligar isso em Plugins › Beta e Experimental, e se você marcar "Manter depois do jogo" o ajuste fica.</li>
       <li>Os dados da sua carreira nunca saem do seu computador.</li>
-      <li>Só acessa a internet para procurar uma nova versão e para enviar uma contagem de uso anônima (o número da versão, os nomes dos recursos do Toby usados nesse dia e o feedback que você deu: gostei, não gostei, sua resposta à pergunta pós-beta; além do tipo de problema que o app encontrou).</li>
+      <li>Só acessa a internet para procurar uma nova versão e para enviar uma contagem de uso anônima (o número da versão, os nomes dos recursos do Toby usados nesse dia, o idioma do app e o feedback que você deu: gostei, não gostei, o botão que você escolheu na pergunta de satisfação; além do tipo de problema que o app encontrou e, se o plugin no jogo estiver instalado, da loja do jogo).</li>
     </ul>
     <h2>O que o plugin no jogo faz?</h2>
     <ul>
@@ -109,13 +304,106 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
       <li>Ele adiciona o BepInEx, de código aberto, e o plugin do Teknik Oda à pasta do jogo, incluindo um arquivo <code>winhttp.dll</code>.</li>
       <li>Ele fornece os botões e cartões no FM, além dos dados de jogos, funções e clube.</li>
       <li>Os arquivos dele são removidos em Configurações ou quando você desinstala o app.</li>
+      <li>Se um problema ligado ao plugin for visto, o app o conta como um sinal de problema anônimo: o sinal leva só um nome de código curto do problema, a versão e a loja do jogo (Steam, Xbox ou Epic). Nenhum dado de carreira, jogador, clube ou caminho de pasta é enviado. Detalhes abaixo, em "Contagem de uso anônima".</li>
+      <li>A pasta de instalação contém o arquivo <code>LISANS.txt</code>: uso pessoal livre; copiar, modificar, redistribuir e vender não são permitidos sem autorização; o software é fornecido "no estado em que se encontra"; não há vínculo com a Sports Interactive ou a SEGA.</li>
     </ul>
+    <!--guven-pt-->
+    <h2 id="cikanlar">O que sai do seu computador?</h2>
+    <p>Esta lista foi extraída do código do app e é verificada por um teste: o app e o plugin no jogo só se conectam à internet nos endereços abaixo. Cada linha diz o que é enviado, para quem e quando.</p>
+      <div class="gv-k">
+        <h3>Arquivos de versão e configuração</h3>
+        <p class="gv-nereye">Para onde: <code>raw.githubusercontent.com</code> <code>teknikodafm.github.io</code></p>
+        <p><b>O que é enviado:</b> Dois arquivos assinados são solicitados: as informações de versão (surum.json) e um arquivo de configuração. Nenhum dado é enviado; como em qualquer requisição web, o servidor vê seu endereço IP e o nome e a versão do app (TeknikOda/1.1.0).</p>
+        <p><b>Quando:</b> Alguns segundos depois de abrir o app e depois uma vez por hora. A verificação de versão pode ser desativada em Configurações &gt; Atualizações; desativada, o arquivo de configuração ainda é solicitado uma vez por dia.</p>
+      </div>
+      <div class="gv-k">
+        <h3>Instalador de uma nova versão</h3>
+        <p class="gv-nereye">Para onde: <code>teknikodafm.com</code></p>
+        <p><b>O que é enviado:</b> Apenas uma requisição de arquivo. O endereço vem do arquivo de versão assinado (hoje, este site). A assinatura e o hash SHA-256 do arquivo baixado são conferidos; um arquivo que não confere não é instalado.</p>
+        <p><b>Quando:</b> Em segundo plano quando há uma nova versão, com a verificação de versão ativada.</p>
+      </div>
+      <div class="gv-k">
+        <h3>Contagem de uso anônima</h3>
+        <p class="gv-nereye">Para onde: <code>teknikodafm.goatcounter.com</code></p>
+        <p><b>O que é enviado:</b> Apenas de um app instalado e apenas nomes são enviados: o número da versão, o idioma do app, os nomes dos recursos do Toby usados no dia (cartões, salas, perguntas prontas; de uma pergunta digitada, só o tipo, nunca o texto), o feedback que você deu (gostei ou não gostei, resposta de pesquisa), o tipo de problema que o app encontrou (leitura, plugin, nome da tela, atualização), a loja do jogo se o plugin no jogo estiver instalado (Steam, Xbox ou Epic) e um sinal sem conteúdo de que o app está aberto. Nenhum dado de carreira, jogador, clube, nome de treinador, usuário ou computador é enviado, e nenhum identificador permanente é criado. O serviço de contagem (GoatCounter) não guarda seu endereço IP; guarda país, idioma, versões do Windows e do motor do navegador como números agregados.</p>
+        <p><b>Quando:</b> Versão, idioma e que o plugin está instalado (com a loja do jogo) uma vez por dia; nomes de recursos e feedback conforme você usa (cada nome uma vez por dia); tipos de problema no máximo 12 vezes por dia; o sinal de &quot;aberto&quot; a cada 15 minutos enquanto o app está aberto.</p>
+      </div>
+      <div class="gv-k">
+        <h3>Bibliotecas Unity para o BepInEx</h3>
+        <p class="gv-nereye">Para onde: <code>unity.bepinex.dev</code></p>
+        <p><b>O que é enviado:</b> Apenas uma requisição de arquivo (cerca de 3 MB; o endereço contém a versão do Unity do FM). Verifica-se se o servidor está acessível sem enviar dados. Se não puder ser preparado, o próprio BepInEx baixa do mesmo endereço.</p>
+        <p><b>Quando:</b> Somente ao instalar o plugin no jogo e quando uma atualização do FM muda a versão do Unity, com o FM fechado. Nunca se você não instalar o plugin.</p>
+      </div>
+    <div class="gv-k">
+      <h3>Links que abrem no seu navegador</h3>
+      <p class="gv-nereye">Para onde: <code>teknikodafm.com</code> <code>x.com</code> <code>sortitoutsi.net</code></p>
+      <p>Os botões de site, X, apoio e compartilhar do app só abrem seu navegador padrão quando você clica; o app em si não se conecta a esses endereços. A janela do app não consegue sair do seu próprio endereço local. &quot;Relatar um problema&quot; apenas prepara um arquivo de relatório neste computador; enviá-lo (por e-mail) fica por sua conta, nunca vai sozinho.</p>
+    </div>
+    <h3 class="gv-alt">Isto não vai a lugar nenhum</h3>
+    <ul>
+      <li>Sua carreira: jogadores, clubes, elenco, partidas, transferências. Tudo é lido e exibido neste computador.</li>
+      <li>Seu arquivo de save e os arquivos do jogo.</li>
+      <li>O texto da pergunta que você digita ao Toby e a resposta dele.</li>
+      <li>O plugin do Teknik Oda no jogo não se conecta a lugar nenhum; o código dele não tem chamadas de rede. Ele conversa com o app por arquivos no mesmo computador.</li>
+      <li>Os componentes do próprio Windows (por exemplo o WebView2, que desenha a interface) seguem as suas configurações do Windows; a lista acima descreve o que o Teknik Oda envia.</li>
+    </ul>
+    <h2 id="yazilanlar">O que gravamos no FM?</h2>
+    <p>O Teknik Oda nunca grava no jogo por conta própria e nunca grava no seu arquivo de save. Algo no FM muda quando você aperta o botão da linha: pelo mesmo caminho dos botões do próprio FM, na memória do jogo; a única exceção é o ajuste de jogo do Toby voltar aos ajustes antigos depois da partida. Toda gravação é relida do FM e conferida; se o FM não permite a edição, nada é gravado e a tela avisa. A mudança entra no seu save quando você salva, como qualquer mudança que você faz no FM à mão.</p>
+    <p>Ativo: pronto para usar. Beta: ativo, mas novo; avise se encontrar algum problema. Experimental: desativado por padrão; ativar fica por sua conta.</p>
+    <table class="gv-tablo">
+      <thead><tr><th>O quê</th><th>Situação</th><th>Dá para desfazer</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Instruções da equipe (ajuste de jogo do Toby)<small>&quot;Desfazer&quot; por linha e &quot;Desfazer tudo&quot;. No máximo 8 instruções por pedido e 4 passos cada. Nada é gravado depois que a partida começa. Por padrão vale só para aquela partida: quando o jogo termina o Toby devolve sozinho (dá para trocar por um lembrete em Plugins › Beta e Experimental), e só fica se &quot;Manter depois do jogo&quot; estiver marcado. Antes da primeira gravação você recebe um aviso único.</small></td>
+          <td><span class="gv-r gv-acik">Ativo</span></td>
+          <td><span class="gv-r">Sim</span></td>
+        </tr>
+        <tr>
+          <td>A semana do Toby, sessão por sessão<small>Ligado por padrão: você desliga em Plugins › Beta e Experimental. O &quot;Aplicar no FM&quot; do plano de treino e a seção A semana do Toby gravam a semana do Toby no calendário do FM sessão por sessão; só o tipo da sessão muda e os programas prontos do FM não são gravados. No máximo 16 sessões por clique. &quot;Desfazer&quot; devolve todas as sessões gravadas ao que eram; a lista fica guardada neste computador e continua ali mesmo se você fechar e abrir o aplicativo no mesmo dia do jogo. Antes da primeira gravação você recebe um aviso único. Dias de jogo, dias de descanso e dias de viagem ficam como estão; nada é gravado depois que a partida começa.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Sim</span></td>
+        </tr>
+        <tr>
+          <td>Intensidade de treino e descanso do jogador<small>Ligado por padrão: você desliga em Plugins › Beta e Experimental. Quando você aperta o botão, a intensidade do jogador sugerida pelo Toby é gravada no FM. No máximo 12 jogadores por pedido. Um jogador que o FM não permite editar (um lesionado, por exemplo) é ignorado e o motivo do FM é exibido. Cada linha tem &quot;Desfazer&quot;, e &quot;Desfazer tudo&quot; aparece quando há vários; a lista fica guardada neste computador. Antes da primeira gravação você recebe um aviso único.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Sim</span></td>
+        </tr>
+        <tr>
+          <td>Função e foco adicional dos jovens<small>Ligado por padrão: você desliga em Plugins › Beta e Experimental. Nos jovens, a função sugerida pelo Toby (posição e função com a bola, função sem a bola) e o foco adicional são gravados no treino individual do FM pelo botão &quot;Gravar no FM&quot; da linha. O valor vem da própria lista do FM. Se o FM não permite editar ou a comissão cuida disso, nada é gravado e o motivo é exibido. Se o valor atual não puder ser desfeito, nada é gravado. Cada linha tem &quot;Desfazer&quot;, e &quot;Desfazer tudo&quot; aparece quando há vários; a lista fica guardada neste computador. Antes da primeira gravação você recebe um aviso único. No máximo 12 jogadores por pedido, e nada durante uma partida.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Sim</span></td>
+        </tr>
+        <tr>
+          <td>Sessão de preparação para a partida<small>Ligado por padrão: você desliga em Plugins › Beta e Experimental. Quando você aperta o botão, a sessão de preparação do Toby é gravada no programa do FM. Apenas um espaço que o FM diz poder ser editado; o nome da sessão é exibido como o FM o devolve. &quot;Desfazer&quot; devolve a sessão ao que era (a marca &quot;(Editado)&quot; que o FM põe no nome da semana permanece); a informação de desfazer fica guardada neste computador. Antes da primeira gravação você recebe um aviso único. Nada é gravado depois que a partida começa.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Sim</span></td>
+        </tr>
+        <tr>
+          <td>Grupo de mentoria<small>Ligado por padrão: você desliga em Plugins › Beta e Experimental. O Toby monta o grupo de mentoria na própria janela do FM e o lê de volta do FM para confirmar; se não der certo, mostra quem marcar. Ele marca os jogadores na janela Editar do FM, lê o FM depois de cada marcação e só confirma se a lista for exatamente igual. Se não houver grupo, um botão abre um grupo vazio no FM; &quot;Desfazer&quot; o apaga (não se ele mudou no FM nesse meio-tempo), e a informação de desfazer fica guardada neste computador. Na primeira vez você recebe um aviso único. Não funciona durante uma partida.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Sim</span></td>
+        </tr>
+        <tr>
+          <td>Adicionar um jogador à lista de observação do FM<small>Ligado por padrão: você desliga em Plugins › Beta e Experimental. Quando você aperta o botão nas linhas de lista e observação do Toby, o jogador é adicionado à lista de observação do FM. Não dá para desfazer aqui: você remove o jogador da lista no próprio FM. O jogador adicionado é relido do FM e conferido. Nenhum arquivo de lista é gravado. Antes da primeira gravação você recebe um aviso único.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r gv-yok">Não dá para desfazer</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <!--/guven-pt-->
     <h2>Por que o Windows mostra um aviso?</h2>
-    <p>O instalador ainda não tem assinatura de código, então o Windows pode mostrar um aviso de "editor desconhecido". Escolha "Mais informações" e depois "Executar assim mesmo".</p>
+    <p>O instalador não tem assinatura de código, então o Windows pode mostrar um aviso de "editor desconhecido". Escolha "Mais informações" e depois "Executar assim mesmo".</p>
     <h2>Se o seu antivírus reclamar</h2>
-    <p>Ferramentas que leem a memória de outro programa e plugins de jogos que usam <code>winhttp.dll</code> podem gerar alarmes falsos. Nosso instalador passou numa verificação do Windows Defender. Baixe só deste site e confira se é o mesmo arquivo:</p>
-    <p><code>Get-FileHash TeknikOda-Kurulum-1.0.10.exe</code></p>
-    <p>SHA-256: <code>4E4CEC47E717D18F5FAC83CDF5A1F7BCD809B33E14084976183D6B6FE4BF37BA</code></p>
+    <p>Ferramentas que leem a memória de outro programa e plugins de jogos que usam <code>winhttp.dll</code> podem gerar alarmes falsos. Nossos resultados (18 de novembro de 2026): o Windows Defender verificou nosso instalador e os pacotes de lançamento e não encontrou ameaças. Numa verificação completa do Malwarebytes, nossos pacotes de lançamento (1.0.0 – 1.0.9 e o candidato 1.1) saíram limpos; na mesma verificação, só os nossos builds de desenvolvimento, que nunca chegam aos usuários, foram marcados como "anômalos" por um palpite de aprendizado de máquina. Baixe o instalador só deste site e confira se é o mesmo arquivo:</p>
+    <p><code>Get-FileHash TeknikOda-Kurulum-1.1.0.exe</code></p>
+    <p>SHA-256: <code>6610739D4D847532F4581199F0D34FDA9A406D788A62860E2B4FCEDC6189D437</code></p>
+    <p>VirusTotal, instalador 1.0.10 (SHA-256 <code>4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba</code>): quando olhamos, em 20 de novembro de 2026, a última análise tinha um dia e 2 de 69 motores marcaram o arquivo: a Deep Instinct disse "MALICIOUS" e a VBA32 disse "TScope.Trojan.MSIL"; os outros motores, incluindo o Windows Defender, não marcaram. <a href="https://www.virustotal.com/gui/file/4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba" rel="noopener">Resultado no VirusTotal</a>. Enviamos um relato de alarme falso às duas empresas em 20 de novembro de 2026 e atualizaremos esta página quando responderem.</p>
+    <p data-yakinda="virustotal"><a href="{{VIRUSTOTAL}}" rel="noopener">Resultado da verificação no VirusTotal</a></p>
+    <h2>Perguntas frequentes</h2>
+    <h3>"2 de 69 motores marcam no VirusTotal", é verdade?</h3>
+    <p>Sim, para a 1.0.10; o resultado está acima. Um site de diretório escreveu o mesmo número. Não tratamos isso como algo menor: o instalador não tem assinatura de código, é novo e é um app auxiliar que lê a memória do jogo; poucos motores podem avisar sobre arquivos assim. Enviamos um relato às duas empresas. Nossos resultados do Windows Defender e do Malwarebytes estão acima, e todo endereço a que o app se conecta está escrito nesta página e é verificado por um teste. Se houver um resultado do VirusTotal para a 1.1, o link dele vai na linha acima; até lá não escrevemos um número para a 1.1.</p>
+    <h3>Por que o FM fica 2-5 minutos numa tela preta na primeira vez?</h3>
+    <p>Na primeira abertura do FM depois de instalar o plugin no jogo, o BepInEx prepara as partes do jogo na própria pasta. Isso pode levar alguns minutos, e o FM parece travado numa tela preta nesse tempo. Não feche, espere: o menu principal abre quando a preparação termina. A pasta preparada é mantida, então as próximas aberturas não esperam; depois de uma atualização do FM a preparação pode ser necessária de novo. Se você não instalou o plugin, não há essa espera. Se demorar demais, remova o plugin na página Plugins e escreva para nós.</p>
     <h2>Atualizações</h2>
     <p>O app obtém as informações de versão de um arquivo assinado e confere o hash do instalador que baixa. Um arquivo com assinatura ou hash errado não é instalado.</p>
     <h2>Bom saber</h2>
@@ -127,12 +415,652 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
     <h2>Contato</h2>
     <p><a href="mailto:teknikodafm@gmail.com">teknikodafm@gmail.com</a></p>
 </div>
+<div lang-id>
+    <h1>Keamanan dan antivirus</h1>
+    <small>Terakhir diperbarui: 21 November 2026</small>
+    <p>Kamu berhak tahu apa yang dilakukan Teknik Oda sebelum memasangnya. Tidak ada yang disembunyikan di sini.</p>
+    <p><a href="#cikanlar">Apa yang keluar dari komputermu?</a> · <a href="#yazilanlar">Apa yang kami tulis ke FM?</a></p>
+    <h2>Apa yang dilakukan aplikasinya?</h2>
+    <ul>
+      <li>Selama FM terbuka, aplikasi membaca kariermu dari memori game. Aplikasi tidak pernah menulis ke game dengan sendirinya: sesuatu di FM berubah saat kamu menekan "Terapkan ke FM", lewat jalur yang sama dengan tombol bawaan FM, dan bisa dibatalkan. Aplikasi tidak pernah menulis ke save-mu. Satu-satunya pengecualian: pengaturan pertandingan dari Toby hanya berlaku untuk satu pertandingan itu, dan setelah pertandingan instruksi yang tidak kamu ubah kembali sendiri ke pengaturan lamamu; kamu bisa mematikannya di Plugin › Beta dan Eksperimental, dan kalau kamu mencentang "Pertahankan setelah pertandingan", pengaturannya tetap.</li>
+      <li>Data kariermu tidak pernah keluar dari komputermu.</li>
+      <li>Aplikasi terhubung ke internet untuk memeriksa versi baru dan mengirim hitungan penggunaan anonim (nomor versi, nama fitur Toby yang dipakai hari itu, bahasa aplikasi, dan masukan yang kamu berikan: jempol naik atau turun, tombol yang kamu pilih di pertanyaan kepuasan; serta jenis masalah yang dialami aplikasi dan, kalau plugin dalam game terpasang, toko tempat game dibeli).</li>
+    </ul>
+    <h2>Apa yang dilakukan plugin dalam game?</h2>
+    <ul>
+      <li>Plugin bersifat opsional. Tidak ada yang dipasang sampai kamu menekan "Pasang plugin".</li>
+      <li>Plugin menambahkan BepInEx yang bersifat sumber terbuka dan plugin Teknik Oda ke folder game, termasuk file <code>winhttp.dll</code>.</li>
+      <li>Plugin menyediakan tombol dan kartu di FM, serta data pertandingan, peran, dan klub.</li>
+      <li>File-filenya dihapus dari Pengaturan, atau saat kamu mencopot aplikasi.</li>
+      <li>Kalau terlihat masalah terkait plugin, aplikasi menghitungnya sebagai sinyal masalah anonim: sinyal itu hanya membawa nama kode singkat untuk masalahnya, versi, dan toko game (Steam, Xbox, atau Epic). Tidak ada karier, pemain, klub, atau lokasi folder yang dikirim. Rinciannya ada di bawah, pada bagian "Hitungan penggunaan anonim".</li>
+      <li>Folder instalasi berisi file <code>LISANS.txt</code>: penggunaan pribadi diperbolehkan; menyalin, mengubah, mendistribusikan ulang, dan menjual tidak diperbolehkan tanpa izin; perangkat lunak disediakan "apa adanya"; tidak ada hubungan dengan Sports Interactive atau SEGA.</li>
+    </ul>
+    <!--guven-id-->
+    <h2 id="cikanlar">Apa yang keluar dari komputermu?</h2>
+    <p>Daftar ini diambil dari kode aplikasi dan diperiksa oleh sebuah tes: aplikasi dan plugin dalam game terhubung ke internet hanya ke alamat-alamat di bawah ini. Setiap baris menjelaskan apa yang dikirim, ke siapa, dan kapan.</p>
+      <div class="gv-k">
+        <h3>File versi dan pengaturan</h3>
+        <p class="gv-nereye">Tujuan: <code>raw.githubusercontent.com</code> <code>teknikodafm.github.io</code></p>
+        <p><b>Yang dikirim:</b> Dua file bertanda tangan diminta: informasi versi (surum.json) dan sebuah file pengaturan. Tidak ada data yang dikirim; seperti pada setiap permintaan web, server melihat alamat IP-mu serta nama dan versi aplikasi (TeknikOda/1.1.0).</p>
+        <p><b>Kapan:</b> Beberapa detik setelah aplikasi dibuka, lalu sekali setiap jam. Pemeriksaan versi bisa dimatikan di Pengaturan &gt; Pembaruan; selama dimatikan, file pengaturan tetap diminta sekali sehari.</p>
+      </div>
+      <div class="gv-k">
+        <h3>Installer versi baru</h3>
+        <p class="gv-nereye">Tujuan: <code>teknikodafm.com</code></p>
+        <p><b>Yang dikirim:</b> Hanya permintaan file. Alamatnya berasal dari file versi bertanda tangan (saat ini, situs ini). Tanda tangan dan hash SHA-256 file yang diunduh diperiksa; file yang tidak cocok tidak dipasang.</p>
+        <p><b>Kapan:</b> Di latar belakang saat versi baru tersedia, selama pemeriksaan versi aktif.</p>
+      </div>
+      <div class="gv-k">
+        <h3>Hitungan penggunaan anonim</h3>
+        <p class="gv-nereye">Tujuan: <code>teknikodafm.goatcounter.com</code></p>
+        <p><b>Yang dikirim:</b> Hanya dari aplikasi yang sudah terpasang, dan hanya nama yang dikirim: nomor versi, bahasa aplikasi, nama fitur Toby yang kamu pakai hari itu (kartu, ruang, pertanyaan bawaan; untuk pertanyaan yang kamu ketik, hanya jenisnya, tidak pernah teksnya), masukan yang kamu berikan (jempol naik atau turun, jawaban survei), jenis masalah yang dialami aplikasi (pembacaan, plugin, nama layar, pembaruan), toko game kalau plugin dalam game terpasang (Steam, Xbox, atau Epic), dan sinyal tanpa isi bahwa aplikasi sedang terbuka. Tidak ada karier, pemain, klub, nama manajer, pengguna, atau detail komputer yang dikirim, dan tidak ada pengenal permanen yang dibuat. Layanan penghitung (GoatCounter) tidak menyimpan alamat IP-mu; layanan itu hanya menyimpan negara, bahasa, versi Windows, dan versi mesin browser sebagai hitungan agregat.</p>
+        <p><b>Kapan:</b> Versi, bahasa, dan keberadaan plugin (beserta toko game) sekali sehari; nama fitur dan masukan saat kamu menggunakannya (setiap nama sekali sehari); jenis masalah paling banyak 12 kali sehari; sinyal &quot;terbuka&quot; setiap 15 menit selama aplikasi terbuka.</p>
+      </div>
+      <div class="gv-k">
+        <h3>Library Unity untuk BepInEx</h3>
+        <p class="gv-nereye">Tujuan: <code>unity.bepinex.dev</code></p>
+        <p><b>Yang dikirim:</b> Hanya permintaan file (sekitar 3 MB; alamatnya membawa versi Unity milik FM). Apakah server bisa dijangkau diperiksa tanpa mengirim data. Kalau tidak bisa disiapkan, BepInEx mengunduh sendiri dari alamat yang sama.</p>
+        <p><b>Kapan:</b> Hanya saat kamu memasang plugin dalam game, dan saat pembaruan FM mengubah versi Unity, selama FM tertutup. Tidak pernah kalau kamu tidak memasang plugin.</p>
+      </div>
+    <div class="gv-k">
+      <h3>Tautan yang terbuka di browsermu</h3>
+      <p class="gv-nereye">Tujuan: <code>teknikodafm.com</code> <code>x.com</code> <code>sortitoutsi.net</code></p>
+      <p>Tombol situs, X, dukungan, dan bagikan di aplikasi membuka browser bawaanmu hanya saat kamu mengkliknya; aplikasinya sendiri tidak terhubung ke alamat-alamat ini. Jendela aplikasi tidak bisa berpindah dari alamat lokalnya sendiri. &quot;Laporkan masalah&quot; hanya menyiapkan file laporan di komputer ini; mengirimkannya (lewat email) terserah kamu, tidak pernah terkirim sendiri.</p>
+    </div>
+    <h3 class="gv-alt">Ini tidak pernah dikirim ke mana pun</h3>
+    <ul>
+      <li>Kariermu: pemain, klub, skuad, pertandingan, transfer. Semuanya dibaca dan digambar di komputer ini.</li>
+      <li>File save-mu dan file game-mu.</li>
+      <li>Teks pertanyaan yang kamu ketik ke Toby, dan jawaban Toby.</li>
+      <li>Plugin dalam game Teknik Oda tidak terhubung ke mana pun; kodenya tidak punya panggilan jaringan. Plugin berbicara dengan aplikasi lewat file di komputer yang sama.</li>
+      <li>Komponen Windows sendiri (misalnya WebView2, yang menggambar antarmuka) mengikuti pengaturan Windows-mu sendiri; daftar di atas menjelaskan apa yang dikirim Teknik Oda.</li>
+    </ul>
+    <h2 id="yazilanlar">Apa yang kami tulis ke FM?</h2>
+    <p>Teknik Oda tidak pernah menulis ke game dengan sendirinya dan tidak pernah menulis ke file save-mu. Sesuatu di FM baru berubah saat kamu menekan tombol pada baris itu: lewat jalur yang sama dengan tombol bawaan FM, di memori game. Setiap penulisan dibaca ulang dari FM dan diperiksa; kalau FM tidak mengizinkan pengeditan, tidak ada yang ditulis dan layar akan memberi tahu. Perubahan itu masuk ke save-mu saat kamu menyimpan, seperti perubahan apa pun yang kamu buat di FM secara manual.</p>
+    <p>Aktif: siap dipakai. Beta: aktif, tetapi baru; kabari kami kalau kamu melihat masalah. Eksperimental: mati secara bawaan; mengaktifkannya terserah kamu.</p>
+    <table class="gv-tablo">
+      <thead><tr><th>Apa</th><th>Status</th><th>Bisa dibatalkan</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Instruksi tim (pengaturan pertandingan dari Toby)<small>&quot;Batalkan&quot; per baris dan &quot;Batalkan semua&quot;. Paling banyak 8 instruksi per permintaan, paling banyak 4 langkah per instruksi. Tidak ada yang ditulis setelah pertandingan dimulai. Secara bawaan hanya berlaku untuk satu pertandingan itu: setelah pertandingan selesai, Toby mengembalikannya sendiri (bisa kamu ubah jadi pengingat di Plugin › Beta dan Eksperimental); hanya bertahan kalau &quot;Pertahankan setelah pertandingan&quot; dicentang. Kamu mendapat pemberitahuan satu kali sebelum penulisan pertama.</small></td>
+          <td><span class="gv-r gv-acik">Aktif</span></td>
+          <td><span class="gv-r">Ya</span></td>
+        </tr>
+        <tr>
+          <td>Minggu Toby, sesi demi sesi<small>Aktif secara bawaan: kamu mematikannya di Plugin › Beta dan Eksperimental. &quot;Terapkan ke FM&quot; di rencana latihan dan bagian Minggu Toby menulis minggu Toby ke kalender FM sesi demi sesi; hanya jenis sesi yang berubah dan program siap pakai FM tidak ditulis. Paling banyak 16 sesi per tekan. &quot;Batalkan&quot; mengembalikan setiap sesi yang ditulis ke semula; daftarnya disimpan di komputer ini dan tetap ada walau aplikasi ditutup dan dibuka lagi di hari permainan yang sama. Kamu mendapat pemberitahuan satu kali sebelum penulisan pertama. Hari pertandingan, hari istirahat, dan hari perjalanan tidak disentuh; tidak ada yang ditulis setelah pertandingan dimulai.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Ya</span></td>
+        </tr>
+        <tr>
+          <td>Intensitas Latihan dan istirahat pemain<small>Aktif secara bawaan: kamu mematikannya di Plugin › Beta dan Eksperimental. Saat kamu menekan tombol, intensitas pemain yang disarankan Toby ditulis ke FM. Paling banyak 12 pemain per permintaan. Pemain yang tidak boleh diedit FM (misalnya cedera) dilewati dan alasannya ditampilkan dengan kalimat FM sendiri. Setiap baris punya &quot;Batalkan&quot;, dan &quot;Batalkan semua&quot; muncul kalau ada beberapa; daftarnya disimpan di komputer ini. Kamu mendapat pemberitahuan satu kali sebelum penulisan pertama.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Ya</span></td>
+        </tr>
+        <tr>
+          <td>Peran dan fokus tambahan pemain muda<small>Aktif secara bawaan: kamu mematikannya di Plugin › Beta dan Eksperimental. Untuk pemain muda, peran yang disarankan Toby (posisi dan peran saat menguasai bola, peran saat tanpa bola) dan fokus tambahan ditulis ke latihan individu FM dengan tombol &quot;Tulis ke FM&quot; di barisnya. Nilainya berasal dari daftar FM sendiri. Kalau FM tidak mengizinkan pengeditan atau staf yang mengurusnya, tidak ada yang ditulis dan alasannya ditampilkan. Kalau nilai saat ini tidak bisa dibatalkan, tidak ada yang ditulis sama sekali. Setiap baris punya &quot;Batalkan&quot;, dan &quot;Batalkan semua&quot; muncul kalau ada beberapa; daftarnya disimpan di komputer ini. Kamu mendapat pemberitahuan satu kali sebelum penulisan pertama. Paling banyak 12 pemain per permintaan, dan tidak ada yang ditulis selama pertandingan.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Ya</span></td>
+        </tr>
+        <tr>
+          <td>Sesi persiapan pertandingan<small>Aktif secara bawaan: kamu mematikannya di Plugin › Beta dan Eksperimental. Saat kamu menekan tombol, sesi persiapan pertandingan dari Toby ditulis ke program FM. Hanya slot yang menurut FM bisa diedit; nama sesi ditampilkan seperti yang dikembalikan FM. &quot;Batalkan&quot; mengembalikan sesi ke semula (keterangan &quot;(Diedit)&quot; yang ditambahkan FM ke nama minggu tetap ada); informasi pembatalan disimpan di komputer ini. Kamu mendapat pemberitahuan satu kali sebelum penulisan pertama. Tidak ada yang ditulis setelah pertandingan dimulai.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Ya</span></td>
+        </tr>
+        <tr>
+          <td>Grup mentoring<small>Aktif secara bawaan: kamu mematikannya di Plugin › Beta dan Eksperimental. Toby menyusun grup mentoring di jendela FM sendiri dan membacanya ulang dari FM untuk memastikannya; jika gagal, ia menunjukkan siapa yang perlu kamu centang. Ia mencentang pemain di jendela Edit FM, membaca FM setelah setiap centang, dan hanya mengonfirmasi jika daftarnya sama persis. Jika belum ada grup, sebuah tombol membuat grup kosong di FM; "Batalkan" menghapusnya (tidak jika grup itu berubah di FM sementara itu), dan informasi pembatalan disimpan di komputer ini. Pertama kali kamu mendapat satu pemberitahuan. Tidak berjalan selama pertandingan.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Ya</span></td>
+        </tr>
+        <tr>
+          <td>Menambah pemain ke daftar pendek FM<small>Aktif secara bawaan: kamu mematikannya di Plugin › Beta dan Eksperimental. Saat kamu menekan tombol di baris daftar dan pengamatan Toby, pemain ditambahkan ke daftar pendek FM. Dari sini tidak bisa dibatalkan: kamu mengeluarkan pemain dari daftar sendiri di FM. Pemain yang ditambahkan dibaca ulang dari FM dan diperiksa. Tidak ada berkas daftar yang ditulis. Kamu mendapat pemberitahuan satu kali sebelum penulisan pertama.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r gv-yok">Tidak bisa dibatalkan</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <!--/guven-id-->
+    <h2>Kenapa Windows menampilkan peringatan?</h2>
+    <p>Installer belum ditandatangani kode, jadi Windows bisa menampilkan peringatan "penerbit tidak dikenal". Pilih "Info selengkapnya", lalu "Tetap jalankan".</p>
+    <h2>Kalau antivirusmu mengeluh</h2>
+    <p>Alat yang membaca memori program lain dan plugin game yang memakai <code>winhttp.dll</code> bisa memicu alarm palsu. Hasil kami (18 November 2026): Windows Defender memindai installer dan paket rilis kami dan tidak menemukan ancaman. Dalam pemindaian penuh Malwarebytes, paket rilis kami (1.0.0 – 1.0.9 dan kandidat 1.1) bersih; dalam pemindaian yang sama, hanya build pengembangan kami, yang tidak pernah sampai ke pengguna, yang ditandai "anomali" lewat tebakan machine learning. Unduh installer hanya dari situs ini, dan periksa bahwa itu file yang sama:</p>
+    <p><code>Get-FileHash TeknikOda-Kurulum-1.1.0.exe</code></p>
+    <p>SHA-256: <code>6610739D4D847532F4581199F0D34FDA9A406D788A62860E2B4FCEDC6189D437</code></p>
+    <p>VirusTotal, installer 1.0.10 (SHA-256 <code>4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba</code>): saat kami melihatnya pada 20 November 2026, analisis terbaru berumur sehari dan 2 dari 69 mesin menandai file itu: Deep Instinct menyebut "MALICIOUS" dan VBA32 menyebut "TScope.Trojan.MSIL"; mesin lainnya, termasuk Windows Defender, tidak menandainya. <a href="https://www.virustotal.com/gui/file/4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba" rel="noopener">Hasil VirusTotal</a>. Kami mengirim laporan positif palsu ke kedua vendor pada 20 November 2026 dan akan memperbarui halaman ini saat mereka menjawab.</p>
+    <p data-yakinda="virustotal"><a href="{{VIRUSTOTAL}}" rel="noopener">Hasil pemindaian VirusTotal</a></p>
+    <h2>Pertanyaan yang sering diajukan</h2>
+    <h3>"2 dari 69 mesin menandainya di VirusTotal", apakah itu benar?</h3>
+    <p>Ya, untuk 1.0.10; hasilnya ada di atas. Sebuah situs direktori juga menulis angka yang sama. Kami tidak menganggapnya enteng: installer belum ditandatangani kode, masih baru, dan merupakan aplikasi pendamping yang membaca memori game; sejumlah kecil mesin mungkin memperingatkan soal file seperti itu. Kami mengirim laporan ke kedua vendor. Hasil Windows Defender dan Malwarebytes kami ada di atas, dan setiap alamat yang dihubungi aplikasi tertulis di halaman ini dan diperiksa oleh sebuah tes. Kalau ada hasil VirusTotal untuk 1.1, tautannya masuk ke baris di atas; sampai saat itu kami tidak menyebut angka untuk 1.1.</p>
+    <h3>Kenapa FM diam di layar hitam selama 2-5 menit pada kali pertama?</h3>
+    <p>Pada saat FM pertama kali dijalankan setelah memasang plugin dalam game, BepInEx menyiapkan bagian-bagian game di folder miliknya sendiri. Ini bisa memakan beberapa menit, dan FM tampak membeku di layar hitam selama itu. Jangan ditutup, tunggu saja: menu utama terbuka setelah persiapan selesai. Folder yang sudah disiapkan disimpan, jadi pembukaan berikutnya tidak menunggu; setelah pembaruan FM, persiapan mungkin perlu dilakukan lagi. Kalau kamu tidak memasang plugin, tidak ada waktu tunggu seperti itu. Kalau sangat lama, hapus plugin dari halaman Plugin dan tulis ke kami.</p>
+    <h2>Pembaruan</h2>
+    <p>Aplikasi mendapatkan informasi versi dari file bertanda tangan dan memeriksa hash installer yang diunduhnya. File dengan tanda tangan atau hash yang salah tidak dipasang.</p>
+    <h2>Perlu diketahui</h2>
+    <ul>
+      <li>Ini bukan alat resmi dan tidak berhubungan dengan Sports Interactive atau SEGA. Kamu memakainya atas tanggung jawabmu sendiri.</li>
+      <li>Ini masih beta. Cadangkan save-mu dulu.</li>
+      <li>Belum diuji dengan karier online.</li>
+    </ul>
+    <h2>Kontak</h2>
+    <p><a href="mailto:teknikodafm@gmail.com">teknikodafm@gmail.com</a></p>
+</div>
+  <div lang-de>
+    <h1>Sicherheit und Virenschutz</h1>
+    <small>Zuletzt aktualisiert: 21. November 2026</small>
+    <p>Du solltest wissen, was Teknik Oda tut, bevor du es installierst. Hier ist nichts versteckt.</p>
+    <p><a href="#cikanlar">Was verlässt deinen Computer?</a> · <a href="#yazilanlar">Was schreiben wir in FM?</a></p>
+    <h2>Was macht die App?</h2>
+    <ul>
+      <li>Solange FM geöffnet ist, liest sie deine Karriere aus dem Spielspeicher. Sie schreibt nie von selbst ins Spiel: In FM ändert sich etwas, wenn du „Auf FM anwenden“ drückst, über denselben Weg wie die eigenen Schaltflächen von FM, und es lässt sich rückgängig machen. Sie schreibt nie in deinen Spielstand. Die einzige Ausnahme: Tobys Spieleinstellungen gelten nur für dieses eine Spiel, und nach dem Spiel gehen die Anweisungen, die du nicht geändert hast, von selbst auf deine alten Einstellungen zurück; das kannst du unter Plugins › Beta und Experimentell abschalten, und setzt du das Häkchen bei „Nach dem Spiel beibehalten“, bleiben die Einstellungen.</li>
+      <li>Deine Karrieredaten verlassen deinen Computer nie.</li>
+      <li>Sie geht online, um nach einer neuen Version zu suchen und eine anonyme Nutzungszählung zu senden (die Versionsnummer, die Namen der an diesem Tag genutzten Toby-Funktionen, die Sprache der App und dein Feedback: Daumen hoch oder runter, die Schaltfläche, die du in der Zufriedenheitsfrage gewählt hast; dazu die Art des Problems, auf das die App gestoßen ist, und, falls das Plugin im Spiel installiert ist, der Shop des Spiels).</li>
+    </ul>
+    <h2>Was macht das Plugin im Spiel?</h2>
+    <ul>
+      <li>Es ist optional. Nichts wird installiert, bis du „Plugin installieren“ drückst.</li>
+      <li>Es legt das Open-Source-Programm BepInEx und das Teknik-Oda-Plugin im Spielordner ab, darunter eine Datei <code>winhttp.dll</code>.</li>
+      <li>Es liefert die Schaltflächen und Karten in FM sowie Spiel-, Rollen- und Vereinsdaten.</li>
+      <li>Seine Dateien werden in den Einstellungen entfernt oder wenn du die App deinstallierst.</li>
+      <li>Wird ein Problem mit dem Plugin bemerkt, zählt die App es als anonymes Problemsignal: Das Signal enthält nur einen kurzen Codenamen für das Problem, die Version und den Shop des Spiels (Steam, Xbox oder Epic). Es werden keine Karriere-, Spieler-, Vereins- oder Ordnerpfaddaten gesendet. Einzelheiten stehen weiter unten unter „Anonyme Nutzungszählung“.</li>
+      <li>Im Installationsordner liegt eine Datei <code>LISANS.txt</code>: Die persönliche Nutzung ist erlaubt; Kopieren, Verändern, Weitergeben und Verkaufen sind ohne Erlaubnis nicht gestattet; die Software wird „wie besehen“ bereitgestellt; es besteht keine Verbindung zu Sports Interactive oder SEGA.</li>
+    </ul>
+    <!--guven-de-->
+    <h2 id="cikanlar">Was verlässt deinen Computer?</h2>
+    <p>Diese Liste wurde dem Code der App entnommen und wird von einem Test geprüft: Die App und das Plugin im Spiel verbinden sich nur mit den folgenden Adressen mit dem Internet. Jede Zeile sagt, was gesendet wird, an wen und wann.</p>
+      <div class="gv-k">
+        <h3>Versions- und Einstellungsdateien</h3>
+        <p class="gv-nereye">Wohin: <code>raw.githubusercontent.com</code> <code>teknikodafm.github.io</code></p>
+        <p><b>Was gesendet wird:</b> Es werden zwei signierte Dateien abgefragt: die Versionsinformation (surum.json) und eine Einstellungsdatei. Es werden keine Daten gesendet; wie bei jeder Webanfrage sieht der Server deine IP-Adresse sowie den Namen und die Version der App (TeknikOda/1.1.0).</p>
+        <p><b>Wann:</b> Einige Sekunden nach dem Öffnen der App, danach einmal in der Stunde. Die Versionsprüfung lässt sich in Einstellungen &gt; Updates abschalten; solange sie aus ist, wird die Einstellungsdatei trotzdem einmal am Tag abgefragt.</p>
+      </div>
+      <div class="gv-k">
+        <h3>Installer einer neuen Version</h3>
+        <p class="gv-nereye">Wohin: <code>teknikodafm.com</code></p>
+        <p><b>Was gesendet wird:</b> Nur eine Dateianfrage. Die Adresse stammt aus der signierten Versionsdatei (heute diese Website). Die Signatur und der SHA-256-Hash der heruntergeladenen Datei werden geprüft; eine Datei, die nicht passt, wird nicht installiert.</p>
+        <p><b>Wann:</b> Im Hintergrund, wenn eine neue Version erschienen ist und die Versionsprüfung eingeschaltet ist.</p>
+      </div>
+      <div class="gv-k">
+        <h3>Anonyme Nutzungszählung</h3>
+        <p class="gv-nereye">Wohin: <code>teknikodafm.goatcounter.com</code></p>
+        <p><b>Was gesendet wird:</b> Nur von einer installierten App, und es werden nur Namen gesendet: die Versionsnummer, die Sprache der App, die Namen der Toby-Funktionen, die du an diesem Tag genutzt hast (Karten, Räume, vorgegebene Fragen; bei einer selbst getippten Frage nur ihre Art, nie der Text), das Feedback, das du gegeben hast (Daumen hoch oder runter, eine Umfrageantwort), die Art des Problems, auf das die App gestoßen ist (Auslesen, Plugin, Bildschirmname, Update), der Shop des Spiels, falls das Plugin im Spiel installiert ist (Steam, Xbox oder Epic), und ein inhaltsloses Signal, dass die App geöffnet ist. Es werden keine Angaben zu Karriere, Spielern, Verein, Managername, Benutzer oder Computer gesendet, und es wird keine dauerhafte Kennung angelegt. Der Zählerdienst (GoatCounter) speichert deine IP-Adresse nicht; er behält Land, Sprache sowie Windows- und Browser-Engine-Versionen als Gesamtzahlen.</p>
+        <p><b>Wann:</b> Version, Sprache und die Angabe, dass das Plugin installiert ist (mit dem Shop des Spiels), einmal am Tag; Funktionsnamen und Feedback bei der Nutzung (jeder Name einmal am Tag); Problemarten höchstens 12-mal am Tag; das Signal „geöffnet“ alle 15 Minuten, solange die App geöffnet ist.</p>
+      </div>
+      <div class="gv-k">
+        <h3>Unity-Bibliotheken für BepInEx</h3>
+        <p class="gv-nereye">Wohin: <code>unity.bepinex.dev</code></p>
+        <p><b>Was gesendet wird:</b> Nur eine Dateianfrage (etwa 3 MB; die Adresse enthält die Unity-Version von FM). Ob der Server erreichbar ist, wird ohne Datenversand geprüft. Lässt sich das nicht vorbereiten, lädt BepInEx von derselben Adresse selbst herunter.</p>
+        <p><b>Wann:</b> Nur wenn du das Plugin im Spiel installierst und wenn ein FM-Update die Unity-Version ändert, während FM geschlossen ist. Nie, wenn du das Plugin nicht installierst.</p>
+      </div>
+    <div class="gv-k">
+      <h3>Links, die sich in deinem Browser öffnen</h3>
+      <p class="gv-nereye">Wohin: <code>teknikodafm.com</code> <code>x.com</code> <code>sortitoutsi.net</code></p>
+      <p>Die Schaltflächen für Website, X, Unterstützung und Teilen in der App öffnen deinen Standardbrowser nur, wenn du sie anklickst; die App selbst verbindet sich nicht mit diesen Adressen. Das Fenster der App kann nicht von ihrer eigenen lokalen Adresse wegnavigieren. „Problem melden“ erstellt nur eine Berichtsdatei auf diesem Computer; das Versenden (per E-Mail) liegt bei dir, es geht nie von selbst.</p>
+    </div>
+    <h3 class="gv-alt">Das geht nirgendwohin</h3>
+    <ul>
+      <li>Deine Karriere: Spieler, Vereine, Kader, Spiele, Transfers. Alles wird auf diesem Computer gelesen und gezeichnet.</li>
+      <li>Deine Spielstanddatei und deine Spieldateien.</li>
+      <li>Der Text der Frage, die du Toby tippst, und Tobys Antwort.</li>
+      <li>Das Teknik-Oda-Plugin im Spiel verbindet sich nirgendwohin; sein Code hat keine Netzwerkaufrufe. Es spricht über Dateien auf demselben Computer mit der App.</li>
+      <li>Die eigenen Komponenten von Windows (zum Beispiel WebView2, das die Oberfläche zeichnet) folgen deinen eigenen Windows-Einstellungen; die Liste oben beschreibt, was Teknik Oda sendet.</li>
+    </ul>
+    <h2 id="yazilanlar">Was schreiben wir in FM?</h2>
+    <p>Teknik Oda schreibt nie von selbst ins Spiel und nie in deine Spielstanddatei. In FM ändert sich nur etwas, wenn du die Schaltfläche dieser Zeile drückst: über denselben Weg wie die eigenen Schaltflächen von FM, im Speicher des Spiels. Jeder Schreibvorgang wird aus FM zurückgelesen und geprüft; erlaubt FM keine Bearbeitung, wird nichts geschrieben, und der Bildschirm sagt es. Die Änderung gelangt in deinen Spielstand, wenn du speicherst, wie jede Änderung, die du in FM von Hand machst.</p>
+    <p>An: einsatzbereit. Beta: an, aber neu; sag uns, wenn dir ein Problem auffällt. Experimentell: standardmäßig aus; das Einschalten liegt bei dir.</p>
+    <table class="gv-tablo">
+      <thead><tr><th>Was</th><th>Status</th><th>Rückgängig möglich</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Mannschaftsanweisungen (Tobys Spieleinstellungen)<small>Je Zeile „Rückgängig“ und „Alles rückgängig“. Höchstens 8 Anweisungen je Anfrage, höchstens 4 Schritte je Anweisung. Sobald ein Spiel begonnen hat, wird nichts geschrieben. Standardmäßig gilt es nur für dieses eine Spiel: Nach dem Spiel setzt Toby es von selbst zurück (unter Plugins › Beta und Experimentell kannst du es auf eine Erinnerung umstellen); es bleibt nur, wenn „Nach dem Spiel beibehalten“ angehakt ist. Vor dem ersten Schreiben bekommst du einmal einen Hinweis.</small></td>
+          <td><span class="gv-r gv-acik">An</span></td>
+          <td><span class="gv-r">Ja</span></td>
+        </tr>
+        <tr>
+          <td>Tobys Woche, Einheit für Einheit<small>Standardmäßig an: Du schaltest es unter Plugins › Beta und Experimentell aus. „Auf FM anwenden“ im Trainingsplan und der Bereich Tobys Woche schreiben Tobys Woche Einheit für Einheit in den FM-Kalender; nur der Typ der Einheit ändert sich, die fertigen Programme von FM werden nicht geschrieben. Höchstens 16 Einheiten je Druck. „Rückgängig“ stellt jede geschriebene Einheit wieder her; die Liste bleibt auf diesem Computer gespeichert und übersteht ein Schließen und Öffnen der App am selben Spieltag. Vor dem ersten Schreiben bekommst du einmal einen Hinweis. Spieltage, Ruhetage und Reisetage bleiben unberührt; sobald ein Spiel begonnen hat, wird nichts geschrieben.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Ja</span></td>
+        </tr>
+        <tr>
+          <td>Trainingsintensität und Ruhe der Spieler<small>Standardmäßig an: Du schaltest es unter Plugins › Beta und Experimentell aus. Wenn du den Button drückst, wird die von Toby empfohlene Spielerintensität in FM geschrieben. Höchstens 12 Spieler je Anfrage. Bei einem Spieler, den FM nicht bearbeiten lässt (zum Beispiel verletzt), wird nichts geschrieben; der Grund steht in FMs eigenem Satz da. Jede Zeile hat „Rückgängig“, bei mehreren erscheint „Alles rückgängig“; die Liste bleibt auf diesem Computer gespeichert. Vor dem ersten Schreiben bekommst du einmal einen Hinweis.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Ja</span></td>
+        </tr>
+        <tr>
+          <td>Rolle und zusätzlicher Fokus der Youngster<small>Standardmäßig an: Du schaltest es unter Plugins › Beta und Experimentell aus. Bei jungen Spielern werden die von Toby empfohlene Rolle (Position und Rolle mit Ball, Rolle gegen den Ball) und der zusätzliche Fokus mit dem Button „In FM schreiben“ in der Zeile in das Einzeltraining von FM geschrieben. Der Wert stammt aus FMs eigener Liste. Wenn FM keine Bearbeitung zulässt oder das Personal zuständig ist, wird nichts geschrieben und der Grund angezeigt. Ließe sich der aktuelle Wert nicht rückgängig machen, wird gar nichts geschrieben. Jede Zeile hat „Rückgängig“, bei mehreren erscheint „Alles rückgängig“; die Liste bleibt auf diesem Computer gespeichert. Vor dem ersten Schreiben bekommst du einmal einen Hinweis. Höchstens 12 Spieler je Anfrage, während eines Spiels wird nichts geschrieben.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Ja</span></td>
+        </tr>
+        <tr>
+          <td>Spielvorbereitungseinheit<small>Standardmäßig an: Du schaltest es unter Plugins › Beta und Experimentell aus. Wenn du den Button drückst, wird Tobys Spielvorbereitungseinheit in den Plan von FM geschrieben. Nur ein Platz, den FM als bearbeitbar meldet; der Name der Einheit wird so angezeigt, wie FM ihn zurückgibt. „Rückgängig“ stellt die Einheit wieder her (der Zusatz „(Bearbeitet)“, den FM dem Namen der Woche anhängt, bleibt); die Rückgängig-Information bleibt auf diesem Computer gespeichert. Vor dem ersten Schreiben bekommst du einmal einen Hinweis. Nach Spielbeginn wird nichts geschrieben.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Ja</span></td>
+        </tr>
+        <tr>
+          <td>Mentoring-Gruppe<small>Standardmäßig an: Du schaltest es unter Plugins › Beta und Experimentell aus. Toby richtet die Mentoring-Gruppe im eigenen Fenster von FM ein und liest sie zur Bestätigung aus FM zurück; klappt das nicht, zeigt er dir, wen du anhaken sollst. Er hakt die Spieler im Fenster Bearbeiten von FM an, liest FM nach jedem Haken und bestätigt nur, wenn die Liste genau übereinstimmt. Gibt es keine Gruppe, legt ein Knopf in FM eine leere an; „Rückgängig“ löscht sie (nicht, wenn sie sich in FM inzwischen geändert hat), die Rückgängig-Information bleibt auf diesem Computer. Beim ersten Mal bekommst du einmal einen Hinweis. Während eines Spiels funktioniert es nicht.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Ja</span></td>
+        </tr>
+        <tr>
+          <td>Spieler zur FM-Shortlist hinzufügen<small>Standardmäßig an: Du schaltest es unter Plugins › Beta und Experimentell aus. Wenn du den Button in Tobys Listen- und Beobachtungszeilen drückst, wird der Spieler auf die Auswahlliste von FM gesetzt. Hier lässt es sich nicht rückgängig machen: Du nimmst den Spieler in FM selbst von der Liste. Der hinzugefügte Spieler wird aus FM zurückgelesen und geprüft. Es wird keine Listendatei geschrieben. Vor dem ersten Schreiben bekommst du einmal einen Hinweis.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r gv-yok">Nicht rückgängig machbar</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <!--/guven-de-->
+    <h2>Warum zeigt Windows eine Warnung?</h2>
+    <p>Der Installer ist nicht code-signiert, deshalb zeigt Windows möglicherweise eine Warnung „Unbekannter Herausgeber“. Wähle „Weitere Informationen“ und dann „Trotzdem ausführen“.</p>
+    <h2>Wenn dein Virenschutz Alarm schlägt</h2>
+    <p>Tools, die den Speicher eines anderen Programms lesen, und Spiel-Plugins, die <code>winhttp.dll</code> nutzen, können Fehlalarme auslösen. Unsere Ergebnisse (18. November 2026): Windows Defender hat unseren Installer und die Release-Pakete geprüft und keine Bedrohungen gefunden. In einem vollständigen Malwarebytes-Scan blieben unsere Release-Pakete (1.0.0 – 1.0.9 und der Kandidat für 1.1) sauber; im selben Scan wurden nur unsere Entwicklungs-Builds, die nie zu Nutzern gelangen, per Machine-Learning-Vermutung als „anomal“ markiert. Lade den Installer nur von dieser Website herunter und prüfe, dass es dieselbe Datei ist:</p>
+    <p><code>Get-FileHash TeknikOda-Kurulum-1.1.0.exe</code></p>
+    <p>SHA-256: <code>6610739D4D847532F4581199F0D34FDA9A406D788A62860E2B4FCEDC6189D437</code></p>
+    <p>VirusTotal, Installer 1.0.10 (SHA-256 <code>4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba</code>): Als wir am 20. November 2026 nachsahen, war die neueste Analyse einen Tag alt, und 2 von 69 Engines markierten die Datei: Deep Instinct sagte „MALICIOUS“ und VBA32 sagte „TScope.Trojan.MSIL“; die anderen Engines, darunter Windows Defender, markierten sie nicht. <a href="https://www.virustotal.com/gui/file/4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba" rel="noopener">VirusTotal-Ergebnis</a>. Wir haben am 20. November 2026 beiden Herstellern eine Meldung über einen Fehlalarm geschickt und aktualisieren diese Seite, wenn sie antworten.</p>
+    <p data-yakinda="virustotal"><a href="{{VIRUSTOTAL}}" rel="noopener">VirusTotal-Scanergebnis</a></p>
+    <h2>Häufig gestellte Fragen</h2>
+    <h3>„2 von 69 Engines melden es bei VirusTotal“, stimmt das?</h3>
+    <p>Ja, für 1.0.10; das Ergebnis steht oben. Eine Verzeichnisseite hat dieselbe Zahl ebenfalls genannt. Wir tun das nicht ab: Der Installer ist nicht code-signiert, er ist neu, und es ist eine Hilfs-App, die den Speicher des Spiels liest; bei solchen Dateien warnen manchmal einige wenige Engines. Wir haben beiden Herstellern eine Meldung geschickt. Unsere Ergebnisse von Windows Defender und Malwarebytes stehen oben, und jede Adresse, mit der sich die App verbindet, steht auf dieser Seite und wird von einem Test geprüft. Gibt es ein VirusTotal-Ergebnis für 1.1, kommt sein Link in die Zeile darüber; bis dahin nennen wir für 1.1 keine Zahl.</p>
+    <h3>Warum hängt FM beim ersten Mal 2-5 Minuten auf einem schwarzen Bildschirm?</h3>
+    <p>Beim ersten FM-Start nach der Installation des Plugins im Spiel bereitet BepInEx die Teile des Spiels in seinem eigenen Ordner vor. Das kann einige Minuten dauern, und FM wirkt währenddessen auf einem schwarzen Bildschirm eingefroren. Schließe es nicht, warte: Das Hauptmenü öffnet sich, wenn die Vorbereitung fertig ist. Der vorbereitete Ordner bleibt erhalten, spätere Starts warten also nicht; nach einem FM-Update kann die Vorbereitung erneut nötig sein. Hast du das Plugin nicht installiert, gibt es diese Wartezeit nicht. Dauert es sehr lange, entferne das Plugin auf der Plugins-Seite und schreib uns.</p>
+    <h2>Updates</h2>
+    <p>Die App erhält Versionsinformationen aus einer signierten Datei und prüft den Hash des heruntergeladenen Installers. Eine Datei mit falscher Signatur oder falschem Hash wird nicht installiert.</p>
+    <h2>Gut zu wissen</h2>
+    <ul>
+      <li>Das ist kein offizielles Werkzeug und hat keine Verbindung zu Sports Interactive oder SEGA. Du nutzt es auf eigene Verantwortung.</li>
+      <li>Das ist eine Beta. Sichere zuerst deinen Spielstand.</li>
+      <li>Es wurde nicht mit Online-Karrieren getestet.</li>
+    </ul>
+    <h2>Kontakt</h2>
+    <p><a href="mailto:teknikodafm@gmail.com">teknikodafm@gmail.com</a></p>
+  </div>
+  <div lang-fr>
+    <h1>Sécurité et antivirus</h1>
+    <small>Dernière mise à jour : 21 novembre 2026</small>
+    <p>Vous devez savoir ce que fait Teknik Oda avant de l'installer. Rien n'est caché ici.</p>
+    <p><a href="#cikanlar">Qu'est-ce qui quitte votre ordinateur ?</a> · <a href="#yazilanlar">Que faisons-nous écrire dans FM ?</a></p>
+    <h2>Que fait l'application ?</h2>
+    <ul>
+      <li>Tant que FM est ouvert, elle lit votre carrière dans la mémoire du jeu. Elle n'écrit jamais dans le jeu d'elle-même : dans FM, quelque chose change lorsque vous appuyez sur « Appliquer à FM », par le même chemin que les boutons de FM, et c'est annulable. Elle n'écrit jamais dans votre sauvegarde. Seule exception : les réglages de match de Toby ne valent que pour ce match, et après le match les consignes que vous n'avez pas modifiées reviennent d'elles-mêmes à vos anciens réglages ; vous pouvez le désactiver dans Plugins › Bêta et Expérimental, et si vous cochez « Garder après le match », les réglages restent.</li>
+      <li>Les données de votre carrière ne quittent jamais votre ordinateur.</li>
+      <li>Elle se connecte à internet pour vérifier la présence d'une nouvelle version et envoyer un comptage d'utilisation anonyme (le numéro de version, les noms des fonctions de Toby utilisées ce jour-là, la langue de l'application et les retours que vous avez donnés : pouce levé ou baissé, le bouton choisi dans la question de satisfaction ; plus le type de problème rencontré par l'application et, si le plugin en jeu est installé, la boutique du jeu).</li>
+    </ul>
+    <h2>Que fait le plugin en jeu ?</h2>
+    <ul>
+      <li>Il est facultatif. Rien n'est installé tant que vous n'appuyez pas sur « Installer le plugin ».</li>
+      <li>Il ajoute le logiciel libre BepInEx et le plugin Teknik Oda dans le dossier du jeu, dont un fichier <code>winhttp.dll</code>.</li>
+      <li>Il fournit les boutons et les fiches dans FM, ainsi que les données de match, de rôle et de club.</li>
+      <li>Ses fichiers sont supprimés depuis les Paramètres, ou quand vous désinstallez l'application.</li>
+      <li>Si un problème lié au plugin est constaté, l'application le compte comme un signal de problème anonyme : le signal ne contient qu'un court nom de code du problème, la version et la boutique du jeu (Steam, Xbox ou Epic). Aucune donnée de carrière, de joueur, de club ni de chemin de dossier n'est envoyée. Les détails sont plus bas, sous « Comptage d'utilisation anonyme ».</li>
+      <li>Le dossier d'installation contient un fichier <code>LISANS.txt</code> : l'usage personnel est autorisé ; copier, modifier, redistribuer et vendre ne sont pas permis sans autorisation ; le logiciel est fourni « en l'état » ; il n'a aucun lien avec Sports Interactive ni SEGA.</li>
+    </ul>
+    <!--guven-fr-->
+    <h2 id="cikanlar">Qu'est-ce qui quitte votre ordinateur ?</h2>
+    <p>Cette liste a été tirée du code de l'application et est vérifiée par un test : l'application et le plugin en jeu ne se connectent à internet qu'aux adresses ci-dessous. Chaque ligne dit ce qui est envoyé, à qui et quand.</p>
+      <div class="gv-k">
+        <h3>Fichiers de version et de réglages</h3>
+        <p class="gv-nereye">Destination : <code>raw.githubusercontent.com</code> <code>teknikodafm.github.io</code></p>
+        <p><b>Ce qui est envoyé :</b> Deux fichiers signés sont demandés : les informations de version (surum.json) et un fichier de réglages. Aucune donnée n'est envoyée ; comme pour toute requête web, le serveur voit votre adresse IP ainsi que le nom et la version de l'application (TeknikOda/1.1.0).</p>
+        <p><b>Quand :</b> Quelques secondes après l'ouverture de l'application, puis toutes les heures. La vérification de version peut être désactivée dans Paramètres &gt; Mises à jour ; tant qu'elle est désactivée, le fichier de réglages est quand même demandé une fois par jour.</p>
+      </div>
+      <div class="gv-k">
+        <h3>Installateur d'une nouvelle version</h3>
+        <p class="gv-nereye">Destination : <code>teknikodafm.com</code></p>
+        <p><b>Ce qui est envoyé :</b> Seulement une demande de fichier. L'adresse vient du fichier de version signé (aujourd'hui, ce site). La signature et le hachage SHA-256 du fichier téléchargé sont vérifiés ; un fichier qui ne correspond pas n'est pas installé.</p>
+        <p><b>Quand :</b> En arrière-plan lorsqu'une nouvelle version est sortie, tant que la vérification de version est activée.</p>
+      </div>
+      <div class="gv-k">
+        <h3>Comptage d'utilisation anonyme</h3>
+        <p class="gv-nereye">Destination : <code>teknikodafm.goatcounter.com</code></p>
+        <p><b>Ce qui est envoyé :</b> Seulement depuis une application installée, et seuls des noms sont envoyés : le numéro de version, la langue de l'application, les noms des fonctions de Toby que vous avez utilisées ce jour-là (fiches, pièces, questions prédéfinies ; pour une question saisie, seulement son type, jamais le texte), les retours que vous avez donnés (pouce levé ou baissé, une réponse de sondage), le type de problème rencontré par l'application (lecture, plugin, nom d'écran, mise à jour), la boutique du jeu si le plugin en jeu est installé (Steam, Xbox ou Epic) et un signal sans contenu indiquant que l'application est ouverte. Aucune donnée de carrière, de joueur, de club, de nom d'entraîneur, d'utilisateur ou d'ordinateur n'est envoyée, et aucun identifiant durable n'est créé. Le service de comptage (GoatCounter) ne conserve pas votre adresse IP ; il garde le pays, la langue, les versions de Windows et du moteur du navigateur sous forme de totaux.</p>
+        <p><b>Quand :</b> La version, la langue et le fait que le plugin est installé (avec la boutique du jeu) une fois par jour ; les noms de fonctions et les retours au fil de votre utilisation (chaque nom une fois par jour) ; les types de problèmes au plus 12 fois par jour ; le signal « ouvert » toutes les 15 minutes tant que l'application est ouverte.</p>
+      </div>
+      <div class="gv-k">
+        <h3>Bibliothèques Unity pour BepInEx</h3>
+        <p class="gv-nereye">Destination : <code>unity.bepinex.dev</code></p>
+        <p><b>Ce qui est envoyé :</b> Seulement une demande de fichier (environ 3 Mo ; l'adresse contient la version d'Unity de FM). La joignabilité du serveur est vérifiée sans envoyer de données. S'il ne peut pas être préparé, BepInEx télécharge lui-même depuis la même adresse.</p>
+        <p><b>Quand :</b> Seulement quand vous installez le plugin en jeu, et quand une mise à jour de FM change la version d'Unity, FM étant fermé. Jamais si vous n'installez pas le plugin.</p>
+      </div>
+    <div class="gv-k">
+      <h3>Liens qui s'ouvrent dans votre navigateur</h3>
+      <p class="gv-nereye">Destination : <code>teknikodafm.com</code> <code>x.com</code> <code>sortitoutsi.net</code></p>
+      <p>Les boutons du site, de X, de soutien et de partage dans l'application n'ouvrent votre navigateur par défaut que lorsque vous cliquez dessus ; l'application elle-même ne se connecte pas à ces adresses. La fenêtre de l'application ne peut pas naviguer hors de sa propre adresse locale. « Signaler un problème » ne fait que préparer un fichier de rapport sur cet ordinateur ; l'envoyer (par e-mail) est à vous de le faire, il ne part jamais tout seul.</p>
+    </div>
+    <h3 class="gv-alt">Cela ne va jamais nulle part</h3>
+    <ul>
+      <li>Votre carrière : joueurs, clubs, effectif, matchs, transferts. Tout est lu et dessiné sur cet ordinateur.</li>
+      <li>Votre fichier de sauvegarde et vos fichiers de jeu.</li>
+      <li>Le texte de la question que vous posez à Toby, et la réponse de Toby.</li>
+      <li>Le plugin Teknik Oda en jeu ne se connecte nulle part ; son code n'a aucun appel réseau. Il communique avec l'application par des fichiers sur le même ordinateur.</li>
+      <li>Les composants propres à Windows (par exemple WebView2, qui dessine l'interface) suivent vos propres réglages Windows ; la liste ci-dessus décrit ce que Teknik Oda envoie.</li>
+    </ul>
+    <h2 id="yazilanlar">Que faisons-nous écrire dans FM ?</h2>
+    <p>Teknik Oda n'écrit jamais dans le jeu de lui-même et n'écrit jamais dans votre fichier de sauvegarde. Quelque chose ne change dans FM que lorsque vous appuyez sur le bouton de la ligne : par le même chemin que les boutons de FM, dans la mémoire du jeu. Chaque écriture est relue depuis FM et vérifiée ; si FM n'autorise pas la modification, rien n'est écrit et l'écran le dit. Le changement entre dans votre sauvegarde quand vous sauvegardez, comme toute modification que vous faites à la main dans FM.</p>
+    <p>Activé : prêt à l'emploi. Bêta : activé, mais nouveau ; dites-nous si vous voyez un problème. Expérimental : désactivé par défaut ; l'activer relève de vous.</p>
+    <table class="gv-tablo">
+      <thead><tr><th>Quoi</th><th>État</th><th>Annulable</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Consignes d'équipe (réglages de match de Toby)<small>« Annuler » par ligne et « Tout annuler ». Au plus 8 consignes par demande, au plus 4 étapes chacune. Rien n'est écrit une fois le match commencé. Par défaut, cela ne vaut que pour ce match : à la fin du match, Toby remet tout seul l'ancien réglage (vous pouvez le changer en simple rappel dans Plugins › Bêta et Expérimental) ; il reste seulement si « Conserver après le match » est coché. Vous recevez une information unique avant la première écriture.</small></td>
+          <td><span class="gv-r gv-acik">Activé</span></td>
+          <td><span class="gv-r">Oui</span></td>
+        </tr>
+        <tr>
+          <td>La semaine de Toby, séance par séance<small>Activé par défaut : vous le désactivez dans Plugins › Bêta et Expérimental. « Appliquer à FM » du plan d'entraînement et la section La semaine de Toby écrivent la semaine de Toby dans le calendrier de FM séance par séance ; seul le type de séance change et les programmes tout faits de FM ne sont pas écrits. Au plus 16 séances par appui. « Annuler » remet chaque séance écrite comme avant ; la liste est conservée sur cet ordinateur et reste là même si vous fermez et rouvrez l'application le même jour de jeu. Vous recevez une information unique avant la première écriture. Les jours de match, de repos et de déplacement restent intacts ; rien n'est écrit une fois le match commencé.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Oui</span></td>
+        </tr>
+        <tr>
+          <td>Intensité d'entraînement et repos des joueurs<small>Activé par défaut : vous le désactivez dans Plugins › Bêta et Expérimental. Quand vous appuyez sur le bouton, l'intensité des joueurs recommandée par Toby est écrite dans FM. Au plus 12 joueurs par demande. Un joueur que FM ne laisse pas modifier (blessé, par exemple) est ignoré ; la raison est donnée avec la phrase de FM. Chaque ligne a « Annuler », et « Tout annuler » apparaît quand il y en a plusieurs ; la liste est conservée sur cet ordinateur. Vous recevez une information unique avant la première écriture.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Oui</span></td>
+        </tr>
+        <tr>
+          <td>Rôle et focus supplémentaire des jeunes<small>Activé par défaut : vous le désactivez dans Plugins › Bêta et Expérimental. Pour les jeunes, le rôle que Toby recommande (poste et rôle avec ballon, rôle sans ballon) et le focus supplémentaire sont écrits dans l'entraînement individuel de FM avec le bouton « Écrire dans FM » de la ligne. La valeur vient de la liste de FM elle-même. Si FM ne permet pas la modification ou si le staff s'en charge, rien n'est écrit et la raison est indiquée. Si la valeur actuelle ne pouvait pas être annulée, rien n'est écrit du tout. Chaque ligne a « Annuler », et « Tout annuler » apparaît quand il y en a plusieurs ; la liste est conservée sur cet ordinateur. Vous recevez une information unique avant la première écriture. Au plus 12 joueurs par demande, et rien pendant un match.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Oui</span></td>
+        </tr>
+        <tr>
+          <td>Séance de préparation du match<small>Activé par défaut : vous le désactivez dans Plugins › Bêta et Expérimental. Quand vous appuyez sur le bouton, la séance de préparation du match de Toby est écrite dans le programme de FM. Seulement un créneau que FM dit modifiable ; le nom de la séance s'affiche tel que FM le renvoie. « Annuler » remet la séance comme avant (la mention « (Modifié) » que FM ajoute au nom de la semaine reste) ; l'information d'annulation est conservée sur cet ordinateur. Vous recevez une information unique avant la première écriture. Rien n'est écrit une fois le match commencé.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Oui</span></td>
+        </tr>
+        <tr>
+          <td>Groupe de tutorat<small>Activé par défaut : vous le désactivez dans Plugins › Bêta et Expérimental. Toby constitue le groupe de tutorat dans la fenêtre même de FM et le relit depuis FM pour le confirmer ; si cela ne marche pas, il vous montre qui cocher. Il coche les joueurs dans la fenêtre Modifier de FM, relit FM après chaque coche et ne confirme que si la liste correspond exactement. S'il n'y a pas de groupe, un bouton en ouvre un vide dans FM ; « Annuler » le supprime (pas s'il a changé dans FM entre-temps), et l'information d'annulation reste sur cet ordinateur. La première fois, vous recevez un avertissement unique. Cela ne fonctionne pas pendant un match.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Oui</span></td>
+        </tr>
+        <tr>
+          <td>Ajout d'un joueur à la sélection de FM<small>Activé par défaut : vous le désactivez dans Plugins › Bêta et Expérimental. Quand vous appuyez sur le bouton des lignes de liste et d'observation de Toby, le joueur est ajouté à la sélection de FM. Impossible à annuler ici : vous retirez le joueur de la liste vous-même dans FM. Le joueur ajouté est relu dans FM et vérifié. Aucun fichier de liste n'est écrit. Vous recevez une information unique avant la première écriture.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r gv-yok">Irréversible</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <!--/guven-fr-->
+    <h2>Pourquoi Windows affiche-t-il un avertissement ?</h2>
+    <p>L'installateur n'est pas signé, donc Windows peut afficher un avertissement « éditeur inconnu ». Choisissez « Informations complémentaires », puis « Exécuter quand même ».</p>
+    <h2>Si votre antivirus se plaint</h2>
+    <p>Les outils qui lisent la mémoire d'un autre programme et les plugins de jeu qui utilisent <code>winhttp.dll</code> peuvent déclencher de fausses alertes. Nos résultats (18 novembre 2026) : Windows Defender a analysé notre installateur et nos paquets de version et n'a trouvé aucune menace. Lors d'une analyse complète de Malwarebytes, nos paquets de version (1.0.0 – 1.0.9 et le candidat 1.1) sont ressortis propres ; dans la même analyse, seules nos versions de développement, qui n'arrivent jamais aux utilisateurs, ont été signalées comme « anormales » par une supposition d'apprentissage automatique. Ne téléchargez l'installateur que depuis ce site, et vérifiez qu'il s'agit du même fichier :</p>
+    <p><code>Get-FileHash TeknikOda-Kurulum-1.1.0.exe</code></p>
+    <p>SHA-256 : <code>6610739D4D847532F4581199F0D34FDA9A406D788A62860E2B4FCEDC6189D437</code></p>
+    <p>VirusTotal, installateur 1.0.10 (SHA-256 <code>4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba</code>) : quand nous avons regardé le 20 novembre 2026, la dernière analyse datait d'un jour et 2 moteurs sur 69 signalaient le fichier : Deep Instinct disait « MALICIOUS » et VBA32 disait « TScope.Trojan.MSIL » ; les autres moteurs, Windows Defender compris, ne le signalaient pas. <a href="https://www.virustotal.com/gui/file/4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba" rel="noopener">Résultat VirusTotal</a>. Nous avons envoyé un signalement de faux positif aux deux éditeurs le 20 novembre 2026 et mettrons cette page à jour quand ils répondront.</p>
+    <p data-yakinda="virustotal"><a href="{{VIRUSTOTAL}}" rel="noopener">Résultat de l'analyse VirusTotal</a></p>
+    <h2>Questions fréquentes</h2>
+    <h3>« 2 moteurs sur 69 le signalent sur VirusTotal », est-ce vrai ?</h3>
+    <p>Oui, pour la 1.0.10 ; le résultat est ci-dessus. Un site d'annuaire a écrit le même chiffre. Nous ne balayons pas cela d'un revers de main : l'installateur n'est pas signé, il est nouveau, et c'est une application d'aide qui lit la mémoire du jeu ; un petit nombre de moteurs peuvent mettre en garde contre de tels fichiers. Nous avons envoyé un signalement aux deux éditeurs. Nos résultats Windows Defender et Malwarebytes sont ci-dessus, et chaque adresse à laquelle l'application se connecte est écrite sur cette page et vérifiée par un test. S'il existe un résultat VirusTotal pour la 1.1, son lien ira sur la ligne ci-dessus ; d'ici là nous n'annonçons aucun chiffre pour la 1.1.</p>
+    <h3>Pourquoi FM reste-t-il sur un écran noir pendant 2 à 5 minutes la première fois ?</h3>
+    <p>Au premier lancement de FM après l'installation du plugin en jeu, BepInEx prépare les composants du jeu dans son propre dossier. Cela peut prendre quelques minutes, et FM semble figé sur un écran noir pendant ce temps. Ne le fermez pas, attendez : le menu principal s'ouvre quand la préparation est terminée. Le dossier préparé est conservé, donc les lancements suivants n'attendent pas ; après une mise à jour de FM, la préparation peut être à nouveau nécessaire. Si vous n'avez pas installé le plugin, cette attente n'existe pas. Si cela dure très longtemps, supprimez le plugin depuis la page Plugins et écrivez-nous.</p>
+    <h2>Mises à jour</h2>
+    <p>L'application reçoit les informations de version depuis un fichier signé et vérifie le hachage de l'installateur qu'elle télécharge. Un fichier dont la signature ou le hachage est faux n'est pas installé.</p>
+    <h2>Bon à savoir</h2>
+    <ul>
+      <li>Ce n'est pas un outil officiel et il n'a aucun lien avec Sports Interactive ni SEGA. Vous l'utilisez sous votre propre responsabilité.</li>
+      <li>C'est une bêta. Faites d'abord une copie de votre sauvegarde.</li>
+      <li>Il n'a pas été testé avec des carrières en ligne.</li>
+    </ul>
+    <h2>Contact</h2>
+    <p><a href="mailto:teknikodafm@gmail.com">teknikodafm@gmail.com</a></p>
+  </div>
+  <div lang-es>
+    <h1>Seguridad y antivirus</h1>
+    <small>Última actualización: 21 de noviembre de 2026</small>
+    <p>Debes saber qué hace Teknik Oda antes de instalarlo. Aquí no hay nada oculto.</p>
+    <p><a href="#cikanlar">¿Qué sale de tu ordenador?</a> · <a href="#yazilanlar">¿Qué escribimos en FM?</a></p>
+    <h2>¿Qué hace la aplicación?</h2>
+    <ul>
+      <li>Mientras FM está abierto, lee tu carrera de la memoria del juego. Nunca escribe en el juego por su cuenta: algo en FM cambia cuando pulsas “Aplicar a FM”, por el mismo camino que los botones del propio FM, y se puede deshacer. Nunca escribe en tu partida guardada. La única excepción: los ajustes de partido de Toby valen solo para ese partido, y después del partido las instrucciones que no cambiaste vuelven solas a tus ajustes anteriores; puedes desactivarlo en Plugins › Beta y Experimental, y si marcas “Mantener tras el partido”, los ajustes se quedan.</li>
+      <li>Los datos de tu carrera nunca salen de tu ordenador.</li>
+      <li>Se conecta a internet para comprobar si hay una versión nueva y para enviar un recuento de uso anónimo (el número de versión, los nombres de las funciones de Toby usadas ese día, el idioma de la aplicación y los comentarios que diste: pulgar arriba o abajo, el botón que elegiste en la pregunta de satisfacción; además del tipo de problema con el que se topó la aplicación y, si el plugin del juego está instalado, la tienda del juego).</li>
+    </ul>
+    <h2>¿Qué hace el plugin del juego?</h2>
+    <ul>
+      <li>Es opcional. No se instala nada hasta que pulsas “Instalar plugin”.</li>
+      <li>Añade BepInEx, de código abierto, y el plugin de Teknik Oda a la carpeta del juego, incluido un archivo <code>winhttp.dll</code>.</li>
+      <li>Aporta los botones y las tarjetas en FM, y los datos de partido, de roles y del club.</li>
+      <li>Sus archivos se quitan desde Ajustes, o cuando desinstalas la aplicación.</li>
+      <li>Si se detecta un problema relacionado con el plugin, la aplicación lo cuenta como una señal de problema anónima: la señal lleva solo un nombre en clave corto del problema, la versión y la tienda del juego (Steam, Xbox o Epic). No se envía ninguna carrera, jugador, club ni ruta de carpeta. Los detalles están más abajo, en “Recuento de uso anónimo”.</li>
+      <li>La carpeta de instalación contiene un archivo <code>LISANS.txt</code>: el uso personal está permitido; copiar, modificar, redistribuir y vender no están permitidos sin autorización; el software se ofrece “tal cual”; no hay ninguna relación con Sports Interactive ni SEGA.</li>
+    </ul>
+    <!--guven-es-->
+    <h2 id="cikanlar">¿Qué sale de tu ordenador?</h2>
+    <p>Esta lista se ha sacado del código de la aplicación y la comprueba una prueba: la aplicación y el plugin del juego se conectan a internet solo en las direcciones de abajo. Cada fila dice qué se envía, a quién y cuándo.</p>
+      <div class="gv-k">
+        <h3>Archivos de versión y de ajustes</h3>
+        <p class="gv-nereye">Destino: <code>raw.githubusercontent.com</code> <code>teknikodafm.github.io</code></p>
+        <p><b>Qué se envía:</b> Se piden dos archivos firmados: la información de versión (surum.json) y un archivo de ajustes. No se envía ningún dato; como en cualquier petición web, el servidor ve tu dirección IP y el nombre y la versión de la aplicación (TeknikOda/1.1.0).</p>
+        <p><b>Cuándo:</b> Unos segundos después de abrir la aplicación, y luego una vez por hora. La comprobación de versión se puede desactivar en Ajustes &gt; Actualizaciones; mientras está desactivada, el archivo de ajustes se sigue pidiendo una vez al día.</p>
+      </div>
+      <div class="gv-k">
+        <h3>Instalador de una versión nueva</h3>
+        <p class="gv-nereye">Destino: <code>teknikodafm.com</code></p>
+        <p><b>Qué se envía:</b> Solo una petición de archivo. La dirección sale del archivo de versión firmado (hoy, este sitio). Se comprueban la firma y el hash SHA-256 del archivo descargado; un archivo que no coincide no se instala.</p>
+        <p><b>Cuándo:</b> En segundo plano cuando hay una versión nueva, mientras la comprobación de versión está activada.</p>
+      </div>
+      <div class="gv-k">
+        <h3>Recuento de uso anónimo</h3>
+        <p class="gv-nereye">Destino: <code>teknikodafm.goatcounter.com</code></p>
+        <p><b>Qué se envía:</b> Solo desde una aplicación instalada, y solo se envían nombres: el número de versión, el idioma de la aplicación, los nombres de las funciones de Toby que usaste ese día (tarjetas, salas, preguntas predefinidas; de una pregunta que escribiste, solo su tipo, nunca el texto), los comentarios que diste (pulgar arriba o abajo, una respuesta de encuesta), el tipo de problema con el que se topó la aplicación (lectura, plugin, nombre de pantalla, actualización), la tienda del juego si el plugin del juego está instalado (Steam, Xbox o Epic) y una señal sin contenido de que la aplicación está abierta. No se envía ningún dato de carrera, jugador, club, nombre de entrenador, usuario u ordenador, y no se crea ningún identificador duradero. El servicio de recuento (GoatCounter) no guarda tu dirección IP; conserva el país, el idioma y las versiones de Windows y del motor del navegador como totales.</p>
+        <p><b>Cuándo:</b> La versión, el idioma y que el plugin está instalado (con la tienda del juego) una vez al día; los nombres de funciones y los comentarios según los usas (cada nombre una vez al día); los tipos de problema como máximo 12 veces al día; la señal “abierta” cada 15 minutos mientras la aplicación está abierta.</p>
+      </div>
+      <div class="gv-k">
+        <h3>Bibliotecas de Unity para BepInEx</h3>
+        <p class="gv-nereye">Destino: <code>unity.bepinex.dev</code></p>
+        <p><b>Qué se envía:</b> Solo una petición de archivo (unos 3 MB; la dirección lleva la versión de Unity de FM). Se comprueba si se puede llegar al servidor sin enviar datos. Si no se puede preparar, BepInEx descarga desde la misma dirección por sí mismo.</p>
+        <p><b>Cuándo:</b> Solo cuando instalas el plugin del juego, y cuando una actualización de FM cambia la versión de Unity, con FM cerrado. Nunca si no instalas el plugin.</p>
+      </div>
+    <div class="gv-k">
+      <h3>Enlaces que se abren en tu navegador</h3>
+      <p class="gv-nereye">Destino: <code>teknikodafm.com</code> <code>x.com</code> <code>sortitoutsi.net</code></p>
+      <p>Los botones del sitio, de X, de apoyo y de compartir de la aplicación abren tu navegador predeterminado solo cuando haces clic en ellos; la propia aplicación no se conecta a estas direcciones. La ventana de la aplicación no puede navegar fuera de su propia dirección local. “Informar de un problema” solo prepara un archivo de informe en este ordenador; enviarlo (por correo electrónico) depende de ti, nunca sale por sí solo.</p>
+    </div>
+    <h3 class="gv-alt">Esto nunca va a ninguna parte</h3>
+    <ul>
+      <li>Tu carrera: jugadores, clubes, plantilla, partidos, fichajes. Todo se lee y se dibuja en este ordenador.</li>
+      <li>Tu archivo de partida guardada y los archivos de tu juego.</li>
+      <li>El texto de la pregunta que le escribes a Toby, y la respuesta de Toby.</li>
+      <li>El plugin de Teknik Oda en el juego no se conecta a ninguna parte; su código no tiene llamadas de red. Habla con la aplicación mediante archivos en el mismo ordenador.</li>
+      <li>Los componentes propios de Windows (por ejemplo WebView2, que dibuja la interfaz) siguen tus propios ajustes de Windows; la lista de arriba describe lo que envía Teknik Oda.</li>
+    </ul>
+    <h2 id="yazilanlar">¿Qué escribimos en FM?</h2>
+    <p>Teknik Oda nunca escribe en el juego por su cuenta y nunca escribe en tu archivo de partida guardada. Algo en FM cambia solo cuando pulsas el botón de esa fila: por el mismo camino que los botones del propio FM, en la memoria del juego. Cada escritura se vuelve a leer desde FM y se comprueba; si FM no permite editar, no se escribe nada y la pantalla lo dice. El cambio entra en tu partida cuando guardas, como cualquier cambio que haces a mano en FM.</p>
+    <p>Activado: listo para usar. Beta: activado, pero nuevo; cuéntanos si ves algún problema. Experimental: desactivado por defecto; activarlo depende de ti.</p>
+    <table class="gv-tablo">
+      <thead><tr><th>Qué</th><th>Estado</th><th>Se puede deshacer</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Instrucciones de equipo (ajustes de partido de Toby)<small>«Deshacer» por fila y «Deshacer todo». Como máximo 8 instrucciones por petición y 4 pasos cada una. No se escribe nada una vez empezado el partido. Por defecto solo vale para ese partido: al terminar, Toby lo devuelve por sí mismo (puedes cambiarlo a un recordatorio en Plugins › Beta y Experimental); solo se queda si «Mantener tras el partido» está marcado. Recibes un aviso único antes de la primera escritura.</small></td>
+          <td><span class="gv-r gv-acik">Activado</span></td>
+          <td><span class="gv-r">Sí</span></td>
+        </tr>
+        <tr>
+          <td>La semana de Toby, sesión a sesión<small>Activado por defecto: lo desactivas en Plugins › Beta y Experimental. «Aplicar a FM» del plan de entrenamiento y la sección La semana de Toby escriben la semana de Toby en el calendario de FM sesión a sesión; solo cambia el tipo de sesión y los programas ya hechos de FM no se escriben. Como máximo 16 sesiones por pulsación. «Deshacer» devuelve cada sesión escrita a como estaba; la lista se guarda en este ordenador y sigue ahí aunque cierres y abras la app el mismo día de juego. Recibes un aviso único antes de la primera escritura. Los días de partido, descanso y viaje no se tocan; no se escribe nada una vez empezado el partido.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Sí</span></td>
+        </tr>
+        <tr>
+          <td>Intensidad de entrenamiento y descanso de los jugadores<small>Activado por defecto: lo desactivas en Plugins › Beta y Experimental. Al pulsar el botón, la intensidad de jugador que sugiere Toby se escribe en FM. Como máximo 12 jugadores por petición. Un jugador que FM no deja editar (lesionado, por ejemplo) se omite y se muestra el motivo con la frase de FM. Cada fila tiene «Deshacer», y aparece «Deshacer todo» cuando hay varias; la lista se guarda en este ordenador. Recibes un aviso único antes de la primera escritura.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Sí</span></td>
+        </tr>
+        <tr>
+          <td>Rol y foco adicional de los jóvenes<small>Activado por defecto: lo desactivas en Plugins › Beta y Experimental. En los jóvenes, el rol que sugiere Toby (posición y rol con balón, rol sin balón) y el foco adicional se escriben en el entrenamiento individual de FM con el botón «Escribir en FM» de la fila. El valor viene de la propia lista de FM. Si FM no permite editar o el cuerpo técnico se encarga, no se escribe nada y se muestra el motivo. Si el valor actual no se pudiera deshacer, no se escribe nada. Cada fila tiene «Deshacer», y aparece «Deshacer todo» cuando hay varias; la lista se guarda en este ordenador. Recibes un aviso único antes de la primera escritura. Como máximo 12 jugadores por petición, y nada durante un partido.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Sí</span></td>
+        </tr>
+        <tr>
+          <td>Sesión de preparación del partido<small>Activado por defecto: lo desactivas en Plugins › Beta y Experimental. Al pulsar el botón, la sesión de preparación del partido de Toby se escribe en el programa de FM. Solo un hueco que FM dice que se puede editar; el nombre de la sesión se muestra como lo devuelve FM. «Deshacer» devuelve la sesión a como estaba (la marca «(Editado)» que FM añade al nombre de la semana se queda); la información para deshacer se guarda en este ordenador. Recibes un aviso único antes de la primera escritura. No se escribe nada una vez empezado el partido.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Sí</span></td>
+        </tr>
+        <tr>
+          <td>Grupo de tutoría<small>Activado por defecto: lo desactivas en Plugins › Beta y Experimental. Toby monta el grupo de tutoría en la propia ventana de FM y lo vuelve a leer desde FM para confirmarlo; si no funciona, te muestra a quién marcar. Marca a los jugadores en la ventana Editar de FM, lee FM después de cada marca y solo confirma si la lista coincide exactamente. Si no hay grupo, un botón abre uno vacío en FM; «Deshacer» lo borra (no si cambió en FM mientras tanto), y la información para deshacer queda en este ordenador. La primera vez recibes un aviso único. No funciona durante un partido.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Sí</span></td>
+        </tr>
+        <tr>
+          <td>Añadir un jugador a la preselección de FM<small>Activado por defecto: lo desactivas en Plugins › Beta y Experimental. Al pulsar el botón de las filas de lista y de ojeo de Toby, el jugador se añade a la preselección de FM. Aquí no se puede deshacer: quitas al jugador de la lista tú mismo en FM. El jugador añadido se relee desde FM y se comprueba. No se escribe ningún archivo de lista. Recibes un aviso único antes de la primera escritura.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r gv-yok">No se puede deshacer</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <!--/guven-es-->
+    <h2>¿Por qué Windows muestra una advertencia?</h2>
+    <p>El instalador no está firmado, así que Windows puede mostrar una advertencia de “editor desconocido”. Elige “Más información” y luego “Ejecutar de todas formas”.</p>
+    <h2>Si tu antivirus protesta</h2>
+    <p>Las herramientas que leen la memoria de otro programa y los plugins de juego que usan <code>winhttp.dll</code> pueden provocar falsas alarmas. Nuestros resultados (18 de noviembre de 2026): Windows Defender analizó nuestro instalador y los paquetes de versión y no encontró amenazas. En un análisis completo de Malwarebytes, nuestros paquetes de versión (1.0.0 – 1.0.9 y el candidato a 1.1) salieron limpios; en el mismo análisis, solo nuestras compilaciones de desarrollo, que nunca llegan a los usuarios, fueron marcadas como “anómalas” por una suposición de aprendizaje automático. Descarga el instalador solo desde este sitio y comprueba que es el mismo archivo:</p>
+    <p><code>Get-FileHash TeknikOda-Kurulum-1.1.0.exe</code></p>
+    <p>SHA-256: <code>6610739D4D847532F4581199F0D34FDA9A406D788A62860E2B4FCEDC6189D437</code></p>
+    <p>VirusTotal, instalador 1.0.10 (SHA-256 <code>4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba</code>): cuando miramos el 20 de noviembre de 2026, el último análisis tenía un día y 2 de 69 motores marcaban el archivo: Deep Instinct decía “MALICIOUS” y VBA32 decía “TScope.Trojan.MSIL”; los demás motores, Windows Defender incluido, no lo marcaban. <a href="https://www.virustotal.com/gui/file/4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba" rel="noopener">Resultado de VirusTotal</a>. Enviamos una notificación de falso positivo a ambos fabricantes el 20 de noviembre de 2026 y actualizaremos esta página cuando respondan.</p>
+    <p data-yakinda="virustotal"><a href="{{VIRUSTOTAL}}" rel="noopener">Resultado del análisis de VirusTotal</a></p>
+    <h2>Preguntas frecuentes</h2>
+    <h3>“2 de 69 motores lo marcan en VirusTotal”, ¿es cierto?</h3>
+    <p>Sí, para la 1.0.10; el resultado está arriba. Un sitio de directorio escribió la misma cifra. No lo despachamos sin más: el instalador no está firmado, es nuevo y es una aplicación auxiliar que lee la memoria del juego; un pequeño número de motores puede avisar sobre archivos así. Enviamos una notificación a ambos fabricantes. Nuestros resultados de Windows Defender y Malwarebytes están arriba, y cada dirección a la que se conecta la aplicación está escrita en esta página y comprobada por una prueba. Si hay un resultado de VirusTotal para la 1.1, su enlace irá en la línea de arriba; hasta entonces no damos ninguna cifra para la 1.1.</p>
+    <h3>¿Por qué FM se queda en una pantalla negra de 2 a 5 minutos la primera vez?</h3>
+    <p>En el primer arranque de FM tras instalar el plugin del juego, BepInEx prepara las piezas del juego en su propia carpeta. Puede tardar unos minutos, y mientras tanto FM parece congelado en una pantalla negra. No lo cierres, espera: el menú principal se abre cuando termina la preparación. La carpeta preparada se conserva, así que los arranques siguientes no esperan; tras una actualización de FM puede hacer falta preparar de nuevo. Si no instalaste el plugin, no hay esa espera. Si tarda muchísimo, quita el plugin desde la página Plugins y escríbenos.</p>
+    <h2>Actualizaciones</h2>
+    <p>La aplicación recibe la información de versión de un archivo firmado y comprueba el hash del instalador que descarga. Un archivo con una firma o un hash incorrectos no se instala.</p>
+    <h2>Conviene saber</h2>
+    <ul>
+      <li>No es una herramienta oficial y no tiene relación con Sports Interactive ni SEGA. La usas bajo tu propia responsabilidad.</li>
+      <li>Es una beta. Haz primero una copia de seguridad de tu partida.</li>
+      <li>No se ha probado con carreras online.</li>
+    </ul>
+    <h2>Contacto</h2>
+    <p><a href="mailto:teknikodafm@gmail.com">teknikodafm@gmail.com</a></p>
+  </div>
+  <div lang-it>
+    <h1>Sicurezza e antivirus</h1>
+    <small>Ultimo aggiornamento: 21 novembre 2026</small>
+    <p>Devi sapere cosa fa Teknik Oda prima di installarlo. Qui non c'è nulla di nascosto.</p>
+    <p><a href="#cikanlar">Cosa lascia il tuo computer?</a> · <a href="#yazilanlar">Cosa scriviamo in FM?</a></p>
+    <h2>Cosa fa l'app?</h2>
+    <ul>
+      <li>Finché FM è aperto, legge la tua carriera dalla memoria del gioco. Non scrive mai nel gioco da sola: in FM qualcosa cambia quando premi «Applica a FM», attraverso lo stesso percorso dei pulsanti di FM, e si può annullare. Non scrive mai nel tuo salvataggio. L'unica eccezione: le impostazioni partita di Toby valgono solo per quella partita, e dopo la partita le istruzioni che non hai modificato tornano da sole alle tue vecchie impostazioni; puoi disattivarlo in Plugin › Beta e Sperimentale, e se spunti «Mantieni dopo la partita» le impostazioni restano.</li>
+      <li>I dati della tua carriera non lasciano mai il tuo computer.</li>
+      <li>Va online per controllare se c'è una nuova versione e per inviare un conteggio d'uso anonimo (il numero di versione, i nomi delle funzioni di Toby usate quel giorno, la lingua dell'app e il feedback che hai dato: pollice su o giù, il pulsante scelto nella domanda sulla soddisfazione; più il tipo di problema in cui l'app si è imbattuta e, se il plugin di gioco è installato, lo store del gioco).</li>
+    </ul>
+    <h2>Cosa fa il plugin di gioco?</h2>
+    <ul>
+      <li>È facoltativo. Non viene installato nulla finché non premi «Installa plugin».</li>
+      <li>Aggiunge BepInEx, open source, e il plugin di Teknik Oda alla cartella del gioco, compreso un file <code>winhttp.dll</code>.</li>
+      <li>Fornisce i pulsanti e le schede in FM e i dati di partita, di ruolo e del club.</li>
+      <li>I suoi file vengono rimossi dalle Impostazioni, oppure quando disinstalli l'app.</li>
+      <li>Se viene rilevato un problema legato al plugin, l'app lo conta come segnale di problema anonimo: il segnale contiene solo un breve nome in codice del problema, la versione e lo store del gioco (Steam, Xbox o Epic). Non viene inviato nessun dato di carriera, giocatore, club o percorso di cartella. I dettagli sono più sotto, in «Conteggio d'uso anonimo».</li>
+      <li>La cartella di installazione contiene un file <code>LISANS.txt</code>: l'uso personale è consentito; copiare, modificare, ridistribuire e vendere non sono consentiti senza permesso; il software è fornito «così com'è»; non ha alcun legame con Sports Interactive o SEGA.</li>
+    </ul>
+    <!--guven-it-->
+    <h2 id="cikanlar">Cosa lascia il tuo computer?</h2>
+    <p>Questo elenco è stato ricavato dal codice dell'app ed è verificato da un test: l'app e il plugin di gioco si collegano a internet solo agli indirizzi qui sotto. Ogni riga dice cosa viene inviato, a chi e quando.</p>
+      <div class="gv-k">
+        <h3>File di versione e di impostazioni</h3>
+        <p class="gv-nereye">Verso: <code>raw.githubusercontent.com</code> <code>teknikodafm.github.io</code></p>
+        <p><b>Cosa viene inviato:</b> Vengono richiesti due file firmati: le informazioni di versione (surum.json) e un file di impostazioni. Non viene inviato alcun dato; come in qualsiasi richiesta web, il server vede il tuo indirizzo IP e il nome e la versione dell'app (TeknikOda/1.1.0).</p>
+        <p><b>Quando:</b> Qualche secondo dopo l'apertura dell'app, poi una volta all'ora. Il controllo della versione si può disattivare in Impostazioni &gt; Aggiornamenti; finché è disattivato, il file di impostazioni viene comunque richiesto una volta al giorno.</p>
+      </div>
+      <div class="gv-k">
+        <h3>Installer di una nuova versione</h3>
+        <p class="gv-nereye">Verso: <code>teknikodafm.com</code></p>
+        <p><b>Cosa viene inviato:</b> Solo una richiesta di file. L'indirizzo viene dal file di versione firmato (oggi, questo sito). Vengono verificati la firma e l'hash SHA-256 del file scaricato; un file che non corrisponde non viene installato.</p>
+        <p><b>Quando:</b> In background quando esce una nuova versione, finché il controllo della versione è attivo.</p>
+      </div>
+      <div class="gv-k">
+        <h3>Conteggio d'uso anonimo</h3>
+        <p class="gv-nereye">Verso: <code>teknikodafm.goatcounter.com</code></p>
+        <p><b>Cosa viene inviato:</b> Solo da un'app installata, e vengono inviati solo nomi: il numero di versione, la lingua dell'app, i nomi delle funzioni di Toby che hai usato quel giorno (schede, stanze, domande predefinite; per una domanda digitata da te, solo il tipo, mai il testo), il feedback che hai dato (pollice su o giù, una risposta a un sondaggio), il tipo di problema in cui l'app si è imbattuta (lettura, plugin, nome della schermata, aggiornamento), lo store del gioco se il plugin di gioco è installato (Steam, Xbox o Epic) e un segnale senza contenuto che l'app è aperta. Non vengono inviati dati di carriera, giocatori, club, nome dell'allenatore, utente o computer, e non viene creato alcun identificativo duraturo. Il servizio di conteggio (GoatCounter) non conserva il tuo indirizzo IP; conserva paese, lingua e versioni di Windows e del motore del browser come totali.</p>
+        <p><b>Quando:</b> Versione, lingua e il fatto che il plugin è installato (con lo store del gioco) una volta al giorno; i nomi delle funzioni e il feedback man mano che li usi (ogni nome una volta al giorno); i tipi di problema al massimo 12 volte al giorno; il segnale «aperta» ogni 15 minuti finché l'app è aperta.</p>
+      </div>
+      <div class="gv-k">
+        <h3>Librerie Unity per BepInEx</h3>
+        <p class="gv-nereye">Verso: <code>unity.bepinex.dev</code></p>
+        <p><b>Cosa viene inviato:</b> Solo una richiesta di file (circa 3 MB; l'indirizzo contiene la versione di Unity di FM). Si verifica se il server è raggiungibile senza inviare dati. Se non si riesce a prepararlo, BepInEx scarica da sé dallo stesso indirizzo.</p>
+        <p><b>Quando:</b> Solo quando installi il plugin di gioco, e quando un aggiornamento di FM cambia la versione di Unity, con FM chiuso. Mai se non installi il plugin.</p>
+      </div>
+    <div class="gv-k">
+      <h3>Link che si aprono nel tuo browser</h3>
+      <p class="gv-nereye">Verso: <code>teknikodafm.com</code> <code>x.com</code> <code>sortitoutsi.net</code></p>
+      <p>I pulsanti del sito, di X, di sostegno e di condivisione nell'app aprono il tuo browser predefinito solo quando li clicchi; l'app stessa non si collega a questi indirizzi. La finestra dell'app non può spostarsi fuori dal proprio indirizzo locale. «Segnala un problema» prepara soltanto un file di rapporto su questo computer; inviarlo (per e-mail) spetta a te, non parte mai da solo.</p>
+    </div>
+    <h3 class="gv-alt">Questo non va mai da nessuna parte</h3>
+    <ul>
+      <li>La tua carriera: giocatori, club, rosa, partite, trasferimenti. Tutto viene letto e disegnato su questo computer.</li>
+      <li>Il tuo file di salvataggio e i file del tuo gioco.</li>
+      <li>Il testo della domanda che scrivi a Toby e la risposta di Toby.</li>
+      <li>Il plugin di Teknik Oda nel gioco non si collega da nessuna parte; il suo codice non ha chiamate di rete. Parla con l'app tramite file sullo stesso computer.</li>
+      <li>I componenti propri di Windows (per esempio WebView2, che disegna l'interfaccia) seguono le tue impostazioni di Windows; l'elenco qui sopra descrive cosa invia Teknik Oda.</li>
+    </ul>
+    <h2 id="yazilanlar">Cosa scriviamo in FM?</h2>
+    <p>Teknik Oda non scrive mai nel gioco da solo e non scrive mai nel tuo file di salvataggio. In FM qualcosa cambia solo quando premi il pulsante di quella riga: attraverso lo stesso percorso dei pulsanti di FM, nella memoria del gioco. Ogni scrittura viene riletta da FM e verificata; se FM non consente la modifica, non viene scritto nulla e la schermata lo dice. La modifica entra nel tuo salvataggio quando salvi, come qualsiasi modifica fatta a mano in FM.</p>
+    <p>Attivo: pronto all'uso. Beta: attivo, ma nuovo; dicci se vedi un problema. Sperimentale: disattivato per impostazione predefinita; attivarlo dipende da te.</p>
+    <table class="gv-tablo">
+      <thead><tr><th>Cosa</th><th>Stato</th><th>Annullabile</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Istruzioni di squadra (impostazioni partita di Toby)<small>«Annulla» per riga e «Annulla tutto». Al massimo 8 istruzioni per richiesta, al massimo 4 passaggi ciascuna. Una volta iniziata la partita non si scrive nulla. Per impostazione predefinita vale solo per quella partita: a fine partita Toby rimette tutto a posto da solo (in Plugin › Beta e Sperimentale puoi cambiarlo in un semplice promemoria); resta solo se «Mantieni dopo la partita» è spuntato. Prima della prima scrittura ricevi un avviso una tantum.</small></td>
+          <td><span class="gv-r gv-acik">Attivo</span></td>
+          <td><span class="gv-r">Sì</span></td>
+        </tr>
+        <tr>
+          <td>La settimana di Toby, sessione per sessione<small>Attivo per impostazione predefinita: lo disattivi in Plugin › Beta e Sperimentale. «Applica a FM» del piano di allenamento e la sezione La settimana di Toby scrivono la settimana di Toby nel calendario di FM sessione per sessione; cambia solo il tipo di sessione e i programmi già pronti di FM non vengono scritti. Al massimo 16 sessioni per pressione. «Annulla» rimette ogni sessione scritta com'era; l'elenco resta salvato su questo computer e rimane anche se chiudi e riapri l'app nello stesso giorno di gioco. Prima della prima scrittura ricevi un avviso una tantum. I giorni di partita, di riposo e di viaggio non vengono toccati; una volta iniziata la partita non si scrive nulla.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Sì</span></td>
+        </tr>
+        <tr>
+          <td>Intensità di allenamento e riposo dei giocatori<small>Attivo per impostazione predefinita: lo disattivi in Plugin › Beta e Sperimentale. Quando premi il pulsante, l'intensità del giocatore suggerita da Toby viene scritta in FM. Al massimo 12 giocatori per richiesta. Un giocatore che FM non lascia modificare (per esempio infortunato) viene saltato e il motivo è mostrato con la frase di FM. Ogni riga ha «Annulla», e «Annulla tutto» compare quando ce ne sono più d'una; l'elenco resta salvato su questo computer. Prima della prima scrittura ricevi un avviso una tantum.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Sì</span></td>
+        </tr>
+        <tr>
+          <td>Ruolo e focus aggiuntivo dei giovani<small>Attivo per impostazione predefinita: lo disattivi in Plugin › Beta e Sperimentale. Per i giovani, il ruolo suggerito da Toby (posizione e ruolo in possesso, ruolo senza palla) e il focus aggiuntivo vengono scritti nell'allenamento individuale di FM con il pulsante «Scrivi in FM» della riga. Il valore viene dall'elenco di FM stesso. Se FM non consente la modifica o se ne occupa lo staff, non viene scritto nulla e il motivo è mostrato. Se il valore attuale non si potesse annullare, non viene scritto nulla. Ogni riga ha «Annulla», e «Annulla tutto» compare quando ce ne sono più d'una; l'elenco resta salvato su questo computer. Prima della prima scrittura ricevi un avviso una tantum. Al massimo 12 giocatori per richiesta, niente durante una partita.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Sì</span></td>
+        </tr>
+        <tr>
+          <td>Seduta di preparazione alla partita<small>Attivo per impostazione predefinita: lo disattivi in Plugin › Beta e Sperimentale. Quando premi il pulsante, la seduta di preparazione alla partita di Toby viene scritta nel programma di FM. Solo uno slot che FM dice modificabile; il nome della seduta è mostrato come lo restituisce FM. «Annulla» rimette la seduta com'era (la dicitura «(Modificato)» che FM aggiunge al nome della settimana resta); l'informazione per annullare resta salvata su questo computer. Prima della prima scrittura ricevi un avviso una tantum. Una volta iniziata la partita non si scrive nulla.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Sì</span></td>
+        </tr>
+        <tr>
+          <td>Gruppo di tutoraggio<small>Attivo per impostazione predefinita: lo disattivi in Plugin › Beta e Sperimentale. Toby imposta il gruppo di tutoraggio nella finestra stessa di FM e lo rilegge da FM per confermarlo; se non funziona, ti mostra chi spuntare. Spunta i giocatori nella finestra Modifica di FM, legge FM dopo ogni spunta e conferma solo se la lista corrisponde esattamente. Se non c'è un gruppo, un pulsante ne apre uno vuoto in FM; «Annulla» lo elimina (non se nel frattempo è cambiato in FM), e l'informazione per annullare resta su questo computer. La prima volta ricevi un avviso unico. Non funziona durante una partita.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r">Sì</span></td>
+        </tr>
+        <tr>
+          <td>Aggiungere un giocatore alla Lista selezionati di FM<small>Attivo per impostazione predefinita: lo disattivi in Plugin › Beta e Sperimentale. Quando premi il pulsante nelle righe di elenco e di osservazione di Toby, il giocatore viene aggiunto alla Lista selezionati di FM. Da qui non si può annullare: togli il giocatore dalla lista tu stesso in FM. Il giocatore aggiunto viene riletto da FM e verificato. Non viene scritto nessun file di lista. Prima della prima scrittura ricevi un avviso una tantum.</small></td>
+          <td><span class="gv-r gv-beta">Beta</span></td>
+          <td><span class="gv-r gv-yok">Non annullabile</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <!--/guven-it-->
+    <h2>Perché Windows mostra un avviso?</h2>
+    <p>L'installer non è firmato, quindi Windows può mostrare un avviso di «editore sconosciuto». Scegli «Ulteriori informazioni», poi «Esegui comunque».</p>
+    <h2>Se il tuo antivirus si lamenta</h2>
+    <p>Gli strumenti che leggono la memoria di un altro programma e i plugin di gioco che usano <code>winhttp.dll</code> possono far scattare falsi allarmi. I nostri risultati (18 novembre 2026): Windows Defender ha analizzato il nostro installer e i pacchetti di rilascio e non ha trovato minacce. In una scansione completa di Malwarebytes i nostri pacchetti di rilascio (1.0.0 – 1.0.9 e il candidato 1.1) sono risultati puliti; nella stessa scansione solo le nostre build di sviluppo, che non arrivano mai agli utenti, sono state segnalate come «anomale» da un'ipotesi di apprendimento automatico. Scarica l'installer solo da questo sito e verifica che sia lo stesso file:</p>
+    <p><code>Get-FileHash TeknikOda-Kurulum-1.1.0.exe</code></p>
+    <p>SHA-256: <code>6610739D4D847532F4581199F0D34FDA9A406D788A62860E2B4FCEDC6189D437</code></p>
+    <p>VirusTotal, installer 1.0.10 (SHA-256 <code>4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba</code>): quando abbiamo guardato il 20 novembre 2026 l'ultima analisi aveva un giorno e 2 motori su 69 segnalavano il file: Deep Instinct diceva «MALICIOUS» e VBA32 diceva «TScope.Trojan.MSIL»; gli altri motori, Windows Defender compreso, non lo segnalavano. <a href="https://www.virustotal.com/gui/file/4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba" rel="noopener">Risultato di VirusTotal</a>. Abbiamo inviato una segnalazione di falso positivo a entrambi i produttori il 20 novembre 2026 e aggiorneremo questa pagina quando risponderanno.</p>
+    <p data-yakinda="virustotal"><a href="{{VIRUSTOTAL}}" rel="noopener">Risultato della scansione di VirusTotal</a></p>
+    <h2>Domande frequenti</h2>
+    <h3>«2 motori su 69 lo segnalano su VirusTotal», è vero?</h3>
+    <p>Sì, per la 1.0.10; il risultato è qui sopra. Anche un sito di directory ha scritto lo stesso numero. Non lo liquidiamo: l'installer non è firmato, è nuovo ed è un'app di supporto che legge la memoria del gioco; un piccolo numero di motori può avvisare per file così. Abbiamo inviato una segnalazione a entrambi i produttori. I nostri risultati di Windows Defender e Malwarebytes sono qui sopra, e ogni indirizzo a cui si collega l'app è scritto in questa pagina e verificato da un test. Se c'è un risultato di VirusTotal per la 1.1, il suo link andrà nella riga qui sopra; fino ad allora non indichiamo alcun numero per la 1.1.</p>
+    <h3>Perché la prima volta FM resta 2-5 minuti su una schermata nera?</h3>
+    <p>Al primo avvio di FM dopo l'installazione del plugin di gioco, BepInEx prepara i componenti del gioco nella sua cartella. Può richiedere qualche minuto, e nel frattempo FM sembra bloccato su una schermata nera. Non chiuderlo, aspetta: il menu principale si apre quando la preparazione è finita. La cartella preparata viene conservata, quindi gli avvii successivi non aspettano; dopo un aggiornamento di FM la preparazione può servire di nuovo. Se non hai installato il plugin, questa attesa non c'è. Se ci mette moltissimo, rimuovi il plugin dalla pagina Plugin e scrivici.</p>
+    <h2>Aggiornamenti</h2>
+    <p>L'app riceve le informazioni di versione da un file firmato e verifica l'hash dell'installer che scarica. Un file con firma o hash sbagliati non viene installato.</p>
+    <h2>Da sapere</h2>
+    <ul>
+      <li>Non è uno strumento ufficiale e non ha alcun legame con Sports Interactive o SEGA. Lo usi a tua responsabilità.</li>
+      <li>È una beta. Fai prima una copia di sicurezza del tuo salvataggio.</li>
+      <li>Non è stato provato con le carriere online.</li>
+    </ul>
+    <h2>Contatti</h2>
+    <p><a href="mailto:teknikodafm@gmail.com">teknikodafm@gmail.com</a></p>
+  </div>
 </main>
 <script>
 const h=document.documentElement,d=document.getElementById('dil');
-const PT=true,DILLER=PT?['tr','en','pt']:['tr','en'];if(!PT)d.querySelector('[value=pt]').remove();const ayarla=l=>{if(!DILLER.includes(l))l='en';h.lang=l;d.value=l;document.title=(l==='en'?'Security and antivirus':l==='pt'?'Segurança e antivírus':'Güvenlik ve antivirüs')+' | Teknik Oda';try{localStorage.setItem('dil',l)}catch{}};
+const PT=true,ID=true,DE=true,FR=true,ES=true,IT=true,DILLER=['tr','en'].concat(PT?['pt']:[],ID?['id']:[],DE?['de']:[],FR?['fr']:[],ES?['es']:[],IT?['it']:[]);[...d.options].forEach(o=>{if(!DILLER.includes(o.value))o.remove()});const ayarla=l=>{if(!DILLER.includes(l))l='en';h.lang=l;d.value=l;{const k=document.getElementById('dilkod'),b=/^(id|de|fr|es|it)$/.test(l);if(k){k.textContent=l.toUpperCase()+(b?' · Beta':'');k.parentNode.classList.toggle('beta',b)}}document.title=(l==='en'?'Security and antivirus':l==='pt'?'Segurança e antivírus':l==='id'?'Keamanan dan antivirus':l==='de'?'Sicherheit und Virenschutz':l==='fr'?'Sécurité et antivirus':l==='es'?'Seguridad y antivirus':l==='it'?'Sicurezza e antivirus':'Güvenlik ve antivirüs')+' | Teknik Oda';try{localStorage.setItem('dil',l)}catch{}};
 let ilk=null;try{ilk=localStorage.getItem('dil')}catch{}const q=new URLSearchParams(location.search).get('dil');if(q&&DILLER.includes(q)){ilk=q;const c=document.querySelector('link[rel=canonical]');if(c)c.href=c.href.split('?')[0]+'?dil='+q}
-const tarayici=navigator.language.toLowerCase();ayarla(ilk||(tarayici.startsWith('tr')?'tr':PT&&tarayici.startsWith('pt')?'pt':'en'));
+const tarayici=navigator.language.toLowerCase();ayarla(ilk||(tarayici.startsWith('tr')?'tr':PT&&tarayici.startsWith('pt')?'pt':ID&&/^(id|in)(-|$)/.test(tarayici)?'id':DE&&tarayici.startsWith('de')?'de':FR&&tarayici.startsWith('fr')?'fr':ES&&tarayici.startsWith('es')?'es':IT&&tarayici.startsWith('it')?'it':'en'));
 d.onchange=()=>{ayarla(d.value);try{history.replaceState(null,'',location.pathname+'?dil='+d.value+location.hash)}catch{}};
 </script>
 <script data-goatcounter="https://teknikodafm.goatcounter.com/count" async src="https://gc.zgo.at/count.v5.js" crossorigin="anonymous" integrity="sha384-atnOLvQb9t+jTSipvd75X2yginT4PjVbqDdlJAmxMm+wYElFmeR6EmLP5bYeoRVQ"></script>
