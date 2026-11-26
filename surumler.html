@@ -29,8 +29,19 @@ h3{font-size:16px;margin:22px 0 4px;color:#F2BE5A}
   <div lang-tr>
     <h1>Sürüm notları</h1>
     <small>Her sürümde ne değişti.</small>
-    <h2>1.1 · Kasım 2026</h2>
+    <h2>1.1.0 – 1.1.1 · Kasım 2026</h2>
     <p>Toby FM&#x27;e yazıyor: antrenman planı ve maç ayarı</p>
+    <h3>1.1.1&#x27;de düzeltildi</h3>
+    <ul>
+      <li>Oyuncu profili bazı kariyerlerde açılmıyordu (yeni kariyer, sezon başı, yeni transfer). Düzeltildi.</li>
+      <li>Çok büyük veritabanıyla kurulan kariyerlerde Akademi › Altyapı alımı açılmıyordu. Düzeltildi.</li>
+      <li>Kendi oyuncularının profilinde Performans kartı, FM'in sezon toplamı gelmeden açıldığında artık kendiliğinden doluyor (uygulamanın açılışı, yeni transfer, sezon başı).</li>
+      <li>Eklenti uyarıları, eklentinin neden çalışmadığını daha açık söylüyor. Uzun BepInEx günlüklerinde yanlış uyarıya yol açan hata düzeltildi; FM'den bir kez gelmeyen veri artık uyarı sayılmıyor.</li>
+      <li>Game Pass'te FM kısa sürede kapanıyor ve BepInEx eklentileri yüklemeden duruyorsa da uygulama eklentiyi kaldırmayı soruyor. Hata bildir raporu artık oyundaki BepInEx sürümünü de yazıyor.</li>
+      <li>Game Pass: BepInEx'in ilk açılışta indirdiği Unity dosyaları internet sağlayıcısının DNS'ine takılınca uygulama dosyayı başka yoldan indiriyor; başka bir mod aracının BepInEx'i kullanılıyorsa eklenti oraya da kuruluyor.</li>
+      <li>FM farklı bir Windows profil klasöründen çalışınca eklenti artık uygulamayla bağlantı kurabiliyor.</li>
+      <li>Bazı eklenti uyarıları diğer dillerde Türkçe görünüyordu; çevrildi.</li>
+    </ul>
     <h3>Toby FM&#x27;e yazar</h3>
     <ul>
       <li>Toby'nin FM içindeki kartları ve maç içi fısıltısı yeni "FM'de Toby" sayfasında (FM içi › FM'de Toby) açılıp kapanır. Eski bağlantılar yeni yere gider.</li>
@@ -325,8 +336,19 @@ h3{font-size:16px;margin:22px 0 4px;color:#F2BE5A}
   <div lang-en>
     <h1>Release notes</h1>
     <small>What changed in each version.</small>
-    <h2>1.1 · November 2026</h2>
+    <h2>1.1.0 – 1.1.1 · November 2026</h2>
     <p>Toby writes to FM: training plan and match settings</p>
+    <h3>Fixed in 1.1.1</h3>
+    <ul>
+      <li>The player profile wouldn't open in some careers (a new career, the start of a season, a new signing). Fixed.</li>
+      <li>In careers started with a very large database, Academy › Youth intake wouldn't open. Fixed.</li>
+      <li>On your own players' profiles, the Performance card now fills in by itself when you open it before FM's season totals arrive (app start-up, a new signing, the start of a season).</li>
+      <li>Plugin warnings now say more clearly why the plugin isn't working. A bug that gave the wrong warning with long BepInEx logs is fixed, and data that FM misses just once no longer counts as a warning.</li>
+      <li>On Game Pass, the app now also asks whether to remove the plugin when FM closes shortly after starting and BepInEx stops before loading plugins. The Report a problem report now also shows the game's BepInEx version.</li>
+      <li>Game Pass: when the Unity files BepInEx downloads on first launch get stuck on the internet provider's DNS, the app now downloads the file another way; if another mod tool's BepInEx is in use, the plugin is installed there too.</li>
+      <li>When FM runs from a different Windows profile folder, the plugin can now connect to the app.</li>
+      <li>Some plugin warnings showed up in Turkish in other languages; they are now translated.</li>
+    </ul>
     <h3>Toby writes to FM</h3>
     <ul>
       <li>Toby's in-game cards and in-match whisper are switched on and off on the new "Toby in FM" page (In FM › Toby in FM). Old links take you to the new place.</li>
@@ -620,8 +642,19 @@ h3{font-size:16px;margin:22px 0 4px;color:#F2BE5A}
   <div lang-pt>
     <h1>Notas de versão</h1>
     <small>O que mudou em cada versão.</small>
-    <h2>1.1 · Novembro de 2026</h2>
+    <h2>1.1.0 – 1.1.1 · Novembro de 2026</h2>
     <p>O Toby grava no FM: plano de treino e ajustes de jogo</p>
+    <h3>Corrigido na 1.1.1</h3>
+    <ul>
+      <li>O perfil do jogador não abria em algumas carreiras (carreira nova, início de temporada, contratação nova). Corrigido.</li>
+      <li>Em carreiras criadas com uma base de dados muito grande, Categorias de base › Novos jogadores da base não abria. Corrigido.</li>
+      <li>No perfil dos seus jogadores, o cartão Desempenho agora se preenche sozinho quando você o abre antes de chegarem os totais da temporada do FM (abertura do app, contratação nova, início de temporada).</li>
+      <li>Os avisos do plugin agora dizem com mais clareza por que ele não está funcionando. Um erro que dava o aviso errado com logs longos do BepInEx foi corrigido, e um dado que o FM deixa de enviar uma única vez não conta mais como aviso.</li>
+      <li>No Game Pass, o app agora também pergunta se deve remover o plugin quando o FM fecha logo depois de abrir e o BepInEx para antes de carregar os plugins. O relatório de Relatar um problema agora também mostra a versão do BepInEx do jogo.</li>
+      <li>Game Pass: quando os arquivos Unity que o BepInEx baixa na primeira abertura travam no DNS do provedor de internet, o app agora baixa o arquivo por outro caminho; se o BepInEx de outra ferramenta de mods estiver em uso, o plugin também é instalado lá.</li>
+      <li>Quando o FM roda a partir de outra pasta de perfil do Windows, o plugin agora consegue se conectar ao app.</li>
+      <li>Alguns avisos do plugin apareciam em turco nos outros idiomas; agora estão traduzidos.</li>
+    </ul>
     <h3>O Toby grava no FM</h3>
     <ul>
       <li>Os cartões do Toby no jogo e o sussurro na partida são ligados e desligados na nova página "Toby no FM" (No FM › Toby no FM). Os links antigos levam ao novo lugar.</li>
@@ -916,8 +949,19 @@ h3{font-size:16px;margin:22px 0 4px;color:#F2BE5A}
     <h1>Catatan rilis</h1>
     <small>Apa yang berubah di setiap versi.</small>
     <div>
-    <h2 id="surum-1-1">1.1 · November 2026</h2>
+    <h2 id="surum-1-1">1.1.0 – 1.1.1 · November 2026</h2>
     <p>Toby menulis ke FM: rencana latihan dan pengaturan pertandingan</p>
+    <h3>Diperbaiki di 1.1.1</h3>
+    <ul>
+      <li>Profil pemain tidak bisa dibuka di beberapa karier (karier baru, awal musim, pemain baru). Sudah diperbaiki.</li>
+      <li>Di karier yang dibuat dengan basis data yang sangat besar, Akademi › Angkatan pemain muda tidak bisa dibuka. Sudah diperbaiki.</li>
+      <li>Di profil pemainmu sendiri, kartu Performa kini terisi sendiri saat kamu membukanya sebelum total musim dari FM tiba (saat aplikasi dibuka, pemain baru, awal musim).</li>
+      <li>Peringatan plugin kini menjelaskan lebih jelas kenapa plugin tidak berjalan. Galat yang memberi peringatan keliru pada log BepInEx yang panjang sudah diperbaiki, dan data yang sekali saja tidak dikirim FM tidak lagi dihitung sebagai peringatan.</li>
+      <li>Di Game Pass, aplikasi kini juga menanyakan apakah plugin perlu dihapus saat FM tertutup tak lama setelah dibuka dan BepInEx berhenti sebelum memuat plugin. Laporan dari Laporkan masalah kini juga mencantumkan versi BepInEx di game.</li>
+      <li>Game Pass: saat file Unity yang diunduh BepInEx pada pembukaan pertama tersangkut di DNS penyedia internet, aplikasi kini mengunduh file itu lewat jalur lain; jika BepInEx milik alat mod lain yang dipakai, plugin juga dipasang di sana.</li>
+      <li>Saat FM berjalan dari folder profil Windows yang berbeda, plugin kini bisa terhubung dengan aplikasi.</li>
+      <li>Beberapa peringatan plugin tampil dalam bahasa Turki di bahasa lain; kini sudah diterjemahkan.</li>
+    </ul>
     <h3>Toby menulis ke FM</h3>
     <ul>
       <li>Kartu Toby di game serta bisikan dalam pertandingan dinyalakan dan dimatikan di halaman baru "Toby di FM" (Di FM › Toby di FM). Tautan lama membawamu ke tempat yang baru.</li>
@@ -1016,8 +1060,19 @@ h3{font-size:16px;margin:22px 0 4px;color:#F2BE5A}
     <h1>Versionshinweise</h1>
     <small>Was sich in jeder Version geändert hat.</small>
     <div>
-    <h2 id="surum-1-1">1.1 · November 2026</h2>
+    <h2 id="surum-1-1">1.1.0 – 1.1.1 · November 2026</h2>
     <p>Toby schreibt in FM: Trainingsplan und Matcheinstellungen</p>
+    <h3>Behoben in 1.1.1</h3>
+    <ul>
+      <li>Das Spielerprofil ließ sich in manchen Karrieren nicht öffnen (neue Karriere, Saisonbeginn, Neuzugang). Behoben.</li>
+      <li>In Karrieren, die mit einer sehr großen Datenbank gestartet wurden, ließ sich Akademie › Jugendzugang nicht öffnen. Behoben.</li>
+      <li>Im Profil deiner eigenen Spieler füllt sich die Karte Leistung jetzt von selbst, wenn du sie öffnest, bevor die Saisonwerte von FM da sind (App-Start, Neuzugang, Saisonbeginn).</li>
+      <li>Plugin-Warnungen sagen jetzt deutlicher, warum das Plugin nicht läuft. Ein Fehler, der bei langen BepInEx-Protokollen die falsche Warnung zeigte, ist behoben, und Daten, die FM nur einmal nicht liefert, zählen nicht mehr als Warnung.</li>
+      <li>Bei Game Pass fragt die App jetzt auch dann, ob das Plugin entfernt werden soll, wenn FM kurz nach dem Start schließt und BepInEx anhält, bevor es die Plugins lädt. Der Bericht unter Problem melden zeigt jetzt auch die BepInEx-Version im Spiel.</li>
+      <li>Game Pass: Bleiben die Unity-Dateien, die BepInEx beim ersten Start herunterlädt, am DNS des Internetanbieters hängen, lädt die App die Datei jetzt auf anderem Weg herunter; wird das BepInEx eines anderen Mod-Tools verwendet, wird das Plugin auch dort installiert.</li>
+      <li>Läuft FM aus einem anderen Windows-Profilordner, kann sich das Plugin jetzt mit der App verbinden.</li>
+      <li>Einige Plugin-Warnungen erschienen in anderen Sprachen auf Türkisch; sie sind jetzt übersetzt.</li>
+    </ul>
     <h3>Toby schreibt in FM</h3>
     <ul>
       <li>Tobys Karten in FM und das Flüstern im Spiel schaltest du auf der neuen Seite „Toby in FM“ (In FM › Toby in FM) ein und aus. Alte Links führen zum neuen Ort.</li>
@@ -1116,8 +1171,19 @@ h3{font-size:16px;margin:22px 0 4px;color:#F2BE5A}
     <h1>Notes de version</h1>
     <small>Ce qui a changé dans chaque version.</small>
     <div>
-    <h2 id="surum-1-1">1.1 · novembre 2026</h2>
+    <h2 id="surum-1-1">1.1.0 – 1.1.1 · novembre 2026</h2>
     <p>Toby écrit dans FM : plan d'entraînement et réglages de match</p>
+    <h3>Corrigé dans la 1.1.1</h3>
+    <ul>
+      <li>Le profil du joueur ne s'ouvrait pas dans certaines carrières (nouvelle carrière, début de saison, nouvelle recrue). Corrigé.</li>
+      <li>Dans les carrières lancées avec une très grande base de données, Centre de formation › Nouvelle promotion de jeunes ne s'ouvrait pas. Corrigé.</li>
+      <li>Dans le profil de vos propres joueurs, la carte Performance se remplit désormais toute seule quand vous l'ouvrez avant l'arrivée des totaux de saison de FM (démarrage de l'application, nouvelle recrue, début de saison).</li>
+      <li>Les avertissements du plugin expliquent plus clairement pourquoi il ne fonctionne pas. Un bug qui affichait le mauvais avertissement avec de longs journaux BepInEx est corrigé, et une donnée que FM ne transmet pas une seule fois ne compte plus comme un avertissement.</li>
+      <li>Sur Game Pass, l'application propose désormais aussi de supprimer le plugin quand FM se ferme peu après son lancement et que BepInEx s'arrête avant de charger les plugins. Le rapport Signaler un problème indique aussi la version de BepInEx du jeu.</li>
+      <li>Game Pass : quand les fichiers Unity que BepInEx télécharge au premier lancement sont bloqués par le DNS du fournisseur d'accès, l'application télécharge désormais le fichier par un autre chemin ; si le BepInEx d'un autre outil de mods est utilisé, le plugin y est aussi installé.</li>
+      <li>Quand FM tourne depuis un autre dossier de profil Windows, le plugin peut désormais se connecter à l'application.</li>
+      <li>Certains avertissements du plugin s'affichaient en turc dans les autres langues ; ils sont désormais traduits.</li>
+    </ul>
     <h3>Toby écrit dans FM</h3>
     <ul>
       <li>Les cartes de Toby dans FM et son murmure en match s'activent et se désactivent sur la nouvelle page « Toby dans FM » (Dans FM › Toby dans FM). Les anciens liens mènent au nouvel emplacement.</li>
@@ -1216,8 +1282,19 @@ h3{font-size:16px;margin:22px 0 4px;color:#F2BE5A}
     <h1>Notas de la versión</h1>
     <small>Qué cambió en cada versión.</small>
     <div>
-    <h2 id="surum-1-1">1.1 · noviembre de 2026</h2>
+    <h2 id="surum-1-1">1.1.0 – 1.1.1 · noviembre de 2026</h2>
     <p>Toby escribe en FM: plan de entrenamiento y ajustes de partido</p>
+    <h3>Corregido en la 1.1.1</h3>
+    <ul>
+      <li>El perfil del jugador no se abría en algunas carreras (carrera nueva, inicio de temporada, fichaje nuevo). Corregido.</li>
+      <li>En carreras creadas con una base de datos muy grande, Cantera › Incorporaciones de la cantera no se abría. Corregido.</li>
+      <li>En el perfil de tus propios jugadores, la tarjeta Rendimiento ahora se rellena sola cuando la abres antes de que lleguen los totales de temporada de FM (inicio de la app, nuevo fichaje, inicio de temporada).</li>
+      <li>Los avisos del plugin explican con más claridad por qué no funciona. Se corrigió un error que daba el aviso equivocado con registros largos de BepInEx, y un dato que FM no envía una sola vez ya no cuenta como aviso.</li>
+      <li>En Game Pass, la app ahora también pregunta si quitar el plugin cuando FM se cierra poco después de abrirse y BepInEx se detiene antes de cargar los plugins. El informe de Informar de un problema ahora también muestra la versión de BepInEx del juego.</li>
+      <li>Game Pass: cuando los archivos de Unity que BepInEx descarga en el primer inicio se atascan en el DNS del proveedor de internet, la app ahora descarga el archivo por otra vía; si se usa el BepInEx de otra herramienta de mods, el plugin también se instala allí.</li>
+      <li>Cuando FM se ejecuta desde otra carpeta de perfil de Windows, el plugin ahora puede conectarse con la app.</li>
+      <li>Algunos avisos del plugin aparecían en turco en otros idiomas; ya están traducidos.</li>
+    </ul>
     <h3>Toby escribe en FM</h3>
     <ul>
       <li>Las tarjetas de Toby dentro de FM y su susurro durante el partido se activan y desactivan en la nueva página «Toby en FM» (En FM › Toby en FM). Los enlaces antiguos llevan al nuevo sitio.</li>
@@ -1316,8 +1393,19 @@ h3{font-size:16px;margin:22px 0 4px;color:#F2BE5A}
     <h1>Note di rilascio</h1>
     <small>Cosa è cambiato in ogni versione.</small>
     <div>
-    <h2 id="surum-1-1">1.1 · novembre 2026</h2>
+    <h2 id="surum-1-1">1.1.0 – 1.1.1 · novembre 2026</h2>
     <p>Toby scrive su FM: piano di allenamento e impostazioni partita</p>
+    <h3>Corretto nella 1.1.1</h3>
+    <ul>
+      <li>Il profilo del giocatore non si apriva in alcune carriere (nuova carriera, inizio stagione, nuovo acquisto). Corretto.</li>
+      <li>Nelle carriere avviate con un database molto grande, Settore giovanile › Nuovi dal settore giovanile non si apriva. Corretto.</li>
+      <li>Nel profilo dei tuoi giocatori, la scheda Prestazioni ora si riempie da sola quando la apri prima che arrivino i totali stagionali di FM (avvio dell'app, nuovo acquisto, inizio stagione).</li>
+      <li>Gli avvisi del plugin spiegano più chiaramente perché non funziona. È stato corretto un errore che dava l'avviso sbagliato con registri BepInEx lunghi, e un dato che FM non invia una sola volta non conta più come avviso.</li>
+      <li>Su Game Pass, l'app ora chiede di rimuovere il plugin anche quando FM si chiude poco dopo l'avvio e BepInEx si ferma prima di caricare i plugin. Il rapporto di Segnala un problema ora mostra anche la versione di BepInEx del gioco.</li>
+      <li>Game Pass: quando i file Unity che BepInEx scarica al primo avvio si bloccano sul DNS del provider internet, l'app ora scarica il file per un'altra via; se è in uso il BepInEx di un altro strumento per mod, il plugin viene installato anche lì.</li>
+      <li>Quando FM viene eseguito da un'altra cartella del profilo di Windows, il plugin ora riesce a collegarsi all'app.</li>
+      <li>Alcuni avvisi del plugin comparivano in turco nelle altre lingue; ora sono tradotti.</li>
+    </ul>
     <h3>Toby scrive su FM</h3>
     <ul>
       <li>Le schede di Toby dentro FM e il suggerimento durante la partita si attivano e disattivano nella nuova pagina «Toby in FM» (In FM › Toby in FM). I vecchi link portano al nuovo posto.</li>

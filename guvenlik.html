@@ -75,7 +75,13 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
         <h3>BepInEx için Unity kütüphaneleri</h3>
         <p class="gv-nereye">Nereye: <code>unity.bepinex.dev</code></p>
         <p><b>Ne gider:</b> Yalnız dosya isteği (yaklaşık 3 MB, adresinde FM'in Unity sürümü yazar). Sunucuya erişilip erişilemediği veri göndermeden yoklanır. Hazırlanamazsa BepInEx aynı adresten kendisi indirir.</p>
-        <p><b>Ne zaman:</b> Yalnız oyun içi eklentiyi kurunca ve FM güncellemesi Unity sürümünü değiştirirse, FM kapalıyken. Eklentiyi kurmazsan hiç.</p>
+        <p><b>Ne zaman:</b> Yalnız oyun içi eklentiyi kurunca, FM güncellemesi Unity sürümünü değiştirince (FM kapalıyken) ve BepInEx bu dosyayı kendisi indiremediyse. Eklentiyi kurmazsan hiç.</p>
+      </div>
+      <div class="gv-k">
+        <h3>Unity kütüphaneleri için DNS yedeği</h3>
+        <p class="gv-nereye">Nereye: <code>1.1.1.1</code> <code>8.8.8.8</code> <code>1.0.0.1</code></p>
+        <p><b>Ne gider:</b> Yalnız unity.bepinex.dev adının adres sorgusu (DNS-over-HTTPS). Bilgisayarın DNS'i bu adı çözemezse sorulur; dosya yine unity.bepinex.dev'den iner, başka veri gitmez.</p>
+        <p><b>Ne zaman:</b> Yalnız Unity kütüphaneleri indirilirken bilgisayarın DNS'i unity.bepinex.dev'i çözemez ya da o adrese bağlanamazsa.</p>
       </div>
     <div class="gv-k">
       <h3>Tarayıcında açılan bağlantılar</h3>
@@ -138,8 +144,8 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
     <p>Kurulum dosyası kod imzalı değil, bu yüzden Windows "bilinmeyen yayıncı" uyarısı gösterebilir. "Daha fazla bilgi", sonra "Yine de çalıştır" seç.</p>
     <h2>Antivirüs uyarırsa</h2>
     <p>Başka bir programın belleğini okuyan araçlar ve <code>winhttp.dll</code> kullanan oyun eklentileri yanlış alarm alabilir. Elimizdeki sonuçlar (18 Kasım 2026): Windows Defender kurulum dosyamızı ve yayın paketlerimizi taradı, tehdit bulmadı. Malwarebytes tam taramasında yayın paketlerimiz (1.0.0 – 1.0.9 ve 1.1 adayı) temiz çıktı; aynı taramada yalnız kullanıcıya hiç gitmeyen geliştirme derlemelerimiz makine öğrenimi tahminiyle "anormal" diye işaretlendi. Dosyayı yalnız bu siteden indir ve aynı dosya olduğunu doğrula:</p>
-    <p><code>Get-FileHash TeknikOda-Kurulum-1.1.0.exe</code></p>
-    <p>SHA-256: <code>6610739D4D847532F4581199F0D34FDA9A406D788A62860E2B4FCEDC6189D437</code></p>
+    <p><code>Get-FileHash TeknikOda-Kurulum-1.1.1.exe</code></p>
+    <p>SHA-256: <code>C65BF67C7C77AFEE4C3BDCB5BF8EBA30BFA47CF1A4A6DCFB80215EF2B84927C7</code></p>
     <p>VirusTotal, 1.0.10 kurulum dosyası (SHA-256 <code>4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba</code>): 20 Kasım 2026'da baktığımızda son analiz bir gün öncesine aitti ve 69 motordan 2'si dosyayı işaretlemişti: Deep Instinct "MALICIOUS", VBA32 "TScope.Trojan.MSIL" dedi; Windows Defender dahil öbür motorlar işaretlemedi. <a href="https://www.virustotal.com/gui/file/4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba" rel="noopener">VirusTotal sonucu</a>. İki firmaya da 20 Kasım 2026'da yanlış alarm bildirimi gönderdik; yanıt gelince bu sayfayı güncelleriz.</p>
     <p data-yakinda="virustotal"><a href="{{VIRUSTOTAL}}" rel="noopener">VirusTotal tarama sonucu</a></p>
     <h2>Sık sorulanlar</h2>
@@ -204,7 +210,13 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
         <h3>Unity libraries for BepInEx</h3>
         <p class="gv-nereye">Where to: <code>unity.bepinex.dev</code></p>
         <p><b>What is sent:</b> A file request only (about 3 MB; the address carries FM's Unity version). Whether the server can be reached is checked without sending data. If it cannot be prepared, BepInEx downloads from the same address itself.</p>
-        <p><b>When:</b> Only when you install the in-game plugin, and when an FM update changes the Unity version, while FM is closed. Never if you do not install the plugin.</p>
+        <p><b>When:</b> Only when you install the in-game plugin, when an FM update changes the Unity version (while FM is closed), and when BepInEx could not download the file itself. Never if you do not install the plugin.</p>
+      </div>
+      <div class="gv-k">
+        <h3>DNS fallback for the Unity libraries</h3>
+        <p class="gv-nereye">Where to: <code>1.1.1.1</code> <code>8.8.8.8</code> <code>1.0.0.1</code></p>
+        <p><b>What is sent:</b> Only the address lookup for the name unity.bepinex.dev (DNS-over-HTTPS). It is asked only if your computer's DNS cannot resolve that name; the file still comes from unity.bepinex.dev and nothing else is sent.</p>
+        <p><b>When:</b> Only while the Unity libraries are being downloaded, if your computer's DNS cannot resolve unity.bepinex.dev or cannot connect to it.</p>
       </div>
     <div class="gv-k">
       <h3>Links that open in your browser</h3>
@@ -267,8 +279,8 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
     <p>The installer is not code signed, so Windows may show an "unknown publisher" warning. Choose "More info", then "Run anyway".</p>
     <h2>If your antivirus complains</h2>
     <p>Tools that read another program's memory and game plugins that use <code>winhttp.dll</code> can trigger false alarms. Our results (18 November 2026): Windows Defender scanned our installer and release packages and found no threats. In a full Malwarebytes scan our release packages (1.0.0 – 1.0.9 and the 1.1 candidate) came out clean; in the same scan only our development builds, which never reach users, were flagged as "anomalous" by a machine-learning guess. Only download the installer from this site, and check that it is the same file:</p>
-    <p><code>Get-FileHash TeknikOda-Kurulum-1.1.0.exe</code></p>
-    <p>SHA-256: <code>6610739D4D847532F4581199F0D34FDA9A406D788A62860E2B4FCEDC6189D437</code></p>
+    <p><code>Get-FileHash TeknikOda-Kurulum-1.1.1.exe</code></p>
+    <p>SHA-256: <code>C65BF67C7C77AFEE4C3BDCB5BF8EBA30BFA47CF1A4A6DCFB80215EF2B84927C7</code></p>
     <p>VirusTotal, installer 1.0.10 (SHA-256 <code>4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba</code>): when we looked on 20 November 2026 the latest analysis was a day old and 2 of 69 engines flagged the file: Deep Instinct said "MALICIOUS" and VBA32 said "TScope.Trojan.MSIL"; the other engines, Windows Defender included, did not flag it. <a href="https://www.virustotal.com/gui/file/4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba" rel="noopener">VirusTotal result</a>. We sent a false-positive report to both vendors on 20 November 2026 and will update this page when they answer.</p>
     <p data-yakinda="virustotal"><a href="{{VIRUSTOTAL}}" rel="noopener">VirusTotal scan result</a></p>
     <h2>Frequently asked questions</h2>
@@ -332,7 +344,13 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
         <h3>Bibliotecas Unity para o BepInEx</h3>
         <p class="gv-nereye">Para onde: <code>unity.bepinex.dev</code></p>
         <p><b>O que é enviado:</b> Apenas uma requisição de arquivo (cerca de 3 MB; o endereço contém a versão do Unity do FM). Verifica-se se o servidor está acessível sem enviar dados. Se não puder ser preparado, o próprio BepInEx baixa do mesmo endereço.</p>
-        <p><b>Quando:</b> Somente ao instalar o plugin no jogo e quando uma atualização do FM muda a versão do Unity, com o FM fechado. Nunca se você não instalar o plugin.</p>
+        <p><b>Quando:</b> Somente ao instalar o plugin no jogo, quando uma atualização do FM muda a versão do Unity (com o FM fechado) e quando o próprio BepInEx não conseguiu baixar o arquivo. Nunca se você não instalar o plugin.</p>
+      </div>
+      <div class="gv-k">
+        <h3>DNS alternativo para as bibliotecas Unity</h3>
+        <p class="gv-nereye">Para onde: <code>1.1.1.1</code> <code>8.8.8.8</code> <code>1.0.0.1</code></p>
+        <p><b>O que é enviado:</b> Apenas a consulta de endereço do nome unity.bepinex.dev (DNS-over-HTTPS). Só é feita se o DNS do computador não resolver esse nome; o arquivo continua vindo de unity.bepinex.dev e nada mais é enviado.</p>
+        <p><b>Quando:</b> Somente durante o download das bibliotecas Unity, se o DNS do computador não resolver unity.bepinex.dev ou não conseguir se conectar a ele.</p>
       </div>
     <div class="gv-k">
       <h3>Links que abrem no seu navegador</h3>
@@ -395,8 +413,8 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
     <p>O instalador não tem assinatura de código, então o Windows pode mostrar um aviso de "editor desconhecido". Escolha "Mais informações" e depois "Executar assim mesmo".</p>
     <h2>Se o seu antivírus reclamar</h2>
     <p>Ferramentas que leem a memória de outro programa e plugins de jogos que usam <code>winhttp.dll</code> podem gerar alarmes falsos. Nossos resultados (18 de novembro de 2026): o Windows Defender verificou nosso instalador e os pacotes de lançamento e não encontrou ameaças. Numa verificação completa do Malwarebytes, nossos pacotes de lançamento (1.0.0 – 1.0.9 e o candidato 1.1) saíram limpos; na mesma verificação, só os nossos builds de desenvolvimento, que nunca chegam aos usuários, foram marcados como "anômalos" por um palpite de aprendizado de máquina. Baixe o instalador só deste site e confira se é o mesmo arquivo:</p>
-    <p><code>Get-FileHash TeknikOda-Kurulum-1.1.0.exe</code></p>
-    <p>SHA-256: <code>6610739D4D847532F4581199F0D34FDA9A406D788A62860E2B4FCEDC6189D437</code></p>
+    <p><code>Get-FileHash TeknikOda-Kurulum-1.1.1.exe</code></p>
+    <p>SHA-256: <code>C65BF67C7C77AFEE4C3BDCB5BF8EBA30BFA47CF1A4A6DCFB80215EF2B84927C7</code></p>
     <p>VirusTotal, instalador 1.0.10 (SHA-256 <code>4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba</code>): quando olhamos, em 20 de novembro de 2026, a última análise tinha um dia e 2 de 69 motores marcaram o arquivo: a Deep Instinct disse "MALICIOUS" e a VBA32 disse "TScope.Trojan.MSIL"; os outros motores, incluindo o Windows Defender, não marcaram. <a href="https://www.virustotal.com/gui/file/4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba" rel="noopener">Resultado no VirusTotal</a>. Enviamos um relato de alarme falso às duas empresas em 20 de novembro de 2026 e atualizaremos esta página quando responderem.</p>
     <p data-yakinda="virustotal"><a href="{{VIRUSTOTAL}}" rel="noopener">Resultado da verificação no VirusTotal</a></p>
     <h2>Perguntas frequentes</h2>
@@ -460,7 +478,13 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
         <h3>Library Unity untuk BepInEx</h3>
         <p class="gv-nereye">Tujuan: <code>unity.bepinex.dev</code></p>
         <p><b>Yang dikirim:</b> Hanya permintaan file (sekitar 3 MB; alamatnya membawa versi Unity milik FM). Apakah server bisa dijangkau diperiksa tanpa mengirim data. Kalau tidak bisa disiapkan, BepInEx mengunduh sendiri dari alamat yang sama.</p>
-        <p><b>Kapan:</b> Hanya saat kamu memasang plugin dalam game, dan saat pembaruan FM mengubah versi Unity, selama FM tertutup. Tidak pernah kalau kamu tidak memasang plugin.</p>
+        <p><b>Kapan:</b> Hanya saat kamu memasang plugin di game, saat pembaruan FM mengubah versi Unity (ketika FM tertutup), dan saat BepInEx tidak bisa mengunduh file itu sendiri. Tidak pernah jika kamu tidak memasang plugin.</p>
+      </div>
+      <div class="gv-k">
+        <h3>DNS cadangan untuk pustaka Unity</h3>
+        <p class="gv-nereye">Tujuan: <code>1.1.1.1</code> <code>8.8.8.8</code> <code>1.0.0.1</code></p>
+        <p><b>Yang dikirim:</b> Hanya pencarian alamat untuk nama unity.bepinex.dev (DNS-over-HTTPS). Hanya dilakukan jika DNS komputer tidak bisa menerjemahkan nama itu; file tetap diunduh dari unity.bepinex.dev dan tidak ada data lain yang dikirim.</p>
+        <p><b>Kapan:</b> Hanya saat pustaka Unity diunduh, jika DNS komputer tidak bisa menerjemahkan unity.bepinex.dev atau tidak bisa terhubung ke sana.</p>
       </div>
     <div class="gv-k">
       <h3>Tautan yang terbuka di browsermu</h3>
@@ -523,8 +547,8 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
     <p>Installer belum ditandatangani kode, jadi Windows bisa menampilkan peringatan "penerbit tidak dikenal". Pilih "Info selengkapnya", lalu "Tetap jalankan".</p>
     <h2>Kalau antivirusmu mengeluh</h2>
     <p>Alat yang membaca memori program lain dan plugin game yang memakai <code>winhttp.dll</code> bisa memicu alarm palsu. Hasil kami (18 November 2026): Windows Defender memindai installer dan paket rilis kami dan tidak menemukan ancaman. Dalam pemindaian penuh Malwarebytes, paket rilis kami (1.0.0 – 1.0.9 dan kandidat 1.1) bersih; dalam pemindaian yang sama, hanya build pengembangan kami, yang tidak pernah sampai ke pengguna, yang ditandai "anomali" lewat tebakan machine learning. Unduh installer hanya dari situs ini, dan periksa bahwa itu file yang sama:</p>
-    <p><code>Get-FileHash TeknikOda-Kurulum-1.1.0.exe</code></p>
-    <p>SHA-256: <code>6610739D4D847532F4581199F0D34FDA9A406D788A62860E2B4FCEDC6189D437</code></p>
+    <p><code>Get-FileHash TeknikOda-Kurulum-1.1.1.exe</code></p>
+    <p>SHA-256: <code>C65BF67C7C77AFEE4C3BDCB5BF8EBA30BFA47CF1A4A6DCFB80215EF2B84927C7</code></p>
     <p>VirusTotal, installer 1.0.10 (SHA-256 <code>4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba</code>): saat kami melihatnya pada 20 November 2026, analisis terbaru berumur sehari dan 2 dari 69 mesin menandai file itu: Deep Instinct menyebut "MALICIOUS" dan VBA32 menyebut "TScope.Trojan.MSIL"; mesin lainnya, termasuk Windows Defender, tidak menandainya. <a href="https://www.virustotal.com/gui/file/4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba" rel="noopener">Hasil VirusTotal</a>. Kami mengirim laporan positif palsu ke kedua vendor pada 20 November 2026 dan akan memperbarui halaman ini saat mereka menjawab.</p>
     <p data-yakinda="virustotal"><a href="{{VIRUSTOTAL}}" rel="noopener">Hasil pemindaian VirusTotal</a></p>
     <h2>Pertanyaan yang sering diajukan</h2>
@@ -588,7 +612,13 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
         <h3>Unity-Bibliotheken für BepInEx</h3>
         <p class="gv-nereye">Wohin: <code>unity.bepinex.dev</code></p>
         <p><b>Was gesendet wird:</b> Nur eine Dateianfrage (etwa 3 MB; die Adresse enthält die Unity-Version von FM). Ob der Server erreichbar ist, wird ohne Datenversand geprüft. Lässt sich das nicht vorbereiten, lädt BepInEx von derselben Adresse selbst herunter.</p>
-        <p><b>Wann:</b> Nur wenn du das Plugin im Spiel installierst und wenn ein FM-Update die Unity-Version ändert, während FM geschlossen ist. Nie, wenn du das Plugin nicht installierst.</p>
+        <p><b>Wann:</b> Nur, wenn du das Ingame-Plugin installierst, wenn ein FM-Update die Unity-Version ändert (bei geschlossenem FM) und wenn BepInEx die Datei nicht selbst herunterladen konnte. Nie, wenn du das Plugin nicht installierst.</p>
+      </div>
+      <div class="gv-k">
+        <h3>DNS-Ausweichweg für die Unity-Bibliotheken</h3>
+        <p class="gv-nereye">Wohin: <code>1.1.1.1</code> <code>8.8.8.8</code> <code>1.0.0.1</code></p>
+        <p><b>Was gesendet wird:</b> Nur die Adressabfrage für den Namen unity.bepinex.dev (DNS-over-HTTPS). Sie erfolgt nur, wenn der DNS deines Computers diesen Namen nicht auflösen kann; die Datei kommt weiterhin von unity.bepinex.dev, sonst wird nichts gesendet.</p>
+        <p><b>Wann:</b> Nur beim Herunterladen der Unity-Bibliotheken, wenn der DNS deines Computers unity.bepinex.dev nicht auflösen oder keine Verbindung dorthin aufbauen kann.</p>
       </div>
     <div class="gv-k">
       <h3>Links, die sich in deinem Browser öffnen</h3>
@@ -651,8 +681,8 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
     <p>Der Installer ist nicht code-signiert, deshalb zeigt Windows möglicherweise eine Warnung „Unbekannter Herausgeber“. Wähle „Weitere Informationen“ und dann „Trotzdem ausführen“.</p>
     <h2>Wenn dein Virenschutz Alarm schlägt</h2>
     <p>Tools, die den Speicher eines anderen Programms lesen, und Spiel-Plugins, die <code>winhttp.dll</code> nutzen, können Fehlalarme auslösen. Unsere Ergebnisse (18. November 2026): Windows Defender hat unseren Installer und die Release-Pakete geprüft und keine Bedrohungen gefunden. In einem vollständigen Malwarebytes-Scan blieben unsere Release-Pakete (1.0.0 – 1.0.9 und der Kandidat für 1.1) sauber; im selben Scan wurden nur unsere Entwicklungs-Builds, die nie zu Nutzern gelangen, per Machine-Learning-Vermutung als „anomal“ markiert. Lade den Installer nur von dieser Website herunter und prüfe, dass es dieselbe Datei ist:</p>
-    <p><code>Get-FileHash TeknikOda-Kurulum-1.1.0.exe</code></p>
-    <p>SHA-256: <code>6610739D4D847532F4581199F0D34FDA9A406D788A62860E2B4FCEDC6189D437</code></p>
+    <p><code>Get-FileHash TeknikOda-Kurulum-1.1.1.exe</code></p>
+    <p>SHA-256: <code>C65BF67C7C77AFEE4C3BDCB5BF8EBA30BFA47CF1A4A6DCFB80215EF2B84927C7</code></p>
     <p>VirusTotal, Installer 1.0.10 (SHA-256 <code>4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba</code>): Als wir am 20. November 2026 nachsahen, war die neueste Analyse einen Tag alt, und 2 von 69 Engines markierten die Datei: Deep Instinct sagte „MALICIOUS“ und VBA32 sagte „TScope.Trojan.MSIL“; die anderen Engines, darunter Windows Defender, markierten sie nicht. <a href="https://www.virustotal.com/gui/file/4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba" rel="noopener">VirusTotal-Ergebnis</a>. Wir haben am 20. November 2026 beiden Herstellern eine Meldung über einen Fehlalarm geschickt und aktualisieren diese Seite, wenn sie antworten.</p>
     <p data-yakinda="virustotal"><a href="{{VIRUSTOTAL}}" rel="noopener">VirusTotal-Scanergebnis</a></p>
     <h2>Häufig gestellte Fragen</h2>
@@ -716,7 +746,13 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
         <h3>Bibliothèques Unity pour BepInEx</h3>
         <p class="gv-nereye">Destination : <code>unity.bepinex.dev</code></p>
         <p><b>Ce qui est envoyé :</b> Seulement une demande de fichier (environ 3 Mo ; l'adresse contient la version d'Unity de FM). La joignabilité du serveur est vérifiée sans envoyer de données. S'il ne peut pas être préparé, BepInEx télécharge lui-même depuis la même adresse.</p>
-        <p><b>Quand :</b> Seulement quand vous installez le plugin en jeu, et quand une mise à jour de FM change la version d'Unity, FM étant fermé. Jamais si vous n'installez pas le plugin.</p>
+        <p><b>Quand :</b> Seulement quand vous installez le plugin en jeu, quand une mise à jour de FM change la version Unity (FM fermé) et quand BepInEx n'a pas pu télécharger le fichier lui-même. Jamais si vous n'installez pas le plugin.</p>
+      </div>
+      <div class="gv-k">
+        <h3>DNS de secours pour les bibliothèques Unity</h3>
+        <p class="gv-nereye">Destination : <code>1.1.1.1</code> <code>8.8.8.8</code> <code>1.0.0.1</code></p>
+        <p><b>Ce qui est envoyé :</b> Uniquement la recherche d'adresse du nom unity.bepinex.dev (DNS-over-HTTPS). Elle n'a lieu que si le DNS de l'ordinateur ne résout pas ce nom ; le fichier vient toujours de unity.bepinex.dev et rien d'autre n'est envoyé.</p>
+        <p><b>Quand :</b> Uniquement pendant le téléchargement des bibliothèques Unity, si le DNS de l'ordinateur ne résout pas unity.bepinex.dev ou ne parvient pas à s'y connecter.</p>
       </div>
     <div class="gv-k">
       <h3>Liens qui s'ouvrent dans votre navigateur</h3>
@@ -779,8 +815,8 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
     <p>L'installateur n'est pas signé, donc Windows peut afficher un avertissement « éditeur inconnu ». Choisissez « Informations complémentaires », puis « Exécuter quand même ».</p>
     <h2>Si votre antivirus se plaint</h2>
     <p>Les outils qui lisent la mémoire d'un autre programme et les plugins de jeu qui utilisent <code>winhttp.dll</code> peuvent déclencher de fausses alertes. Nos résultats (18 novembre 2026) : Windows Defender a analysé notre installateur et nos paquets de version et n'a trouvé aucune menace. Lors d'une analyse complète de Malwarebytes, nos paquets de version (1.0.0 – 1.0.9 et le candidat 1.1) sont ressortis propres ; dans la même analyse, seules nos versions de développement, qui n'arrivent jamais aux utilisateurs, ont été signalées comme « anormales » par une supposition d'apprentissage automatique. Ne téléchargez l'installateur que depuis ce site, et vérifiez qu'il s'agit du même fichier :</p>
-    <p><code>Get-FileHash TeknikOda-Kurulum-1.1.0.exe</code></p>
-    <p>SHA-256 : <code>6610739D4D847532F4581199F0D34FDA9A406D788A62860E2B4FCEDC6189D437</code></p>
+    <p><code>Get-FileHash TeknikOda-Kurulum-1.1.1.exe</code></p>
+    <p>SHA-256 : <code>C65BF67C7C77AFEE4C3BDCB5BF8EBA30BFA47CF1A4A6DCFB80215EF2B84927C7</code></p>
     <p>VirusTotal, installateur 1.0.10 (SHA-256 <code>4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba</code>) : quand nous avons regardé le 20 novembre 2026, la dernière analyse datait d'un jour et 2 moteurs sur 69 signalaient le fichier : Deep Instinct disait « MALICIOUS » et VBA32 disait « TScope.Trojan.MSIL » ; les autres moteurs, Windows Defender compris, ne le signalaient pas. <a href="https://www.virustotal.com/gui/file/4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba" rel="noopener">Résultat VirusTotal</a>. Nous avons envoyé un signalement de faux positif aux deux éditeurs le 20 novembre 2026 et mettrons cette page à jour quand ils répondront.</p>
     <p data-yakinda="virustotal"><a href="{{VIRUSTOTAL}}" rel="noopener">Résultat de l'analyse VirusTotal</a></p>
     <h2>Questions fréquentes</h2>
@@ -844,7 +880,13 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
         <h3>Bibliotecas de Unity para BepInEx</h3>
         <p class="gv-nereye">Destino: <code>unity.bepinex.dev</code></p>
         <p><b>Qué se envía:</b> Solo una petición de archivo (unos 3 MB; la dirección lleva la versión de Unity de FM). Se comprueba si se puede llegar al servidor sin enviar datos. Si no se puede preparar, BepInEx descarga desde la misma dirección por sí mismo.</p>
-        <p><b>Cuándo:</b> Solo cuando instalas el plugin del juego, y cuando una actualización de FM cambia la versión de Unity, con FM cerrado. Nunca si no instalas el plugin.</p>
+        <p><b>Cuándo:</b> Solo al instalar el plugin del juego, cuando una actualización de FM cambia la versión de Unity (con FM cerrado) y cuando BepInEx no pudo descargar el archivo por su cuenta. Nunca si no instalas el plugin.</p>
+      </div>
+      <div class="gv-k">
+        <h3>DNS de respaldo para las bibliotecas de Unity</h3>
+        <p class="gv-nereye">Destino: <code>1.1.1.1</code> <code>8.8.8.8</code> <code>1.0.0.1</code></p>
+        <p><b>Qué se envía:</b> Solo la consulta de dirección del nombre unity.bepinex.dev (DNS-over-HTTPS). Se hace solo si el DNS del equipo no resuelve ese nombre; el archivo sigue llegando desde unity.bepinex.dev y no se envía nada más.</p>
+        <p><b>Cuándo:</b> Solo mientras se descargan las bibliotecas de Unity, si el DNS del equipo no resuelve unity.bepinex.dev o no logra conectarse a él.</p>
       </div>
     <div class="gv-k">
       <h3>Enlaces que se abren en tu navegador</h3>
@@ -907,8 +949,8 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
     <p>El instalador no está firmado, así que Windows puede mostrar una advertencia de “editor desconocido”. Elige “Más información” y luego “Ejecutar de todas formas”.</p>
     <h2>Si tu antivirus protesta</h2>
     <p>Las herramientas que leen la memoria de otro programa y los plugins de juego que usan <code>winhttp.dll</code> pueden provocar falsas alarmas. Nuestros resultados (18 de noviembre de 2026): Windows Defender analizó nuestro instalador y los paquetes de versión y no encontró amenazas. En un análisis completo de Malwarebytes, nuestros paquetes de versión (1.0.0 – 1.0.9 y el candidato a 1.1) salieron limpios; en el mismo análisis, solo nuestras compilaciones de desarrollo, que nunca llegan a los usuarios, fueron marcadas como “anómalas” por una suposición de aprendizaje automático. Descarga el instalador solo desde este sitio y comprueba que es el mismo archivo:</p>
-    <p><code>Get-FileHash TeknikOda-Kurulum-1.1.0.exe</code></p>
-    <p>SHA-256: <code>6610739D4D847532F4581199F0D34FDA9A406D788A62860E2B4FCEDC6189D437</code></p>
+    <p><code>Get-FileHash TeknikOda-Kurulum-1.1.1.exe</code></p>
+    <p>SHA-256: <code>C65BF67C7C77AFEE4C3BDCB5BF8EBA30BFA47CF1A4A6DCFB80215EF2B84927C7</code></p>
     <p>VirusTotal, instalador 1.0.10 (SHA-256 <code>4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba</code>): cuando miramos el 20 de noviembre de 2026, el último análisis tenía un día y 2 de 69 motores marcaban el archivo: Deep Instinct decía “MALICIOUS” y VBA32 decía “TScope.Trojan.MSIL”; los demás motores, Windows Defender incluido, no lo marcaban. <a href="https://www.virustotal.com/gui/file/4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba" rel="noopener">Resultado de VirusTotal</a>. Enviamos una notificación de falso positivo a ambos fabricantes el 20 de noviembre de 2026 y actualizaremos esta página cuando respondan.</p>
     <p data-yakinda="virustotal"><a href="{{VIRUSTOTAL}}" rel="noopener">Resultado del análisis de VirusTotal</a></p>
     <h2>Preguntas frecuentes</h2>
@@ -972,7 +1014,13 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
         <h3>Librerie Unity per BepInEx</h3>
         <p class="gv-nereye">Verso: <code>unity.bepinex.dev</code></p>
         <p><b>Cosa viene inviato:</b> Solo una richiesta di file (circa 3 MB; l'indirizzo contiene la versione di Unity di FM). Si verifica se il server è raggiungibile senza inviare dati. Se non si riesce a prepararlo, BepInEx scarica da sé dallo stesso indirizzo.</p>
-        <p><b>Quando:</b> Solo quando installi il plugin di gioco, e quando un aggiornamento di FM cambia la versione di Unity, con FM chiuso. Mai se non installi il plugin.</p>
+        <p><b>Quando:</b> Solo quando installi il plugin di gioco, quando un aggiornamento di FM cambia la versione Unity (con FM chiuso) e quando BepInEx non è riuscito a scaricare il file da solo. Mai se non installi il plugin.</p>
+      </div>
+      <div class="gv-k">
+        <h3>DNS di riserva per le librerie Unity</h3>
+        <p class="gv-nereye">Verso: <code>1.1.1.1</code> <code>8.8.8.8</code> <code>1.0.0.1</code></p>
+        <p><b>Cosa viene inviato:</b> Solo la ricerca dell'indirizzo del nome unity.bepinex.dev (DNS-over-HTTPS). Avviene solo se il DNS del computer non risolve quel nome; il file arriva sempre da unity.bepinex.dev e non viene inviato nient'altro.</p>
+        <p><b>Quando:</b> Solo durante il download delle librerie Unity, se il DNS del computer non risolve unity.bepinex.dev o non riesce a collegarsi.</p>
       </div>
     <div class="gv-k">
       <h3>Link che si aprono nel tuo browser</h3>
@@ -1035,8 +1083,8 @@ p,li{color:#AEBACC}ul{padding-left:20px}small{color:#7C8BA4}a{color:#F2BE5A}code
     <p>L'installer non è firmato, quindi Windows può mostrare un avviso di «editore sconosciuto». Scegli «Ulteriori informazioni», poi «Esegui comunque».</p>
     <h2>Se il tuo antivirus si lamenta</h2>
     <p>Gli strumenti che leggono la memoria di un altro programma e i plugin di gioco che usano <code>winhttp.dll</code> possono far scattare falsi allarmi. I nostri risultati (18 novembre 2026): Windows Defender ha analizzato il nostro installer e i pacchetti di rilascio e non ha trovato minacce. In una scansione completa di Malwarebytes i nostri pacchetti di rilascio (1.0.0 – 1.0.9 e il candidato 1.1) sono risultati puliti; nella stessa scansione solo le nostre build di sviluppo, che non arrivano mai agli utenti, sono state segnalate come «anomale» da un'ipotesi di apprendimento automatico. Scarica l'installer solo da questo sito e verifica che sia lo stesso file:</p>
-    <p><code>Get-FileHash TeknikOda-Kurulum-1.1.0.exe</code></p>
-    <p>SHA-256: <code>6610739D4D847532F4581199F0D34FDA9A406D788A62860E2B4FCEDC6189D437</code></p>
+    <p><code>Get-FileHash TeknikOda-Kurulum-1.1.1.exe</code></p>
+    <p>SHA-256: <code>C65BF67C7C77AFEE4C3BDCB5BF8EBA30BFA47CF1A4A6DCFB80215EF2B84927C7</code></p>
     <p>VirusTotal, installer 1.0.10 (SHA-256 <code>4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba</code>): quando abbiamo guardato il 20 novembre 2026 l'ultima analisi aveva un giorno e 2 motori su 69 segnalavano il file: Deep Instinct diceva «MALICIOUS» e VBA32 diceva «TScope.Trojan.MSIL»; gli altri motori, Windows Defender compreso, non lo segnalavano. <a href="https://www.virustotal.com/gui/file/4e4cec47e717d18f5fac83cdf5a1f7bcd809b33e14084976183d6b6fe4bf37ba" rel="noopener">Risultato di VirusTotal</a>. Abbiamo inviato una segnalazione di falso positivo a entrambi i produttori il 20 novembre 2026 e aggiorneremo questa pagina quando risponderanno.</p>
     <p data-yakinda="virustotal"><a href="{{VIRUSTOTAL}}" rel="noopener">Risultato della scansione di VirusTotal</a></p>
     <h2>Domande frequenti</h2>
